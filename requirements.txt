@@ -1,0 +1,2 @@
+clickhouse-driver
+apache-airflow-providers-clickhouse

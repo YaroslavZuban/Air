@@ -4898,3 +4898,24 @@
 [2025-03-10T15:45:34.111+0000] {logging_mixin.py:188} INFO - [2025-03-10T15:45:34.110+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-03-10T15:45:34.125+0000] {logging_mixin.py:188} INFO - [2025-03-10T15:45:34.125+0000] {dag.py:3823} INFO - Setting next_dagrun for 3_4_2_homework_assignment to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
 [2025-03-10T15:45:34.146+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/3_4_2_homework_assignment.py took 0.427 seconds
+[2025-03-10T15:46:04.615+0000] {processor.py:161} INFO - Started process (PID=6807) to work on /opt/airflow/dags/3_4_2_homework_assignment.py
+[2025-03-10T15:46:04.616+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/3_4_2_homework_assignment.py for tasks to queue
+[2025-03-10T15:46:04.617+0000] {logging_mixin.py:188} INFO - [2025-03-10T15:46:04.616+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/3_4_2_homework_assignment.py
+[2025-03-10T15:46:04.974+0000] {processor.py:840} INFO - DAG(s) '3_4_2_homework_assignment' retrieved from /opt/airflow/dags/3_4_2_homework_assignment.py
+[2025-03-10T15:46:05.046+0000] {logging_mixin.py:188} INFO - [2025-03-10T15:46:05.045+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-10T15:46:05.202+0000] {logging_mixin.py:188} INFO - [2025-03-10T15:46:05.202+0000] {dag.py:3823} INFO - Setting next_dagrun for 3_4_2_homework_assignment to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-10T15:46:05.221+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/3_4_2_homework_assignment.py took 0.608 seconds
+[2025-03-10T15:46:35.524+0000] {processor.py:161} INFO - Started process (PID=6817) to work on /opt/airflow/dags/3_4_2_homework_assignment.py
+[2025-03-10T15:46:35.526+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/3_4_2_homework_assignment.py for tasks to queue
+[2025-03-10T15:46:35.528+0000] {logging_mixin.py:188} INFO - [2025-03-10T15:46:35.527+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/3_4_2_homework_assignment.py
+[2025-03-10T15:46:35.921+0000] {processor.py:840} INFO - DAG(s) '3_4_2_homework_assignment' retrieved from /opt/airflow/dags/3_4_2_homework_assignment.py
+[2025-03-10T15:46:36.188+0000] {logging_mixin.py:188} INFO - [2025-03-10T15:46:36.187+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-10T15:46:36.209+0000] {logging_mixin.py:188} INFO - [2025-03-10T15:46:36.208+0000] {dag.py:3823} INFO - Setting next_dagrun for 3_4_2_homework_assignment to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-10T15:46:36.253+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/3_4_2_homework_assignment.py took 0.731 seconds
+[2025-03-10T15:47:06.920+0000] {processor.py:161} INFO - Started process (PID=6827) to work on /opt/airflow/dags/3_4_2_homework_assignment.py
+[2025-03-10T15:47:06.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/3_4_2_homework_assignment.py for tasks to queue
+[2025-03-10T15:47:06.929+0000] {logging_mixin.py:188} INFO - [2025-03-10T15:47:06.928+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/3_4_2_homework_assignment.py
+[2025-03-10T15:47:08.295+0000] {processor.py:840} INFO - DAG(s) '3_4_2_homework_assignment' retrieved from /opt/airflow/dags/3_4_2_homework_assignment.py
+[2025-03-10T15:47:09.195+0000] {logging_mixin.py:188} INFO - [2025-03-10T15:47:09.194+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-10T15:47:09.263+0000] {logging_mixin.py:188} INFO - [2025-03-10T15:47:09.261+0000] {dag.py:3823} INFO - Setting next_dagrun for 3_4_2_homework_assignment to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-10T15:47:09.378+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/3_4_2_homework_assignment.py took 2.466 seconds

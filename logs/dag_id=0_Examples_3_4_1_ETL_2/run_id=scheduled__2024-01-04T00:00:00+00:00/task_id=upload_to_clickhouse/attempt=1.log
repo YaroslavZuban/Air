@@ -1,0 +1,108 @@
+[2025-02-26T09:57:51.271+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [queued]>
+[2025-02-26T09:57:51.277+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [queued]>
+[2025-02-26T09:57:51.278+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-26T09:57:51.292+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse> on 2024-01-04 00:00:00+00:00
+[2025-02-26T09:57:51.298+0000] {standard_task_runner.py:60} INFO - Started process 553 to run task
+[2025-02-26T09:57:51.300+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '0_Examples_3_4_1_ETL_2', 'upload_to_clickhouse', 'scheduled__2024-01-04T00:00:00+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/exchangerate_api_work.py', '--cfg-path', '/tmp/tmpgkfpn081']
+[2025-02-26T09:57:51.302+0000] {standard_task_runner.py:88} INFO - Job 25: Subtask upload_to_clickhouse
+[2025-02-26T09:57:51.331+0000] {task_command.py:423} INFO - Running <TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [running]> on host 8b59c4dac072
+[2025-02-26T09:57:51.380+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='0_Examples_3_4_1_ETL_2' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse' AIRFLOW_CTX_EXECUTION_DATE='2024-01-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-04T00:00:00+00:00'
+[2025-02-26T09:57:51.387+0000] {connection.py:411} WARNING - Failed to connect to localhost:8123
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 399, in connect
+    return self._init_connection(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 329, in _init_connection
+    self.socket = self._create_socket(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 301, in _create_socket
+    raise err
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 292, in _create_socket
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2025-02-26T09:57:51.388+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/exchangerate_api_work.py", line 62, in upload_to_clickhouse
+    client.execute(f'CREATE TABLE IF NOT EXISTS {table_name} (num_code Int64, char_code String, nominal Int64, name String, value String, date String) ENGINE Log')
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 258, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 420, in connect
+    raise err
+clickhouse_driver.errors.NetworkError: Code: 210. Connection refused (localhost:8123)
+[2025-02-26T09:57:51.393+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=0_Examples_3_4_1_ETL_2, task_id=upload_to_clickhouse, execution_date=20240104T000000, start_date=20250226T095751, end_date=20250226T095751
+[2025-02-26T09:57:51.403+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 25 for task upload_to_clickhouse (Code: 210. Connection refused (localhost:8123); 553)
+[2025-02-26T09:57:51.433+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-26T09:57:51.444+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-26T10:05:13.227+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [queued]>
+[2025-02-26T10:05:13.232+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [queued]>
+[2025-02-26T10:05:13.232+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-26T10:05:13.243+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse> on 2024-01-04 00:00:00+00:00
+[2025-02-26T10:05:13.248+0000] {standard_task_runner.py:60} INFO - Started process 423 to run task
+[2025-02-26T10:05:13.251+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '0_Examples_3_4_1_ETL_2', 'upload_to_clickhouse', 'scheduled__2024-01-04T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/exchangerate_api_work.py', '--cfg-path', '/tmp/tmp2dhj81bk']
+[2025-02-26T10:05:13.252+0000] {standard_task_runner.py:88} INFO - Job 13: Subtask upload_to_clickhouse
+[2025-02-26T10:05:13.279+0000] {task_command.py:423} INFO - Running <TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [running]> on host a57e69d73574
+[2025-02-26T10:05:13.317+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='0_Examples_3_4_1_ETL_2' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse' AIRFLOW_CTX_EXECUTION_DATE='2024-01-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-04T00:00:00+00:00'
+[2025-02-26T10:05:13.324+0000] {connection.py:411} WARNING - Failed to connect to localhost:9000
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 399, in connect
+    return self._init_connection(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 329, in _init_connection
+    self.socket = self._create_socket(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 301, in _create_socket
+    raise err
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 292, in _create_socket
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2025-02-26T10:05:13.325+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/exchangerate_api_work.py", line 61, in upload_to_clickhouse
+    client.execute(f'CREATE TABLE IF NOT EXISTS {table_name} (num_code Int64, char_code String, nominal Int64, name String, value String, date String) ENGINE Log')
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 258, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 420, in connect
+    raise err
+clickhouse_driver.errors.NetworkError: Code: 210. Connection refused (localhost:9000)
+[2025-02-26T10:05:13.329+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=0_Examples_3_4_1_ETL_2, task_id=upload_to_clickhouse, execution_date=20240104T000000, start_date=20250226T100513, end_date=20250226T100513
+[2025-02-26T10:05:13.337+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 13 for task upload_to_clickhouse (Code: 210. Connection refused (localhost:9000); 423)
+[2025-02-26T10:05:13.384+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-26T10:05:13.395+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-26T10:09:01.619+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [queued]>
+[2025-02-26T10:09:01.624+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [queued]>
+[2025-02-26T10:09:01.624+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-26T10:09:01.637+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse> on 2024-01-04 00:00:00+00:00
+[2025-02-26T10:09:01.643+0000] {standard_task_runner.py:60} INFO - Started process 713 to run task
+[2025-02-26T10:09:01.645+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '0_Examples_3_4_1_ETL_2', 'upload_to_clickhouse', 'scheduled__2024-01-04T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/exchangerate_api_work.py', '--cfg-path', '/tmp/tmprmu9kuh4']
+[2025-02-26T10:09:01.647+0000] {standard_task_runner.py:88} INFO - Job 13: Subtask upload_to_clickhouse
+[2025-02-26T10:09:01.672+0000] {task_command.py:423} INFO - Running <TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [running]> on host a57e69d73574
+[2025-02-26T10:09:01.717+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='0_Examples_3_4_1_ETL_2' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse' AIRFLOW_CTX_EXECUTION_DATE='2024-01-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-04T00:00:00+00:00'
+[2025-02-26T10:09:01.734+0000] {unix.py:142} WARNING - /etc/timezone is deprecated on Debian, and no longer reliable. Ignoring.
+[2025-02-26T10:09:01.738+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-26T10:09:01.742+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=0_Examples_3_4_1_ETL_2, task_id=upload_to_clickhouse, execution_date=20240104T000000, start_date=20250226T100901, end_date=20250226T100901
+[2025-02-26T10:09:01.778+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-02-26T10:09:01.789+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

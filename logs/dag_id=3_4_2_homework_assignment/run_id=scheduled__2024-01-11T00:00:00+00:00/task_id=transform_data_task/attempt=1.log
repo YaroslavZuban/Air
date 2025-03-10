@@ -1,0 +1,708 @@
+[2025-02-27T10:28:05.149+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-11T00:00:00+00:00 [queued]>
+[2025-02-27T10:28:05.153+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-11T00:00:00+00:00 [queued]>
+[2025-02-27T10:28:05.154+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:28:05.165+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data_task> on 2024-01-11 00:00:00+00:00
+[2025-02-27T10:28:05.170+0000] {standard_task_runner.py:60} INFO - Started process 6085 to run task
+[2025-02-27T10:28:05.172+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'transform_data_task', 'scheduled__2024-01-11T00:00:00+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmpzb06_sa1']
+[2025-02-27T10:28:05.173+0000] {standard_task_runner.py:88} INFO - Job 33: Subtask transform_data_task
+[2025-02-27T10:28:05.201+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-11T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:28:05.251+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='transform_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-11T00:00:00+00:00'
+[2025-02-27T10:28:05.253+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-27T10:28:05.257+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=3_4_2_homework_assignment, task_id=transform_data_task, execution_date=20240111T000000, start_date=20250227T102805, end_date=20250227T102805
+[2025-02-27T10:28:05.305+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-02-27T10:36:26.381+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-11T00:00:00+00:00 [queued]>
+[2025-02-27T10:36:26.386+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-11T00:00:00+00:00 [queued]>
+[2025-02-27T10:36:26.387+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:36:26.398+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data_task> on 2024-01-11 00:00:00+00:00
+[2025-02-27T10:36:26.403+0000] {standard_task_runner.py:60} INFO - Started process 6745 to run task
+[2025-02-27T10:36:26.405+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'transform_data_task', 'scheduled__2024-01-11T00:00:00+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmpk0wsdeef']
+[2025-02-27T10:36:26.406+0000] {standard_task_runner.py:88} INFO - Job 33: Subtask transform_data_task
+[2025-02-27T10:36:26.430+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-11T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:36:26.470+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='transform_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-11T00:00:00+00:00'
+[2025-02-27T10:36:26.471+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AED,3.672498,2024-01-11
+
+[2025-02-27T10:36:26.471+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AFN,70.593305,2024-01-11
+
+[2025-02-27T10:36:26.472+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ALL,95.027294,2024-01-11
+
+[2025-02-27T10:36:26.472+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AMD,405.517854,2024-01-11
+
+[2025-02-27T10:36:26.472+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ANG,1.802504,2024-01-11
+
+[2025-02-27T10:36:26.472+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AOA,828.723996,2024-01-11
+
+[2025-02-27T10:36:26.473+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ARS,815.453722,2024-01-11
+
+[2025-02-27T10:36:26.473+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AUD,1.492894,2024-01-11
+
+[2025-02-27T10:36:26.473+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AWG,1.8,2024-01-11
+
+[2025-02-27T10:36:26.473+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AZN,1.705131,2024-01-11
+
+[2025-02-27T10:36:26.473+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BAM,1.78175,2024-01-11
+
+[2025-02-27T10:36:26.473+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BBD,2.019386,2024-01-11
+
+[2025-02-27T10:36:26.474+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BDT,109.767374,2024-01-11
+
+[2025-02-27T10:36:26.474+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BGN,1.781195,2024-01-11
+
+[2025-02-27T10:36:26.474+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BHD,0.376939,2024-01-11
+
+[2025-02-27T10:36:26.474+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BIF,2858.0,2024-01-11
+
+[2025-02-27T10:36:26.474+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BMD,1.0,2024-01-11
+
+[2025-02-27T10:36:26.474+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BND,1.329677,2024-01-11
+
+[2025-02-27T10:36:26.475+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BOB,6.910751,2024-01-11
+
+[2025-02-27T10:36:26.475+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BRL,4.871197,2024-01-11
+
+[2025-02-27T10:36:26.475+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BSD,1.000082,2024-01-11
+
+[2025-02-27T10:36:26.475+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BTC,2.1558786e-05,2024-01-11
+
+[2025-02-27T10:36:26.475+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BTN,83.024765,2024-01-11
+
+[2025-02-27T10:36:26.475+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BWP,13.497374,2024-01-11
+
+[2025-02-27T10:36:26.476+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BYN,3.27254,2024-01-11
+
+[2025-02-27T10:36:26.476+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BYR,19600.0,2024-01-11
+
+[2025-02-27T10:36:26.476+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BZD,2.015924,2024-01-11
+
+[2025-02-27T10:36:26.476+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CAD,1.33805,2024-01-11
+
+[2025-02-27T10:36:26.476+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CDF,2684.999748,2024-01-11
+
+[2025-02-27T10:36:26.476+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CHF,0.85107,2024-01-11
+
+[2025-02-27T10:36:26.477+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CLF,0.033123,2024-01-11
+
+[2025-02-27T10:36:26.477+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CLP,913.970387,2024-01-11
+
+[2025-02-27T10:36:26.477+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CNY,7.113097,2024-01-11
+
+[2025-02-27T10:36:26.477+0000] {3_4_2_homework_assignment.py:84} INFO - USD,COP,3918.48,2024-01-11
+
+[2025-02-27T10:36:26.477+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CRC,520.818624,2024-01-11
+
+[2025-02-27T10:36:26.477+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CUC,1.0,2024-01-11
+
+[2025-02-27T10:36:26.478+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CUP,26.5,2024-01-11
+
+[2025-02-27T10:36:26.478+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CVE,100.874986,2024-01-11
+
+[2025-02-27T10:36:26.478+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CZK,22.479702,2024-01-11
+
+[2025-02-27T10:36:26.478+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DJF,177.720063,2024-01-11
+
+[2025-02-27T10:36:26.478+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DKK,6.790905,2024-01-11
+
+[2025-02-27T10:36:26.479+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DOP,58.596617,2024-01-11
+
+[2025-02-27T10:36:26.479+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DZD,134.416042,2024-01-11
+
+[2025-02-27T10:36:26.479+0000] {3_4_2_homework_assignment.py:84} INFO - USD,EGP,30.898403,2024-01-11
+
+[2025-02-27T10:36:26.479+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ERN,15.0,2024-01-11
+
+[2025-02-27T10:36:26.479+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ETB,56.557925,2024-01-11
+
+[2025-02-27T10:36:26.479+0000] {3_4_2_homework_assignment.py:84} INFO - USD,EUR,0.910645,2024-01-11
+
+[2025-02-27T10:36:26.480+0000] {3_4_2_homework_assignment.py:84} INFO - USD,FJD,2.24125,2024-01-11
+
+[2025-02-27T10:36:26.480+0000] {3_4_2_homework_assignment.py:84} INFO - USD,FKP,0.785688,2024-01-11
+
+[2025-02-27T10:36:26.480+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GBP,0.782655,2024-01-11
+
+[2025-02-27T10:36:26.480+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GEL,2.68497,2024-01-11
+
+[2025-02-27T10:36:26.480+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GGP,0.785688,2024-01-11
+
+[2025-02-27T10:36:26.480+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GHS,11.969894,2024-01-11
+
+[2025-02-27T10:36:26.481+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GIP,0.785688,2024-01-11
+
+[2025-02-27T10:36:26.481+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GMD,67.275039,2024-01-11
+
+[2025-02-27T10:36:26.481+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GNF,8555.000077,2024-01-11
+
+[2025-02-27T10:36:26.481+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GTQ,7.820934,2024-01-11
+
+[2025-02-27T10:36:26.482+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GYD,209.2447,2024-01-11
+
+[2025-02-27T10:36:26.482+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HKD,7.81785,2024-01-11
+
+[2025-02-27T10:36:26.482+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HNL,24.664635,2024-01-11
+
+[2025-02-27T10:36:26.482+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HRK,6.98177,2024-01-11
+
+[2025-02-27T10:36:26.482+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HTG,131.728781,2024-01-11
+
+[2025-02-27T10:36:26.482+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HUF,345.404972,2024-01-11
+
+[2025-02-27T10:36:26.483+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IDR,15562.5,2024-01-11
+
+[2025-02-27T10:36:26.483+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ILS,3.74732,2024-01-11
+
+[2025-02-27T10:36:26.483+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IMP,0.785688,2024-01-11
+
+[2025-02-27T10:36:26.483+0000] {3_4_2_homework_assignment.py:84} INFO - USD,INR,83.07635,2024-01-11
+
+[2025-02-27T10:36:26.483+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IQD,1310.182106,2024-01-11
+
+[2025-02-27T10:36:26.483+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IRR,42037.500451,2024-01-11
+
+[2025-02-27T10:36:26.484+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ISK,136.689721,2024-01-11
+
+[2025-02-27T10:36:26.484+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JEP,0.785688,2024-01-11
+
+[2025-02-27T10:36:26.484+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JMD,154.979298,2024-01-11
+
+[2025-02-27T10:36:26.484+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JOD,0.709398,2024-01-11
+
+[2025-02-27T10:36:26.484+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JPY,145.047025,2024-01-11
+
+[2025-02-27T10:36:26.485+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KES,158.999832,2024-01-11
+
+[2025-02-27T10:36:26.485+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KGS,89.320128,2024-01-11
+
+[2025-02-27T10:36:26.485+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KHR,4094.999852,2024-01-11
+
+[2025-02-27T10:36:26.485+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KMF,448.924994,2024-01-11
+
+[2025-02-27T10:36:26.485+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KPW,899.980852,2024-01-11
+
+[2025-02-27T10:36:26.486+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KRW,1313.724973,2024-01-11
+
+[2025-02-27T10:36:26.486+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KWD,0.30731,2024-01-11
+
+[2025-02-27T10:36:26.486+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KYD,0.833474,2024-01-11
+
+[2025-02-27T10:36:26.486+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KZT,451.995518,2024-01-11
+
+[2025-02-27T10:36:26.486+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LAK,20635.000148,2024-01-11
+
+[2025-02-27T10:36:26.486+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LBP,14990.975881,2024-01-11
+
+[2025-02-27T10:36:26.487+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LKR,322.756673,2024-01-11
+
+[2025-02-27T10:36:26.487+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LRD,188.950308,2024-01-11
+
+[2025-02-27T10:36:26.487+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LSL,18.679921,2024-01-11
+
+[2025-02-27T10:36:26.487+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LTL,2.95274,2024-01-11
+
+[2025-02-27T10:36:26.487+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LVL,0.60489,2024-01-11
+
+[2025-02-27T10:36:26.487+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LYD,4.795039,2024-01-11
+
+[2025-02-27T10:36:26.488+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MAD,9.948504,2024-01-11
+
+[2025-02-27T10:36:26.488+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MDL,17.777089,2024-01-11
+
+[2025-02-27T10:36:26.488+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MGA,4566.779933,2024-01-11
+
+[2025-02-27T10:36:26.488+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MKD,56.039312,2024-01-11
+
+[2025-02-27T10:36:26.488+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MMK,2100.310195,2024-01-11
+
+[2025-02-27T10:36:26.488+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MNT,3419.608444,2024-01-11
+
+[2025-02-27T10:36:26.489+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MOP,8.053949,2024-01-11
+
+[2025-02-27T10:36:26.489+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MRU,39.620181,2024-01-11
+
+[2025-02-27T10:36:26.489+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MUR,45.394738,2024-01-11
+
+[2025-02-27T10:36:26.489+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MVR,15.400926,2024-01-11
+
+[2025-02-27T10:36:26.489+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MWK,1683.59585,2024-01-11
+
+[2025-02-27T10:36:26.490+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MXN,16.9042,2024-01-11
+
+[2025-02-27T10:36:26.490+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MYR,4.645992,2024-01-11
+
+[2025-02-27T10:36:26.490+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MZN,63.24995,2024-01-11
+
+[2025-02-27T10:36:26.490+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NAD,18.680062,2024-01-11
+
+[2025-02-27T10:36:26.490+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NGN,958.049927,2024-01-11
+
+[2025-02-27T10:36:26.490+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NIO,36.622528,2024-01-11
+
+[2025-02-27T10:36:26.491+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NOK,10.29314,2024-01-11
+
+[2025-02-27T10:36:26.491+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NPR,132.84109,2024-01-11
+
+[2025-02-27T10:36:26.491+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NZD,1.602125,2024-01-11
+
+[2025-02-27T10:36:26.491+0000] {3_4_2_homework_assignment.py:84} INFO - USD,OMR,0.384941,2024-01-11
+
+[2025-02-27T10:36:26.491+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PAB,1.000187,2024-01-11
+
+[2025-02-27T10:36:26.491+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PEN,3.700846,2024-01-11
+
+[2025-02-27T10:36:26.492+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PGK,3.736921,2024-01-11
+
+[2025-02-27T10:36:26.492+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PHP,56.024499,2024-01-11
+
+[2025-02-27T10:36:26.492+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PKR,281.139661,2024-01-11
+
+[2025-02-27T10:36:26.492+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PLN,3.96535,2024-01-11
+
+[2025-02-27T10:36:26.493+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PYG,7297.108942,2024-01-11
+
+[2025-02-27T10:36:26.493+0000] {3_4_2_homework_assignment.py:84} INFO - USD,QAR,3.640969,2024-01-11
+
+[2025-02-27T10:36:26.493+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RON,4.528002,2024-01-11
+
+[2025-02-27T10:36:26.493+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RSD,106.762003,2024-01-11
+
+[2025-02-27T10:36:26.493+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RUB,89.905977,2024-01-11
+
+[2025-02-27T10:36:26.494+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RWF,1265.014417,2024-01-11
+
+[2025-02-27T10:36:26.494+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SAR,3.75008,2024-01-11
+
+[2025-02-27T10:36:26.494+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SBD,8.453689,2024-01-11
+
+[2025-02-27T10:36:26.494+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SCR,13.284277,2024-01-11
+
+[2025-02-27T10:36:26.494+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SDG,600.999699,2024-01-11
+
+[2025-02-27T10:36:26.495+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SEK,10.25113,2024-01-11
+
+[2025-02-27T10:36:26.495+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SGD,1.330305,2024-01-11
+
+[2025-02-27T10:36:26.495+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SHP,1.26975,2024-01-11
+
+[2025-02-27T10:36:26.495+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SLE,22.489865,2024-01-11
+
+[2025-02-27T10:36:26.495+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SLL,19750.000281,2024-01-11
+
+[2025-02-27T10:36:26.496+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SOS,571.0004,2024-01-11
+
+[2025-02-27T10:36:26.496+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SRD,36.929613,2024-01-11
+
+[2025-02-27T10:36:26.496+0000] {3_4_2_homework_assignment.py:84} INFO - USD,STD,20697.981008,2024-01-11
+
+[2025-02-27T10:36:26.496+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SYP,13002.098001,2024-01-11
+
+[2025-02-27T10:36:26.496+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SZL,18.60874,2024-01-11
+
+[2025-02-27T10:36:26.497+0000] {3_4_2_homework_assignment.py:84} INFO - USD,THB,35.013977,2024-01-11
+
+[2025-02-27T10:36:26.497+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TJS,10.976496,2024-01-11
+
+[2025-02-27T10:36:26.497+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TMT,3.5,2024-01-11
+
+[2025-02-27T10:36:26.497+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TND,3.097501,2024-01-11
+
+[2025-02-27T10:36:26.497+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TOP,2.34815,2024-01-11
+
+[2025-02-27T10:36:26.498+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TRY,30.065899,2024-01-11
+
+[2025-02-27T10:36:26.498+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TTD,6.788771,2024-01-11
+
+[2025-02-27T10:36:26.498+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TWD,30.900498,2024-01-11
+
+[2025-02-27T10:36:26.498+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TZS,2515.000116,2024-01-11
+
+[2025-02-27T10:36:26.498+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UAH,37.89058,2024-01-11
+
+[2025-02-27T10:36:26.499+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UGX,3799.815065,2024-01-11
+
+[2025-02-27T10:36:26.499+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UYU,39.464874,2024-01-11
+
+[2025-02-27T10:36:26.499+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UZS,12419.774343,2024-01-11
+
+[2025-02-27T10:36:26.499+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VEF,3588288.841241,2024-01-11
+
+[2025-02-27T10:36:26.499+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VES,35.872231,2024-01-11
+
+[2025-02-27T10:36:26.499+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VND,24490.0,2024-01-11
+
+[2025-02-27T10:36:26.500+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VUV,119.418996,2024-01-11
+
+[2025-02-27T10:36:26.500+0000] {3_4_2_homework_assignment.py:84} INFO - USD,WST,2.715648,2024-01-11
+
+[2025-02-27T10:36:26.500+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XAF,597.57674,2024-01-11
+
+[2025-02-27T10:36:26.500+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XAG,0.043698,2024-01-11
+
+[2025-02-27T10:36:26.500+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XAU,0.000491,2024-01-11
+
+[2025-02-27T10:36:26.500+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XCD,2.70255,2024-01-11
+
+[2025-02-27T10:36:26.501+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XDR,0.749469,2024-01-11
+
+[2025-02-27T10:36:26.501+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XOF,598.486806,2024-01-11
+
+[2025-02-27T10:36:26.501+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XPF,109.598462,2024-01-11
+
+[2025-02-27T10:36:26.501+0000] {3_4_2_homework_assignment.py:84} INFO - USD,YER,250.35051,2024-01-11
+
+[2025-02-27T10:36:26.501+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZAR,18.660102,2024-01-11
+
+[2025-02-27T10:36:26.501+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZMK,9001.197777,2024-01-11
+
+[2025-02-27T10:36:26.502+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZMW,26.12803,2024-01-11
+
+[2025-02-27T10:36:26.502+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZWL,321.999592,2024-01-11
+
+[2025-02-27T10:36:26.502+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-27T10:36:26.506+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=3_4_2_homework_assignment, task_id=transform_data_task, execution_date=20240111T000000, start_date=20250227T103626, end_date=20250227T103626
+[2025-02-27T10:36:26.540+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-02-27T10:46:18.656+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-11T00:00:00+00:00 [queued]>
+[2025-02-27T10:46:18.662+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-11T00:00:00+00:00 [queued]>
+[2025-02-27T10:46:18.662+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:46:18.672+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data_task> on 2024-01-11 00:00:00+00:00
+[2025-02-27T10:46:18.677+0000] {standard_task_runner.py:60} INFO - Started process 7430 to run task
+[2025-02-27T10:46:18.679+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'transform_data_task', 'scheduled__2024-01-11T00:00:00+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmpgxsrwu3n']
+[2025-02-27T10:46:18.680+0000] {standard_task_runner.py:88} INFO - Job 33: Subtask transform_data_task
+[2025-02-27T10:46:18.703+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-11T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:46:18.745+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='transform_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-11T00:00:00+00:00'
+[2025-02-27T10:46:18.746+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AED,3.672498,2024-01-11
+
+[2025-02-27T10:46:18.746+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AFN,70.593305,2024-01-11
+
+[2025-02-27T10:46:18.747+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ALL,95.027294,2024-01-11
+
+[2025-02-27T10:46:18.747+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AMD,405.517854,2024-01-11
+
+[2025-02-27T10:46:18.747+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ANG,1.802504,2024-01-11
+
+[2025-02-27T10:46:18.747+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AOA,828.723996,2024-01-11
+
+[2025-02-27T10:46:18.747+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ARS,815.453722,2024-01-11
+
+[2025-02-27T10:46:18.748+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AUD,1.492894,2024-01-11
+
+[2025-02-27T10:46:18.748+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AWG,1.8,2024-01-11
+
+[2025-02-27T10:46:18.748+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AZN,1.705131,2024-01-11
+
+[2025-02-27T10:46:18.748+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BAM,1.78175,2024-01-11
+
+[2025-02-27T10:46:18.748+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BBD,2.019386,2024-01-11
+
+[2025-02-27T10:46:18.749+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BDT,109.767374,2024-01-11
+
+[2025-02-27T10:46:18.749+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BGN,1.781195,2024-01-11
+
+[2025-02-27T10:46:18.749+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BHD,0.376939,2024-01-11
+
+[2025-02-27T10:46:18.749+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BIF,2858.0,2024-01-11
+
+[2025-02-27T10:46:18.750+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BMD,1.0,2024-01-11
+
+[2025-02-27T10:46:18.750+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BND,1.329677,2024-01-11
+
+[2025-02-27T10:46:18.750+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BOB,6.910751,2024-01-11
+
+[2025-02-27T10:46:18.750+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BRL,4.871197,2024-01-11
+
+[2025-02-27T10:46:18.750+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BSD,1.000082,2024-01-11
+
+[2025-02-27T10:46:18.750+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BTC,2.1558786e-05,2024-01-11
+
+[2025-02-27T10:46:18.751+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BTN,83.024765,2024-01-11
+
+[2025-02-27T10:46:18.751+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BWP,13.497374,2024-01-11
+
+[2025-02-27T10:46:18.751+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BYN,3.27254,2024-01-11
+
+[2025-02-27T10:46:18.751+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BYR,19600.0,2024-01-11
+
+[2025-02-27T10:46:18.751+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BZD,2.015924,2024-01-11
+
+[2025-02-27T10:46:18.752+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CAD,1.33805,2024-01-11
+
+[2025-02-27T10:46:18.752+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CDF,2684.999748,2024-01-11
+
+[2025-02-27T10:46:18.752+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CHF,0.85107,2024-01-11
+
+[2025-02-27T10:46:18.752+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CLF,0.033123,2024-01-11
+
+[2025-02-27T10:46:18.752+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CLP,913.970387,2024-01-11
+
+[2025-02-27T10:46:18.752+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CNY,7.113097,2024-01-11
+
+[2025-02-27T10:46:18.753+0000] {3_4_2_homework_assignment.py:84} INFO - USD,COP,3918.48,2024-01-11
+
+[2025-02-27T10:46:18.753+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CRC,520.818624,2024-01-11
+
+[2025-02-27T10:46:18.753+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CUC,1.0,2024-01-11
+
+[2025-02-27T10:46:18.753+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CUP,26.5,2024-01-11
+
+[2025-02-27T10:46:18.753+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CVE,100.874986,2024-01-11
+
+[2025-02-27T10:46:18.753+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CZK,22.479702,2024-01-11
+
+[2025-02-27T10:46:18.754+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DJF,177.720063,2024-01-11
+
+[2025-02-27T10:46:18.754+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DKK,6.790905,2024-01-11
+
+[2025-02-27T10:46:18.754+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DOP,58.596617,2024-01-11
+
+[2025-02-27T10:46:18.754+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DZD,134.416042,2024-01-11
+
+[2025-02-27T10:46:18.754+0000] {3_4_2_homework_assignment.py:84} INFO - USD,EGP,30.898403,2024-01-11
+
+[2025-02-27T10:46:18.754+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ERN,15.0,2024-01-11
+
+[2025-02-27T10:46:18.755+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ETB,56.557925,2024-01-11
+
+[2025-02-27T10:46:18.755+0000] {3_4_2_homework_assignment.py:84} INFO - USD,EUR,0.910645,2024-01-11
+
+[2025-02-27T10:46:18.755+0000] {3_4_2_homework_assignment.py:84} INFO - USD,FJD,2.24125,2024-01-11
+
+[2025-02-27T10:46:18.755+0000] {3_4_2_homework_assignment.py:84} INFO - USD,FKP,0.785688,2024-01-11
+
+[2025-02-27T10:46:18.755+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GBP,0.782655,2024-01-11
+
+[2025-02-27T10:46:18.755+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GEL,2.68497,2024-01-11
+
+[2025-02-27T10:46:18.756+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GGP,0.785688,2024-01-11
+
+[2025-02-27T10:46:18.756+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GHS,11.969894,2024-01-11
+
+[2025-02-27T10:46:18.756+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GIP,0.785688,2024-01-11
+
+[2025-02-27T10:46:18.756+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GMD,67.275039,2024-01-11
+
+[2025-02-27T10:46:18.756+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GNF,8555.000077,2024-01-11
+
+[2025-02-27T10:46:18.756+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GTQ,7.820934,2024-01-11
+
+[2025-02-27T10:46:18.757+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GYD,209.2447,2024-01-11
+
+[2025-02-27T10:46:18.757+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HKD,7.81785,2024-01-11
+
+[2025-02-27T10:46:18.757+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HNL,24.664635,2024-01-11
+
+[2025-02-27T10:46:18.757+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HRK,6.98177,2024-01-11
+
+[2025-02-27T10:46:18.757+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HTG,131.728781,2024-01-11
+
+[2025-02-27T10:46:18.758+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HUF,345.404972,2024-01-11
+
+[2025-02-27T10:46:18.758+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IDR,15562.5,2024-01-11
+
+[2025-02-27T10:46:18.758+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ILS,3.74732,2024-01-11
+
+[2025-02-27T10:46:18.758+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IMP,0.785688,2024-01-11
+
+[2025-02-27T10:46:18.758+0000] {3_4_2_homework_assignment.py:84} INFO - USD,INR,83.07635,2024-01-11
+
+[2025-02-27T10:46:18.758+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IQD,1310.182106,2024-01-11
+
+[2025-02-27T10:46:18.759+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IRR,42037.500451,2024-01-11
+
+[2025-02-27T10:46:18.759+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ISK,136.689721,2024-01-11
+
+[2025-02-27T10:46:18.759+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JEP,0.785688,2024-01-11
+
+[2025-02-27T10:46:18.759+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JMD,154.979298,2024-01-11
+
+[2025-02-27T10:46:18.759+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JOD,0.709398,2024-01-11
+
+[2025-02-27T10:46:18.760+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JPY,145.047025,2024-01-11
+
+[2025-02-27T10:46:18.760+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KES,158.999832,2024-01-11
+
+[2025-02-27T10:46:18.760+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KGS,89.320128,2024-01-11
+
+[2025-02-27T10:46:18.760+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KHR,4094.999852,2024-01-11
+
+[2025-02-27T10:46:18.760+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KMF,448.924994,2024-01-11
+
+[2025-02-27T10:46:18.760+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KPW,899.980852,2024-01-11
+
+[2025-02-27T10:46:18.761+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KRW,1313.724973,2024-01-11
+
+[2025-02-27T10:46:18.761+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KWD,0.30731,2024-01-11
+
+[2025-02-27T10:46:18.761+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KYD,0.833474,2024-01-11
+
+[2025-02-27T10:46:18.761+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KZT,451.995518,2024-01-11
+
+[2025-02-27T10:46:18.761+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LAK,20635.000148,2024-01-11
+
+[2025-02-27T10:46:18.761+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LBP,14990.975881,2024-01-11
+
+[2025-02-27T10:46:18.762+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LKR,322.756673,2024-01-11
+
+[2025-02-27T10:46:18.762+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LRD,188.950308,2024-01-11
+
+[2025-02-27T10:46:18.762+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LSL,18.679921,2024-01-11
+
+[2025-02-27T10:46:18.762+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LTL,2.95274,2024-01-11
+
+[2025-02-27T10:46:18.762+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LVL,0.60489,2024-01-11
+
+[2025-02-27T10:46:18.762+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LYD,4.795039,2024-01-11
+
+[2025-02-27T10:46:18.763+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MAD,9.948504,2024-01-11
+
+[2025-02-27T10:46:18.763+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MDL,17.777089,2024-01-11
+
+[2025-02-27T10:46:18.763+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MGA,4566.779933,2024-01-11
+
+[2025-02-27T10:46:18.763+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MKD,56.039312,2024-01-11
+
+[2025-02-27T10:46:18.763+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MMK,2100.310195,2024-01-11
+
+[2025-02-27T10:46:18.763+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MNT,3419.608444,2024-01-11
+
+[2025-02-27T10:46:18.764+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MOP,8.053949,2024-01-11
+
+[2025-02-27T10:46:18.764+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MRU,39.620181,2024-01-11
+
+[2025-02-27T10:46:18.764+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MUR,45.394738,2024-01-11
+
+[2025-02-27T10:46:18.764+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MVR,15.400926,2024-01-11
+
+[2025-02-27T10:46:18.764+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MWK,1683.59585,2024-01-11
+
+[2025-02-27T10:46:18.764+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MXN,16.9042,2024-01-11
+
+[2025-02-27T10:46:18.765+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MYR,4.645992,2024-01-11
+
+[2025-02-27T10:46:18.765+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MZN,63.24995,2024-01-11
+
+[2025-02-27T10:46:18.765+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NAD,18.680062,2024-01-11
+
+[2025-02-27T10:46:18.765+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NGN,958.049927,2024-01-11
+
+[2025-02-27T10:46:18.766+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NIO,36.622528,2024-01-11
+
+[2025-02-27T10:46:18.766+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NOK,10.29314,2024-01-11
+
+[2025-02-27T10:46:18.766+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NPR,132.84109,2024-01-11
+
+[2025-02-27T10:46:18.766+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NZD,1.602125,2024-01-11
+
+[2025-02-27T10:46:18.766+0000] {3_4_2_homework_assignment.py:84} INFO - USD,OMR,0.384941,2024-01-11
+
+[2025-02-27T10:46:18.767+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PAB,1.000187,2024-01-11
+
+[2025-02-27T10:46:18.767+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PEN,3.700846,2024-01-11
+
+[2025-02-27T10:46:18.767+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PGK,3.736921,2024-01-11
+
+[2025-02-27T10:46:18.767+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PHP,56.024499,2024-01-11
+
+[2025-02-27T10:46:18.767+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PKR,281.139661,2024-01-11
+
+[2025-02-27T10:46:18.767+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PLN,3.96535,2024-01-11
+
+[2025-02-27T10:46:18.768+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PYG,7297.108942,2024-01-11
+
+[2025-02-27T10:46:18.768+0000] {3_4_2_homework_assignment.py:84} INFO - USD,QAR,3.640969,2024-01-11
+
+[2025-02-27T10:46:18.768+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RON,4.528002,2024-01-11
+
+[2025-02-27T10:46:18.768+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RSD,106.762003,2024-01-11
+
+[2025-02-27T10:46:18.768+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RUB,89.905977,2024-01-11
+
+[2025-02-27T10:46:18.769+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RWF,1265.014417,2024-01-11
+
+[2025-02-27T10:46:18.769+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SAR,3.75008,2024-01-11
+
+[2025-02-27T10:46:18.769+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SBD,8.453689,2024-01-11
+
+[2025-02-27T10:46:18.769+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SCR,13.284277,2024-01-11
+
+[2025-02-27T10:46:18.769+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SDG,600.999699,2024-01-11
+
+[2025-02-27T10:46:18.769+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SEK,10.25113,2024-01-11
+
+[2025-02-27T10:46:18.770+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SGD,1.330305,2024-01-11
+
+[2025-02-27T10:46:18.770+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SHP,1.26975,2024-01-11
+
+[2025-02-27T10:46:18.770+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SLE,22.489865,2024-01-11
+
+[2025-02-27T10:46:18.770+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SLL,19750.000281,2024-01-11
+
+[2025-02-27T10:46:18.770+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SOS,571.0004,2024-01-11
+
+[2025-02-27T10:46:18.770+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SRD,36.929613,2024-01-11
+
+[2025-02-27T10:46:18.771+0000] {3_4_2_homework_assignment.py:84} INFO - USD,STD,20697.981008,2024-01-11
+
+[2025-02-27T10:46:18.771+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SYP,13002.098001,2024-01-11
+
+[2025-02-27T10:46:18.771+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SZL,18.60874,2024-01-11
+
+[2025-02-27T10:46:18.771+0000] {3_4_2_homework_assignment.py:84} INFO - USD,THB,35.013977,2024-01-11
+
+[2025-02-27T10:46:18.771+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TJS,10.976496,2024-01-11
+
+[2025-02-27T10:46:18.772+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TMT,3.5,2024-01-11
+
+[2025-02-27T10:46:18.772+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TND,3.097501,2024-01-11
+
+[2025-02-27T10:46:18.772+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TOP,2.34815,2024-01-11
+
+[2025-02-27T10:46:18.772+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TRY,30.065899,2024-01-11
+
+[2025-02-27T10:46:18.772+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TTD,6.788771,2024-01-11
+
+[2025-02-27T10:46:18.772+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TWD,30.900498,2024-01-11
+
+[2025-02-27T10:46:18.772+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TZS,2515.000116,2024-01-11
+
+[2025-02-27T10:46:18.773+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UAH,37.89058,2024-01-11
+
+[2025-02-27T10:46:18.773+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UGX,3799.815065,2024-01-11
+
+[2025-02-27T10:46:18.773+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UYU,39.464874,2024-01-11
+
+[2025-02-27T10:46:18.773+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UZS,12419.774343,2024-01-11
+
+[2025-02-27T10:46:18.773+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VEF,3588288.841241,2024-01-11
+
+[2025-02-27T10:46:18.774+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VES,35.872231,2024-01-11
+
+[2025-02-27T10:46:18.774+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VND,24490.0,2024-01-11
+
+[2025-02-27T10:46:18.774+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VUV,119.418996,2024-01-11
+
+[2025-02-27T10:46:18.774+0000] {3_4_2_homework_assignment.py:84} INFO - USD,WST,2.715648,2024-01-11
+
+[2025-02-27T10:46:18.774+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XAF,597.57674,2024-01-11
+
+[2025-02-27T10:46:18.774+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XAG,0.043698,2024-01-11
+
+[2025-02-27T10:46:18.775+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XAU,0.000491,2024-01-11
+
+[2025-02-27T10:46:18.775+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XCD,2.70255,2024-01-11
+
+[2025-02-27T10:46:18.775+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XDR,0.749469,2024-01-11
+
+[2025-02-27T10:46:18.775+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XOF,598.486806,2024-01-11
+
+[2025-02-27T10:46:18.775+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XPF,109.598462,2024-01-11
+
+[2025-02-27T10:46:18.775+0000] {3_4_2_homework_assignment.py:84} INFO - USD,YER,250.35051,2024-01-11
+
+[2025-02-27T10:46:18.776+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZAR,18.660102,2024-01-11
+
+[2025-02-27T10:46:18.776+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZMK,9001.197777,2024-01-11
+
+[2025-02-27T10:46:18.776+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZMW,26.12803,2024-01-11
+
+[2025-02-27T10:46:18.776+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZWL,321.999592,2024-01-11
+
+[2025-02-27T10:46:18.776+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-27T10:46:18.780+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=3_4_2_homework_assignment, task_id=transform_data_task, execution_date=20240111T000000, start_date=20250227T104618, end_date=20250227T104618
+[2025-02-27T10:46:18.815+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0

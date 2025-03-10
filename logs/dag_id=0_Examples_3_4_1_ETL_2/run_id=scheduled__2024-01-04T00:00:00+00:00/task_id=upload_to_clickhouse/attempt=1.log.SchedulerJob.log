@@ -1,1 +1,0 @@
-[2025-02-26T09:55:30.430+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

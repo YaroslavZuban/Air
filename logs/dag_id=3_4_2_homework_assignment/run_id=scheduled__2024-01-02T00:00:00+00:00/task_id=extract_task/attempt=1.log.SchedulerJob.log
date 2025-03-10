@@ -1,1 +1,0 @@
-[2025-02-27T10:12:00.994+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: 3_4_2_homework_assignment.extract_task scheduled__2024-01-02T00:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

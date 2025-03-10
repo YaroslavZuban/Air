@@ -1,0 +1,38 @@
+[2025-03-10T15:39:19.544+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_xcom.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [queued]>
+[2025-03-10T15:39:19.551+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_xcom.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [queued]>
+[2025-03-10T15:39:19.551+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-10T15:39:19.563+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse> on 2024-01-04 00:00:00+00:00
+[2025-03-10T15:39:19.569+0000] {standard_task_runner.py:60} INFO - Started process 6534 to run task
+[2025-03-10T15:39:19.571+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'test_xcom', 'upload_to_clickhouse', 'scheduled__2024-01-04T00:00:00+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/5_1_2_xcom.py', '--cfg-path', '/tmp/tmpbmk_shjs']
+[2025-03-10T15:39:19.573+0000] {standard_task_runner.py:88} INFO - Job 48: Subtask upload_to_clickhouse
+[2025-03-10T15:39:19.605+0000] {task_command.py:423} INFO - Running <TaskInstance: test_xcom.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-10T15:39:19.654+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='test_xcom' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse' AIRFLOW_CTX_EXECUTION_DATE='2024-01-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-04T00:00:00+00:00'
+[2025-03-10T15:39:19.664+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/5_1_2_xcom.py", line 62, in upload_to_clickhouse
+    for file in files:
+TypeError: 'int' object is not iterable
+[2025-03-10T15:39:19.670+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=test_xcom, task_id=upload_to_clickhouse, execution_date=20240104T000000, start_date=20250310T153919, end_date=20250310T153919
+[2025-03-10T15:39:19.679+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 48 for task upload_to_clickhouse ('int' object is not iterable; 6534)
+[2025-03-10T15:39:19.704+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-10T15:39:19.715+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-10T15:43:33.213+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: test_xcom.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [queued]>
+[2025-03-10T15:43:33.218+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: test_xcom.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [queued]>
+[2025-03-10T15:43:33.218+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-10T15:43:33.232+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse> on 2024-01-04 00:00:00+00:00
+[2025-03-10T15:43:33.237+0000] {standard_task_runner.py:60} INFO - Started process 6758 to run task
+[2025-03-10T15:43:33.240+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'test_xcom', 'upload_to_clickhouse', 'scheduled__2024-01-04T00:00:00+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/5_1_2_xcom.py', '--cfg-path', '/tmp/tmpw5r1o891']
+[2025-03-10T15:43:33.241+0000] {standard_task_runner.py:88} INFO - Job 48: Subtask upload_to_clickhouse
+[2025-03-10T15:43:33.269+0000] {task_command.py:423} INFO - Running <TaskInstance: test_xcom.upload_to_clickhouse scheduled__2024-01-04T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-10T15:43:33.316+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='test_xcom' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse' AIRFLOW_CTX_EXECUTION_DATE='2024-01-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-04T00:00:00+00:00'
+[2025-03-10T15:43:33.462+0000] {unix.py:142} WARNING - /etc/timezone is deprecated on Debian, and no longer reliable. Ignoring.
+[2025-03-10T15:43:34.603+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-03-10T15:43:34.607+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=test_xcom, task_id=upload_to_clickhouse, execution_date=20240104T000000, start_date=20250310T154333, end_date=20250310T154334
+[2025-03-10T15:43:34.656+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-10T15:43:34.666+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

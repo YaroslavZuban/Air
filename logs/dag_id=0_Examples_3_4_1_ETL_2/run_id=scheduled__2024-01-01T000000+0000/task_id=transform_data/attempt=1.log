@@ -1,0 +1,60 @@
+[2025-02-26T09:54:19.071+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-02-26T09:54:19.085+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-02-26T09:54:19.086+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-26T09:54:19.101+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data> on 2024-01-01 00:00:00+00:00
+[2025-02-26T09:54:19.107+0000] {standard_task_runner.py:60} INFO - Started process 128 to run task
+[2025-02-26T09:54:19.111+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '0_Examples_3_4_1_ETL_2', 'transform_data', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/exchangerate_api_work.py', '--cfg-path', '/tmp/tmpg2dr_taa']
+[2025-02-26T09:54:19.113+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask transform_data
+[2025-02-26T09:54:19.153+0000] {task_command.py:423} INFO - Running <TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [running]> on host 8b59c4dac072
+[2025-02-26T09:54:19.240+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='0_Examples_3_4_1_ETL_2' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2025-02-26T09:54:19.259+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-26T09:54:19.268+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=0_Examples_3_4_1_ETL_2, task_id=transform_data, execution_date=20240101T000000, start_date=20250226T095419, end_date=20250226T095419
+[2025-02-26T09:54:19.325+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-02-26T09:56:56.994+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-02-26T09:56:56.998+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-02-26T09:56:56.999+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-26T09:56:57.010+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data> on 2024-01-01 00:00:00+00:00
+[2025-02-26T09:56:57.015+0000] {standard_task_runner.py:60} INFO - Started process 371 to run task
+[2025-02-26T09:56:57.017+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '0_Examples_3_4_1_ETL_2', 'transform_data', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/exchangerate_api_work.py', '--cfg-path', '/tmp/tmpiz4d3v1p']
+[2025-02-26T09:56:57.018+0000] {standard_task_runner.py:88} INFO - Job 15: Subtask transform_data
+[2025-02-26T09:56:57.045+0000] {task_command.py:423} INFO - Running <TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [running]> on host 8b59c4dac072
+[2025-02-26T09:56:57.087+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='0_Examples_3_4_1_ETL_2' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2025-02-26T09:56:57.094+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-26T09:56:57.098+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=0_Examples_3_4_1_ETL_2, task_id=transform_data, execution_date=20240101T000000, start_date=20250226T095656, end_date=20250226T095657
+[2025-02-26T09:56:57.150+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-02-26T10:03:02.916+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-02-26T10:03:02.930+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-02-26T10:03:02.931+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-26T10:03:02.950+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data> on 2024-01-01 00:00:00+00:00
+[2025-02-26T10:03:02.956+0000] {standard_task_runner.py:60} INFO - Started process 144 to run task
+[2025-02-26T10:03:02.959+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '0_Examples_3_4_1_ETL_2', 'transform_data', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/exchangerate_api_work.py', '--cfg-path', '/tmp/tmp1vgcicsx']
+[2025-02-26T10:03:02.960+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask transform_data
+[2025-02-26T10:03:03.001+0000] {task_command.py:423} INFO - Running <TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [running]> on host a57e69d73574
+[2025-02-26T10:03:03.057+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='0_Examples_3_4_1_ETL_2' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2025-02-26T10:03:03.075+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-26T10:03:03.081+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=0_Examples_3_4_1_ETL_2, task_id=transform_data, execution_date=20240101T000000, start_date=20250226T100302, end_date=20250226T100303
+[2025-02-26T10:03:03.132+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-02-26T10:04:18.222+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-02-26T10:04:18.227+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-02-26T10:04:18.228+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-26T10:04:18.241+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data> on 2024-01-01 00:00:00+00:00
+[2025-02-26T10:04:18.247+0000] {standard_task_runner.py:60} INFO - Started process 239 to run task
+[2025-02-26T10:04:18.249+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '0_Examples_3_4_1_ETL_2', 'transform_data', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/exchangerate_api_work.py', '--cfg-path', '/tmp/tmp900mevq5']
+[2025-02-26T10:04:18.250+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask transform_data
+[2025-02-26T10:04:18.281+0000] {task_command.py:423} INFO - Running <TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [running]> on host a57e69d73574
+[2025-02-26T10:04:18.328+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='0_Examples_3_4_1_ETL_2' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2025-02-26T10:04:18.336+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-26T10:04:18.343+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=0_Examples_3_4_1_ETL_2, task_id=transform_data, execution_date=20240101T000000, start_date=20250226T100418, end_date=20250226T100418
+[2025-02-26T10:04:18.382+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-02-26T10:08:07.921+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-02-26T10:08:07.928+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-02-26T10:08:07.928+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-26T10:08:07.941+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data> on 2024-01-01 00:00:00+00:00
+[2025-02-26T10:08:07.946+0000] {standard_task_runner.py:60} INFO - Started process 529 to run task
+[2025-02-26T10:08:07.949+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '0_Examples_3_4_1_ETL_2', 'transform_data', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/exchangerate_api_work.py', '--cfg-path', '/tmp/tmppqaluo91']
+[2025-02-26T10:08:07.950+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask transform_data
+[2025-02-26T10:08:07.977+0000] {task_command.py:423} INFO - Running <TaskInstance: 0_Examples_3_4_1_ETL_2.transform_data scheduled__2024-01-01T00:00:00+00:00 [running]> on host a57e69d73574
+[2025-02-26T10:08:08.019+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='0_Examples_3_4_1_ETL_2' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2025-02-26T10:08:08.026+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-26T10:08:08.030+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=0_Examples_3_4_1_ETL_2, task_id=transform_data, execution_date=20240101T000000, start_date=20250226T100807, end_date=20250226T100808
+[2025-02-26T10:08:08.082+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0

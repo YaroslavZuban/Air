@@ -1,0 +1,286 @@
+[2025-02-27T09:50:45.340+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T09:50:45.346+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T09:50:45.346+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T09:50:45.356+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse_task> on 2024-01-06 00:00:00+00:00
+[2025-02-27T09:50:45.361+0000] {standard_task_runner.py:60} INFO - Started process 2375 to run task
+[2025-02-27T09:50:45.363+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'upload_to_clickhouse_task', 'scheduled__2024-01-06T00:00:00+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmp5py1zodj']
+[2025-02-27T09:50:45.364+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask upload_to_clickhouse_task
+[2025-02-27T09:50:45.390+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T09:50:45.429+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-06T00:00:00+00:00'
+[2025-02-27T09:50:45.431+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/3_4_2_homework_assignment.py", line 92, in upload_to_clickhouse
+    data_frame = pd.read_csv(csv_file)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/common.py", line 863, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'extracted_data_csv.csv'
+[2025-02-27T09:50:45.436+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=3_4_2_homework_assignment, task_id=upload_to_clickhouse_task, execution_date=20240106T000000, start_date=20250227T095045, end_date=20250227T095045
+[2025-02-27T09:50:45.444+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 19 for task upload_to_clickhouse_task ([Errno 2] No such file or directory: 'extracted_data_csv.csv'; 2375)
+[2025-02-27T09:50:45.457+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-27T09:50:45.467+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-27T09:55:04.183+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T09:55:04.188+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T09:55:04.188+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T09:55:04.199+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse_task> on 2024-01-06 00:00:00+00:00
+[2025-02-27T09:55:04.204+0000] {standard_task_runner.py:60} INFO - Started process 2953 to run task
+[2025-02-27T09:55:04.206+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'upload_to_clickhouse_task', 'scheduled__2024-01-06T00:00:00+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmp9ugvx914']
+[2025-02-27T09:55:04.207+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask upload_to_clickhouse_task
+[2025-02-27T09:55:04.233+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T09:55:04.273+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-06T00:00:00+00:00'
+[2025-02-27T09:55:04.275+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/3_4_2_homework_assignment.py", line 93, in upload_to_clickhouse
+    data_frame = pd.read_csv(csv_file)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/common.py", line 863, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'extracted_data_csv.csv'
+[2025-02-27T09:55:04.280+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=3_4_2_homework_assignment, task_id=upload_to_clickhouse_task, execution_date=20240106T000000, start_date=20250227T095504, end_date=20250227T095504
+[2025-02-27T09:55:04.288+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 19 for task upload_to_clickhouse_task ([Errno 2] No such file or directory: 'extracted_data_csv.csv'; 2953)
+[2025-02-27T09:55:04.299+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-27T09:55:04.309+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-27T10:06:57.006+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T10:06:57.011+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T10:06:57.012+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:06:57.024+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse_task> on 2024-01-06 00:00:00+00:00
+[2025-02-27T10:06:57.029+0000] {standard_task_runner.py:60} INFO - Started process 3597 to run task
+[2025-02-27T10:06:57.033+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'upload_to_clickhouse_task', 'scheduled__2024-01-06T00:00:00+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmpk24dx758']
+[2025-02-27T10:06:57.034+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask upload_to_clickhouse_task
+[2025-02-27T10:06:57.065+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:06:57.115+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-06T00:00:00+00:00'
+[2025-02-27T10:06:57.118+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/3_4_2_homework_assignment.py", line 87, in upload_to_clickhouse
+    data_frame = pd.read_csv(csv_file)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+  File "/home/airflow/.local/lib/python3.9/site-packages/pandas/io/common.py", line 863, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'extracted_data_csv.csv'
+[2025-02-27T10:06:57.124+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=3_4_2_homework_assignment, task_id=upload_to_clickhouse_task, execution_date=20240106T000000, start_date=20250227T100657, end_date=20250227T100657
+[2025-02-27T10:06:57.134+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 19 for task upload_to_clickhouse_task ([Errno 2] No such file or directory: 'extracted_data_csv.csv'; 3597)
+[2025-02-27T10:06:57.166+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-27T10:06:57.175+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-27T10:14:33.939+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T10:14:33.944+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T10:14:33.944+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:14:33.955+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse_task> on 2024-01-06 00:00:00+00:00
+[2025-02-27T10:14:33.960+0000] {standard_task_runner.py:60} INFO - Started process 4492 to run task
+[2025-02-27T10:14:33.962+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'upload_to_clickhouse_task', 'scheduled__2024-01-06T00:00:00+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmpc5lru7vj']
+[2025-02-27T10:14:33.963+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask upload_to_clickhouse_task
+[2025-02-27T10:14:33.993+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:14:34.038+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-06T00:00:00+00:00'
+[2025-02-27T10:14:34.043+0000] {connection.py:411} WARNING - Failed to connect to None:9000
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 399, in connect
+    return self._init_connection(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 329, in _init_connection
+    self.socket = self._create_socket(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 301, in _create_socket
+    raise err
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 292, in _create_socket
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2025-02-27T10:14:34.044+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/3_4_2_homework_assignment.py", line 90, in upload_to_clickhouse
+    client.execute(f'CREATE TABLE IF NOT EXISTS {table_name} (source String, currency String, value Float, date String) ENGINE Log')
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 258, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 420, in connect
+    raise err
+clickhouse_driver.errors.NetworkError: Code: 210. Connection refused (None:9000)
+[2025-02-27T10:14:34.050+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=3_4_2_homework_assignment, task_id=upload_to_clickhouse_task, execution_date=20240106T000000, start_date=20250227T101433, end_date=20250227T101434
+[2025-02-27T10:14:34.059+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 19 for task upload_to_clickhouse_task (Code: 210. Connection refused (None:9000); 4492)
+[2025-02-27T10:14:34.097+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-27T10:14:34.107+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-27T10:19:49.343+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T10:19:49.347+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T10:19:49.347+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:19:49.361+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse_task> on 2024-01-06 00:00:00+00:00
+[2025-02-27T10:19:49.366+0000] {standard_task_runner.py:60} INFO - Started process 5085 to run task
+[2025-02-27T10:19:49.368+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'upload_to_clickhouse_task', 'scheduled__2024-01-06T00:00:00+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmppvs8ohv7']
+[2025-02-27T10:19:49.370+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask upload_to_clickhouse_task
+[2025-02-27T10:19:49.399+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:19:49.458+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-06T00:00:00+00:00'
+[2025-02-27T10:19:49.465+0000] {connection.py:411} WARNING - Failed to connect to None:9000
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 399, in connect
+    return self._init_connection(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 329, in _init_connection
+    self.socket = self._create_socket(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 301, in _create_socket
+    raise err
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 292, in _create_socket
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2025-02-27T10:19:49.466+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/3_4_2_homework_assignment.py", line 90, in upload_to_clickhouse
+    client.execute(f'CREATE TABLE IF NOT EXISTS {table_name} (source String, currency String, value Float, date String) ENGINE Log')
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 258, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 420, in connect
+    raise err
+clickhouse_driver.errors.NetworkError: Code: 210. Connection refused (None:9000)
+[2025-02-27T10:19:49.471+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=3_4_2_homework_assignment, task_id=upload_to_clickhouse_task, execution_date=20240106T000000, start_date=20250227T101949, end_date=20250227T101949
+[2025-02-27T10:19:49.487+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 19 for task upload_to_clickhouse_task (Code: 210. Connection refused (None:9000); 5085)
+[2025-02-27T10:19:49.503+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-27T10:19:49.517+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-27T10:27:14.800+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T10:27:14.805+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T10:27:14.806+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:27:14.818+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse_task> on 2024-01-06 00:00:00+00:00
+[2025-02-27T10:27:14.824+0000] {standard_task_runner.py:60} INFO - Started process 5827 to run task
+[2025-02-27T10:27:14.826+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'upload_to_clickhouse_task', 'scheduled__2024-01-06T00:00:00+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmp2zuow3go']
+[2025-02-27T10:27:14.827+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask upload_to_clickhouse_task
+[2025-02-27T10:27:14.853+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:27:14.890+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-06T00:00:00+00:00'
+[2025-02-27T10:27:14.902+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/3_4_2_homework_assignment.py", line 92, in upload_to_clickhouse
+    client.execute(f'INSERT INTO {table_name} VALUES', data_frame.to_dict('records'))
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 376, in execute
+    rv = self.process_insert_query(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 607, in process_insert_query
+    rv = self.send_data(sample_block, data,
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 658, in send_data
+    block = block_cls(sample_block.columns_with_types, chunk,
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/block.py", line 40, in __init__
+    self.data = self.normalize(data or [])
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/block.py", line 128, in normalize
+    self._mutate_dicts_to_rows(data)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/block.py", line 159, in _mutate_dicts_to_rows
+    return self._pure_mutate_dicts_to_rows(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/block.py", line 186, in _pure_mutate_dicts_to_rows
+    new_data.append(row[name])
+KeyError: 'source'
+[2025-02-27T10:27:14.908+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=3_4_2_homework_assignment, task_id=upload_to_clickhouse_task, execution_date=20240106T000000, start_date=20250227T102714, end_date=20250227T102714
+[2025-02-27T10:27:14.915+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 19 for task upload_to_clickhouse_task ('source'; 5827)
+[2025-02-27T10:27:14.960+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-27T10:27:14.968+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-27T10:35:35.973+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T10:35:35.979+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T10:35:35.979+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:35:35.994+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse_task> on 2024-01-06 00:00:00+00:00
+[2025-02-27T10:35:36.000+0000] {standard_task_runner.py:60} INFO - Started process 6487 to run task
+[2025-02-27T10:35:36.002+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'upload_to_clickhouse_task', 'scheduled__2024-01-06T00:00:00+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmp9g5x2z5_']
+[2025-02-27T10:35:36.004+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask upload_to_clickhouse_task
+[2025-02-27T10:35:36.038+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:35:36.095+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-06T00:00:00+00:00'
+[2025-02-27T10:35:36.112+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/3_4_2_homework_assignment.py", line 93, in upload_to_clickhouse
+    client.execute(f'INSERT INTO {table_name} VALUES', data_frame.to_dict('records'))
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 376, in execute
+    rv = self.process_insert_query(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 607, in process_insert_query
+    rv = self.send_data(sample_block, data,
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 658, in send_data
+    block = block_cls(sample_block.columns_with_types, chunk,
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/block.py", line 40, in __init__
+    self.data = self.normalize(data or [])
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/block.py", line 128, in normalize
+    self._mutate_dicts_to_rows(data)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/block.py", line 159, in _mutate_dicts_to_rows
+    return self._pure_mutate_dicts_to_rows(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/block.py", line 186, in _pure_mutate_dicts_to_rows
+    new_data.append(row[name])
+KeyError: 'source'
+[2025-02-27T10:35:36.118+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=3_4_2_homework_assignment, task_id=upload_to_clickhouse_task, execution_date=20240106T000000, start_date=20250227T103535, end_date=20250227T103536
+[2025-02-27T10:35:36.131+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 19 for task upload_to_clickhouse_task ('source'; 6487)
+[2025-02-27T10:35:36.176+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-27T10:35:36.186+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-27T10:45:29.130+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T10:45:29.135+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2025-02-27T10:45:29.136+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:45:29.148+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse_task> on 2024-01-06 00:00:00+00:00
+[2025-02-27T10:45:29.153+0000] {standard_task_runner.py:60} INFO - Started process 7172 to run task
+[2025-02-27T10:45:29.155+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'upload_to_clickhouse_task', 'scheduled__2024-01-06T00:00:00+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmpmei7rlri']
+[2025-02-27T10:45:29.156+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask upload_to_clickhouse_task
+[2025-02-27T10:45:29.181+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.upload_to_clickhouse_task scheduled__2024-01-06T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:45:29.223+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-06T00:00:00+00:00'
+[2025-02-27T10:45:29.239+0000] {unix.py:142} WARNING - /etc/timezone is deprecated on Debian, and no longer reliable. Ignoring.
+[2025-02-27T10:45:29.242+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-27T10:45:29.246+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=3_4_2_homework_assignment, task_id=upload_to_clickhouse_task, execution_date=20240106T000000, start_date=20250227T104529, end_date=20250227T104529
+[2025-02-27T10:45:29.289+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-02-27T10:45:29.297+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,839 @@
+[2025-02-27T09:35:57.542+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T09:35:57.553+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T09:35:57.553+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T09:35:57.572+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data_task> on 2024-01-09 00:00:00+00:00
+[2025-02-27T09:35:57.583+0000] {standard_task_runner.py:60} INFO - Started process 823 to run task
+[2025-02-27T09:35:57.587+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'transform_data_task', 'scheduled__2024-01-09T00:00:00+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmprgboueph']
+[2025-02-27T09:35:57.589+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask transform_data_task
+[2025-02-27T09:35:57.637+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T09:35:57.713+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='transform_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-09T00:00:00+00:00'
+[2025-02-27T09:35:57.715+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/3_4_2_homework_assignment.py", line 56, in transform_data
+    current = request_json["source"]
+KeyError: 'source'
+[2025-02-27T09:35:57.723+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=3_4_2_homework_assignment, task_id=transform_data_task, execution_date=20240109T000000, start_date=20250227T093557, end_date=20250227T093557
+[2025-02-27T09:35:57.738+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 19 for task transform_data_task ('source'; 823)
+[2025-02-27T09:35:57.760+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-27T09:40:51.175+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T09:40:51.181+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T09:40:51.181+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T09:40:51.191+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data_task> on 2024-01-09 00:00:00+00:00
+[2025-02-27T09:40:51.196+0000] {standard_task_runner.py:60} INFO - Started process 1226 to run task
+[2025-02-27T09:40:51.198+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'transform_data_task', 'scheduled__2024-01-09T00:00:00+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmp8yhwtf1s']
+[2025-02-27T09:40:51.199+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask transform_data_task
+[2025-02-27T09:40:51.224+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T09:40:51.263+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='transform_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-09T00:00:00+00:00'
+[2025-02-27T09:40:51.265+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/3_4_2_homework_assignment.py", line 56, in transform_data
+    current = request_json["source"]
+KeyError: 'source'
+[2025-02-27T09:40:51.269+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=3_4_2_homework_assignment, task_id=transform_data_task, execution_date=20240109T000000, start_date=20250227T094051, end_date=20250227T094051
+[2025-02-27T09:40:51.276+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 19 for task transform_data_task ('source'; 1226)
+[2025-02-27T09:40:51.291+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-27T09:51:14.578+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T09:51:14.583+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T09:51:14.583+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T09:51:14.593+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data_task> on 2024-01-09 00:00:00+00:00
+[2025-02-27T09:51:14.598+0000] {standard_task_runner.py:60} INFO - Started process 2523 to run task
+[2025-02-27T09:51:14.600+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'transform_data_task', 'scheduled__2024-01-09T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmpwv2bjpbd']
+[2025-02-27T09:51:14.601+0000] {standard_task_runner.py:88} INFO - Job 27: Subtask transform_data_task
+[2025-02-27T09:51:14.625+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T09:51:14.663+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='transform_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-09T00:00:00+00:00'
+[2025-02-27T09:51:14.664+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/3_4_2_homework_assignment.py", line 66, in transform_data
+    raise KeyError(f"Ключ '{key}' отсутствует в JSON-файле: {s_file}")
+KeyError: "Ключ 'source' отсутствует в JSON-файле: extracted_data.json"
+[2025-02-27T09:51:14.668+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=3_4_2_homework_assignment, task_id=transform_data_task, execution_date=20240109T000000, start_date=20250227T095114, end_date=20250227T095114
+[2025-02-27T09:51:14.676+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 27 for task transform_data_task ("Ключ 'source' отсутствует в JSON-файле: extracted_data.json"; 2523)
+[2025-02-27T09:51:14.694+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-27T09:51:14.702+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-27T09:55:33.381+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T09:55:33.386+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T09:55:33.386+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T09:55:33.396+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data_task> on 2024-01-09 00:00:00+00:00
+[2025-02-27T09:55:33.401+0000] {standard_task_runner.py:60} INFO - Started process 3101 to run task
+[2025-02-27T09:55:33.403+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'transform_data_task', 'scheduled__2024-01-09T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmp8j1j9mzz']
+[2025-02-27T09:55:33.404+0000] {standard_task_runner.py:88} INFO - Job 27: Subtask transform_data_task
+[2025-02-27T09:55:33.428+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T09:55:33.477+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='transform_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-09T00:00:00+00:00'
+[2025-02-27T09:55:33.479+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/3_4_2_homework_assignment.py", line 67, in transform_data
+    raise KeyError(f"Ключ '{key}' отсутствует в JSON-файле: {s_file}")
+KeyError: "Ключ 'source' отсутствует в JSON-файле: extracted_data.json"
+[2025-02-27T09:55:33.484+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=3_4_2_homework_assignment, task_id=transform_data_task, execution_date=20240109T000000, start_date=20250227T095533, end_date=20250227T095533
+[2025-02-27T09:55:33.495+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 27 for task transform_data_task ("Ключ 'source' отсутствует в JSON-файле: extracted_data.json"; 3101)
+[2025-02-27T09:55:33.536+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-27T09:55:33.545+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-27T10:07:26.830+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T10:07:26.835+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T10:07:26.835+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:07:26.847+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data_task> on 2024-01-09 00:00:00+00:00
+[2025-02-27T10:07:26.852+0000] {standard_task_runner.py:60} INFO - Started process 3745 to run task
+[2025-02-27T10:07:26.855+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'transform_data_task', 'scheduled__2024-01-09T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmp5n7k4en5']
+[2025-02-27T10:07:26.856+0000] {standard_task_runner.py:88} INFO - Job 27: Subtask transform_data_task
+[2025-02-27T10:07:26.889+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:07:26.934+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='transform_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-09T00:00:00+00:00'
+[2025-02-27T10:07:26.935+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/3_4_2_homework_assignment.py", line 61, in transform_data
+    raise KeyError(f"Ключ '{key}' отсутствует в JSON-файле: {s_file}")
+KeyError: "Ключ 'source' отсутствует в JSON-файле: extracted_data.json"
+[2025-02-27T10:07:26.939+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=3_4_2_homework_assignment, task_id=transform_data_task, execution_date=20240109T000000, start_date=20250227T100726, end_date=20250227T100726
+[2025-02-27T10:07:26.949+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 27 for task transform_data_task ("Ключ 'source' отсутствует в JSON-файле: extracted_data.json"; 3745)
+[2025-02-27T10:07:26.988+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-02-27T10:07:26.997+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-27T10:15:03.058+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T10:15:03.063+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T10:15:03.063+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:15:03.073+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data_task> on 2024-01-09 00:00:00+00:00
+[2025-02-27T10:15:03.078+0000] {standard_task_runner.py:60} INFO - Started process 4640 to run task
+[2025-02-27T10:15:03.080+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'transform_data_task', 'scheduled__2024-01-09T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmpbcc6p655']
+[2025-02-27T10:15:03.081+0000] {standard_task_runner.py:88} INFO - Job 27: Subtask transform_data_task
+[2025-02-27T10:15:03.110+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:15:03.150+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='transform_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-09T00:00:00+00:00'
+[2025-02-27T10:15:03.152+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-27T10:15:03.155+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=3_4_2_homework_assignment, task_id=transform_data_task, execution_date=20240109T000000, start_date=20250227T101503, end_date=20250227T101503
+[2025-02-27T10:15:03.173+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-02-27T10:15:03.182+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-27T10:27:43.321+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T10:27:43.331+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T10:27:43.332+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:27:43.353+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data_task> on 2024-01-09 00:00:00+00:00
+[2025-02-27T10:27:43.359+0000] {standard_task_runner.py:60} INFO - Started process 5975 to run task
+[2025-02-27T10:27:43.362+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'transform_data_task', 'scheduled__2024-01-09T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmppkaav1bf']
+[2025-02-27T10:27:43.364+0000] {standard_task_runner.py:88} INFO - Job 27: Subtask transform_data_task
+[2025-02-27T10:27:43.399+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:27:43.447+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='transform_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-09T00:00:00+00:00'
+[2025-02-27T10:27:43.449+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-27T10:27:43.452+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=3_4_2_homework_assignment, task_id=transform_data_task, execution_date=20240109T000000, start_date=20250227T102743, end_date=20250227T102743
+[2025-02-27T10:27:43.495+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-02-27T10:36:05.343+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T10:36:05.348+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T10:36:05.349+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:36:05.361+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data_task> on 2024-01-09 00:00:00+00:00
+[2025-02-27T10:36:05.367+0000] {standard_task_runner.py:60} INFO - Started process 6635 to run task
+[2025-02-27T10:36:05.370+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'transform_data_task', 'scheduled__2024-01-09T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmp7fq9ikkm']
+[2025-02-27T10:36:05.371+0000] {standard_task_runner.py:88} INFO - Job 27: Subtask transform_data_task
+[2025-02-27T10:36:05.401+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:36:05.448+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='transform_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-09T00:00:00+00:00'
+[2025-02-27T10:36:05.449+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AED,3.672497,2024-01-09
+
+[2025-02-27T10:36:05.450+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AFN,70.373942,2024-01-09
+
+[2025-02-27T10:36:05.450+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ALL,95.19045,2024-01-09
+
+[2025-02-27T10:36:05.450+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AMD,404.371085,2024-01-09
+
+[2025-02-27T10:36:05.451+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ANG,1.80158,2024-01-09
+
+[2025-02-27T10:36:05.451+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AOA,828.723987,2024-01-09
+
+[2025-02-27T10:36:05.451+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ARS,814.335087,2024-01-09
+
+[2025-02-27T10:36:05.451+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AUD,1.496334,2024-01-09
+
+[2025-02-27T10:36:05.452+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AWG,1.8025,2024-01-09
+
+[2025-02-27T10:36:05.452+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AZN,1.703214,2024-01-09
+
+[2025-02-27T10:36:05.452+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BAM,1.788422,2024-01-09
+
+[2025-02-27T10:36:05.452+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BBD,2.018362,2024-01-09
+
+[2025-02-27T10:36:05.452+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BDT,109.702905,2024-01-09
+
+[2025-02-27T10:36:05.453+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BGN,1.789365,2024-01-09
+
+[2025-02-27T10:36:05.453+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BHD,0.376858,2024-01-09
+
+[2025-02-27T10:36:05.453+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BIF,2848.795208,2024-01-09
+
+[2025-02-27T10:36:05.453+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BMD,1.0,2024-01-09
+
+[2025-02-27T10:36:05.453+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BND,1.330803,2024-01-09
+
+[2025-02-27T10:36:05.454+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BOB,6.907777,2024-01-09
+
+[2025-02-27T10:36:05.454+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BRL,4.906597,2024-01-09
+
+[2025-02-27T10:36:05.454+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BSD,0.999671,2024-01-09
+
+[2025-02-27T10:36:05.454+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BTC,2.1636242e-05,2024-01-09
+
+[2025-02-27T10:36:05.454+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BTN,83.164373,2024-01-09
+
+[2025-02-27T10:36:05.455+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BWP,13.535732,2024-01-09
+
+[2025-02-27T10:36:05.455+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BYN,3.270907,2024-01-09
+
+[2025-02-27T10:36:05.455+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BYR,19600.0,2024-01-09
+
+[2025-02-27T10:36:05.455+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BZD,2.014997,2024-01-09
+
+[2025-02-27T10:36:05.455+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CAD,1.33909,2024-01-09
+
+[2025-02-27T10:36:05.456+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CDF,2685.000016,2024-01-09
+
+[2025-02-27T10:36:05.456+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CHF,0.85245,2024-01-09
+
+[2025-02-27T10:36:05.456+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CLF,0.033275,2024-01-09
+
+[2025-02-27T10:36:05.456+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CLP,918.150107,2024-01-09
+
+[2025-02-27T10:36:05.456+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CNY,7.112601,2024-01-09
+
+[2025-02-27T10:36:05.457+0000] {3_4_2_homework_assignment.py:84} INFO - USD,COP,3940.0,2024-01-09
+
+[2025-02-27T10:36:05.457+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CRC,519.409263,2024-01-09
+
+[2025-02-27T10:36:05.457+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CUC,1.0,2024-01-09
+
+[2025-02-27T10:36:05.457+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CUP,26.5,2024-01-09
+
+[2025-02-27T10:36:05.457+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CVE,100.830308,2024-01-09
+
+[2025-02-27T10:36:05.458+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CZK,22.488297,2024-01-09
+
+[2025-02-27T10:36:05.458+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DJF,177.719689,2024-01-09
+
+[2025-02-27T10:36:05.458+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DKK,6.822415,2024-01-09
+
+[2025-02-27T10:36:05.458+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DOP,58.579855,2024-01-09
+
+[2025-02-27T10:36:05.458+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DZD,134.50263,2024-01-09
+
+[2025-02-27T10:36:05.459+0000] {3_4_2_homework_assignment.py:84} INFO - USD,EGP,30.896961,2024-01-09
+
+[2025-02-27T10:36:05.459+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ERN,15.0,2024-01-09
+
+[2025-02-27T10:36:05.459+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ETB,56.504869,2024-01-09
+
+[2025-02-27T10:36:05.459+0000] {3_4_2_homework_assignment.py:84} INFO - USD,EUR,0.914805,2024-01-09
+
+[2025-02-27T10:36:05.459+0000] {3_4_2_homework_assignment.py:84} INFO - USD,FJD,2.239201,2024-01-09
+
+[2025-02-27T10:36:05.460+0000] {3_4_2_homework_assignment.py:84} INFO - USD,FKP,0.783532,2024-01-09
+
+[2025-02-27T10:36:05.460+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GBP,0.786775,2024-01-09
+
+[2025-02-27T10:36:05.460+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GEL,2.685021,2024-01-09
+
+[2025-02-27T10:36:05.460+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GGP,0.783532,2024-01-09
+
+[2025-02-27T10:36:05.460+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GHS,11.910749,2024-01-09
+
+[2025-02-27T10:36:05.461+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GIP,0.783532,2024-01-09
+
+[2025-02-27T10:36:05.461+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GMD,67.275025,2024-01-09
+
+[2025-02-27T10:36:05.461+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GNF,8594.6287,2024-01-09
+
+[2025-02-27T10:36:05.461+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GTQ,7.819558,2024-01-09
+
+[2025-02-27T10:36:05.461+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GYD,209.135385,2024-01-09
+
+[2025-02-27T10:36:05.462+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HKD,7.815775,2024-01-09
+
+[2025-02-27T10:36:05.462+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HNL,24.652749,2024-01-09
+
+[2025-02-27T10:36:05.462+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HRK,6.98177,2024-01-09
+
+[2025-02-27T10:36:05.462+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HTG,131.662933,2024-01-09
+
+[2025-02-27T10:36:05.462+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HUF,346.873031,2024-01-09
+
+[2025-02-27T10:36:05.463+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IDR,15542.65,2024-01-09
+
+[2025-02-27T10:36:05.463+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ILS,3.73325,2024-01-09
+
+[2025-02-27T10:36:05.463+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IMP,0.783532,2024-01-09
+
+[2025-02-27T10:36:05.463+0000] {3_4_2_homework_assignment.py:84} INFO - USD,INR,83.15635,2024-01-09
+
+[2025-02-27T10:36:05.464+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IQD,1309.448696,2024-01-09
+
+[2025-02-27T10:36:05.464+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IRR,42037.495986,2024-01-09
+
+[2025-02-27T10:36:05.464+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ISK,137.501353,2024-01-09
+
+[2025-02-27T10:36:05.464+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JEP,0.783532,2024-01-09
+
+[2025-02-27T10:36:05.464+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JMD,154.379355,2024-01-09
+
+[2025-02-27T10:36:05.464+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JOD,0.709398,2024-01-09
+
+[2025-02-27T10:36:05.465+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JPY,144.443502,2024-01-09
+
+[2025-02-27T10:36:05.465+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KES,158.250442,2024-01-09
+
+[2025-02-27T10:36:05.465+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KGS,89.281302,2024-01-09
+
+[2025-02-27T10:36:05.465+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KHR,4095.834667,2024-01-09
+
+[2025-02-27T10:36:05.466+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KMF,449.499754,2024-01-09
+
+[2025-02-27T10:36:05.466+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KPW,899.981435,2024-01-09
+
+[2025-02-27T10:36:05.466+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KRW,1320.589961,2024-01-09
+
+[2025-02-27T10:36:05.466+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KWD,0.30749,2024-01-09
+
+[2025-02-27T10:36:05.466+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KYD,0.833067,2024-01-09
+
+[2025-02-27T10:36:05.467+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KZT,454.528828,2024-01-09
+
+[2025-02-27T10:36:05.467+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LAK,20602.62448,2024-01-09
+
+[2025-02-27T10:36:05.467+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LBP,15024.461616,2024-01-09
+
+[2025-02-27T10:36:05.467+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LKR,322.500114,2024-01-09
+
+[2025-02-27T10:36:05.467+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LRD,188.825005,2024-01-09
+
+[2025-02-27T10:36:05.468+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LSL,18.600056,2024-01-09
+
+[2025-02-27T10:36:05.468+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LTL,2.95274,2024-01-09
+
+[2025-02-27T10:36:05.468+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LVL,0.60489,2024-01-09
+
+[2025-02-27T10:36:05.468+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LYD,4.79613,2024-01-09
+
+[2025-02-27T10:36:05.468+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MAD,9.952906,2024-01-09
+
+[2025-02-27T10:36:05.469+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MDL,17.74313,2024-01-09
+
+[2025-02-27T10:36:05.469+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MGA,4572.264643,2024-01-09
+
+[2025-02-27T10:36:05.469+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MKD,56.277155,2024-01-09
+
+[2025-02-27T10:36:05.469+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MMK,2099.218143,2024-01-09
+
+[2025-02-27T10:36:05.469+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MNT,3423.951251,2024-01-09
+
+[2025-02-27T10:36:05.469+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MOP,8.046637,2024-01-09
+
+[2025-02-27T10:36:05.470+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MRU,39.650314,2024-01-09
+
+[2025-02-27T10:36:05.470+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MUR,45.190082,2024-01-09
+
+[2025-02-27T10:36:05.470+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MVR,15.409745,2024-01-09
+
+[2025-02-27T10:36:05.470+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MWK,1682.776279,2024-01-09
+
+[2025-02-27T10:36:05.470+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MXN,16.972115,2024-01-09
+
+[2025-02-27T10:36:05.471+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MYR,4.6435,2024-01-09
+
+[2025-02-27T10:36:05.471+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MZN,63.24995,2024-01-09
+
+[2025-02-27T10:36:05.471+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NAD,18.583536,2024-01-09
+
+[2025-02-27T10:36:05.471+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NGN,914.499594,2024-01-09
+
+[2025-02-27T10:36:05.471+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NIO,36.585923,2024-01-09
+
+[2025-02-27T10:36:05.472+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NOK,10.366935,2024-01-09
+
+[2025-02-27T10:36:05.472+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NPR,133.065394,2024-01-09
+
+[2025-02-27T10:36:05.472+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NZD,1.603205,2024-01-09
+
+[2025-02-27T10:36:05.472+0000] {3_4_2_homework_assignment.py:84} INFO - USD,OMR,0.384871,2024-01-09
+
+[2025-02-27T10:36:05.472+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PAB,0.99968,2024-01-09
+
+[2025-02-27T10:36:05.473+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PEN,3.696036,2024-01-09
+
+[2025-02-27T10:36:05.473+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PGK,3.732797,2024-01-09
+
+[2025-02-27T10:36:05.473+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PHP,56.127003,2024-01-09
+
+[2025-02-27T10:36:05.473+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PKR,281.216932,2024-01-09
+
+[2025-02-27T10:36:05.473+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PLN,3.977706,2024-01-09
+
+[2025-02-27T10:36:05.474+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PYG,7266.24297,2024-01-09
+
+[2025-02-27T10:36:05.474+0000] {3_4_2_homework_assignment.py:84} INFO - USD,QAR,3.641501,2024-01-09
+
+[2025-02-27T10:36:05.474+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RON,4.548695,2024-01-09
+
+[2025-02-27T10:36:05.474+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RSD,107.235308,2024-01-09
+
+[2025-02-27T10:36:05.474+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RUB,90.867862,2024-01-09
+
+[2025-02-27T10:36:05.475+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RWF,1264.048283,2024-01-09
+
+[2025-02-27T10:36:05.475+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SAR,3.749954,2024-01-09
+
+[2025-02-27T10:36:05.475+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SBD,8.453689,2024-01-09
+
+[2025-02-27T10:36:05.475+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SCR,13.36204,2024-01-09
+
+[2025-02-27T10:36:05.475+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SDG,601.000264,2024-01-09
+
+[2025-02-27T10:36:05.476+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SEK,10.251425,2024-01-09
+
+[2025-02-27T10:36:05.476+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SGD,1.331025,2024-01-09
+
+[2025-02-27T10:36:05.476+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SHP,1.2754,2024-01-09
+
+[2025-02-27T10:36:05.476+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SLE,22.515143,2024-01-09
+
+[2025-02-27T10:36:05.476+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SLL,19749.999818,2024-01-09
+
+[2025-02-27T10:36:05.477+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SOS,571.000093,2024-01-09
+
+[2025-02-27T10:36:05.477+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SRD,36.835982,2024-01-09
+
+[2025-02-27T10:36:05.477+0000] {3_4_2_homework_assignment.py:84} INFO - USD,STD,20697.981008,2024-01-09
+
+[2025-02-27T10:36:05.477+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SYP,13001.88942,2024-01-09
+
+[2025-02-27T10:36:05.477+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SZL,18.702391,2024-01-09
+
+[2025-02-27T10:36:05.478+0000] {3_4_2_homework_assignment.py:84} INFO - USD,THB,34.924996,2024-01-09
+
+[2025-02-27T10:36:05.478+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TJS,10.951031,2024-01-09
+
+[2025-02-27T10:36:05.478+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TMT,3.51,2024-01-09
+
+[2025-02-27T10:36:05.478+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TND,3.094007,2024-01-09
+
+[2025-02-27T10:36:05.478+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TOP,2.34535,2024-01-09
+
+[2025-02-27T10:36:05.479+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TRY,29.96686,2024-01-09
+
+[2025-02-27T10:36:05.479+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TTD,6.785303,2024-01-09
+
+[2025-02-27T10:36:05.479+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TWD,31.076028,2024-01-09
+
+[2025-02-27T10:36:05.479+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TZS,2515.000251,2024-01-09
+
+[2025-02-27T10:36:05.480+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UAH,38.141832,2024-01-09
+
+[2025-02-27T10:36:05.480+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UGX,3798.602729,2024-01-09
+
+[2025-02-27T10:36:05.480+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UYU,39.329362,2024-01-09
+
+[2025-02-27T10:36:05.480+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UZS,12384.897448,2024-01-09
+
+[2025-02-27T10:36:05.481+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VEF,3595949.028453,2024-01-09
+
+[2025-02-27T10:36:05.481+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VES,35.893617,2024-01-09
+
+[2025-02-27T10:36:05.481+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VND,24370.0,2024-01-09
+
+[2025-02-27T10:36:05.481+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VUV,118.996053,2024-01-09
+
+[2025-02-27T10:36:05.481+0000] {3_4_2_homework_assignment.py:84} INFO - USD,WST,2.712028,2024-01-09
+
+[2025-02-27T10:36:05.482+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XAF,599.8418,2024-01-09
+
+[2025-02-27T10:36:05.482+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XAG,0.043506,2024-01-09
+
+[2025-02-27T10:36:05.482+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XAU,0.000492,2024-01-09
+
+[2025-02-27T10:36:05.482+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XCD,2.70255,2024-01-09
+
+[2025-02-27T10:36:05.482+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XDR,0.749028,2024-01-09
+
+[2025-02-27T10:36:05.482+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XOF,599.830829,2024-01-09
+
+[2025-02-27T10:36:05.483+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XPF,109.400846,2024-01-09
+
+[2025-02-27T10:36:05.483+0000] {3_4_2_homework_assignment.py:84} INFO - USD,YER,250.349773,2024-01-09
+
+[2025-02-27T10:36:05.483+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZAR,18.655403,2024-01-09
+
+[2025-02-27T10:36:05.483+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZMK,9001.201412,2024-01-09
+
+[2025-02-27T10:36:05.483+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZMW,25.965891,2024-01-09
+
+[2025-02-27T10:36:05.484+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZWL,321.999592,2024-01-09
+
+[2025-02-27T10:36:05.484+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-27T10:36:05.488+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=3_4_2_homework_assignment, task_id=transform_data_task, execution_date=20240109T000000, start_date=20250227T103605, end_date=20250227T103605
+[2025-02-27T10:36:05.544+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-02-27T10:45:56.875+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T10:45:56.880+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [queued]>
+[2025-02-27T10:45:56.880+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-02-27T10:45:56.893+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data_task> on 2024-01-09 00:00:00+00:00
+[2025-02-27T10:45:56.898+0000] {standard_task_runner.py:60} INFO - Started process 7318 to run task
+[2025-02-27T10:45:56.900+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '3_4_2_homework_assignment', 'transform_data_task', 'scheduled__2024-01-09T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/3_4_2_homework_assignment.py', '--cfg-path', '/tmp/tmp_iihcg81']
+[2025-02-27T10:45:56.901+0000] {standard_task_runner.py:88} INFO - Job 27: Subtask transform_data_task
+[2025-02-27T10:45:56.927+0000] {task_command.py:423} INFO - Running <TaskInstance: 3_4_2_homework_assignment.transform_data_task scheduled__2024-01-09T00:00:00+00:00 [running]> on host ea5964584459
+[2025-02-27T10:45:56.975+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='3_4_2_homework_assignment' AIRFLOW_CTX_TASK_ID='transform_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-01-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-09T00:00:00+00:00'
+[2025-02-27T10:45:56.976+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AED,3.672497,2024-01-09
+
+[2025-02-27T10:45:56.976+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AFN,70.373942,2024-01-09
+
+[2025-02-27T10:45:56.977+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ALL,95.19045,2024-01-09
+
+[2025-02-27T10:45:56.977+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AMD,404.371085,2024-01-09
+
+[2025-02-27T10:45:56.977+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ANG,1.80158,2024-01-09
+
+[2025-02-27T10:45:56.977+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AOA,828.723987,2024-01-09
+
+[2025-02-27T10:45:56.977+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ARS,814.335087,2024-01-09
+
+[2025-02-27T10:45:56.978+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AUD,1.496334,2024-01-09
+
+[2025-02-27T10:45:56.978+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AWG,1.8025,2024-01-09
+
+[2025-02-27T10:45:56.978+0000] {3_4_2_homework_assignment.py:84} INFO - USD,AZN,1.703214,2024-01-09
+
+[2025-02-27T10:45:56.978+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BAM,1.788422,2024-01-09
+
+[2025-02-27T10:45:56.978+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BBD,2.018362,2024-01-09
+
+[2025-02-27T10:45:56.979+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BDT,109.702905,2024-01-09
+
+[2025-02-27T10:45:56.979+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BGN,1.789365,2024-01-09
+
+[2025-02-27T10:45:56.979+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BHD,0.376858,2024-01-09
+
+[2025-02-27T10:45:56.979+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BIF,2848.795208,2024-01-09
+
+[2025-02-27T10:45:56.979+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BMD,1.0,2024-01-09
+
+[2025-02-27T10:45:56.980+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BND,1.330803,2024-01-09
+
+[2025-02-27T10:45:56.980+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BOB,6.907777,2024-01-09
+
+[2025-02-27T10:45:56.980+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BRL,4.906597,2024-01-09
+
+[2025-02-27T10:45:56.980+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BSD,0.999671,2024-01-09
+
+[2025-02-27T10:45:56.980+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BTC,2.1636242e-05,2024-01-09
+
+[2025-02-27T10:45:56.981+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BTN,83.164373,2024-01-09
+
+[2025-02-27T10:45:56.981+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BWP,13.535732,2024-01-09
+
+[2025-02-27T10:45:56.981+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BYN,3.270907,2024-01-09
+
+[2025-02-27T10:45:56.981+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BYR,19600.0,2024-01-09
+
+[2025-02-27T10:45:56.981+0000] {3_4_2_homework_assignment.py:84} INFO - USD,BZD,2.014997,2024-01-09
+
+[2025-02-27T10:45:56.982+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CAD,1.33909,2024-01-09
+
+[2025-02-27T10:45:56.982+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CDF,2685.000016,2024-01-09
+
+[2025-02-27T10:45:56.982+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CHF,0.85245,2024-01-09
+
+[2025-02-27T10:45:56.982+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CLF,0.033275,2024-01-09
+
+[2025-02-27T10:45:56.982+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CLP,918.150107,2024-01-09
+
+[2025-02-27T10:45:56.983+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CNY,7.112601,2024-01-09
+
+[2025-02-27T10:45:56.983+0000] {3_4_2_homework_assignment.py:84} INFO - USD,COP,3940.0,2024-01-09
+
+[2025-02-27T10:45:56.983+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CRC,519.409263,2024-01-09
+
+[2025-02-27T10:45:56.983+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CUC,1.0,2024-01-09
+
+[2025-02-27T10:45:56.983+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CUP,26.5,2024-01-09
+
+[2025-02-27T10:45:56.983+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CVE,100.830308,2024-01-09
+
+[2025-02-27T10:45:56.984+0000] {3_4_2_homework_assignment.py:84} INFO - USD,CZK,22.488297,2024-01-09
+
+[2025-02-27T10:45:56.984+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DJF,177.719689,2024-01-09
+
+[2025-02-27T10:45:56.984+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DKK,6.822415,2024-01-09
+
+[2025-02-27T10:45:56.984+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DOP,58.579855,2024-01-09
+
+[2025-02-27T10:45:56.985+0000] {3_4_2_homework_assignment.py:84} INFO - USD,DZD,134.50263,2024-01-09
+
+[2025-02-27T10:45:56.985+0000] {3_4_2_homework_assignment.py:84} INFO - USD,EGP,30.896961,2024-01-09
+
+[2025-02-27T10:45:56.985+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ERN,15.0,2024-01-09
+
+[2025-02-27T10:45:56.985+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ETB,56.504869,2024-01-09
+
+[2025-02-27T10:45:56.985+0000] {3_4_2_homework_assignment.py:84} INFO - USD,EUR,0.914805,2024-01-09
+
+[2025-02-27T10:45:56.986+0000] {3_4_2_homework_assignment.py:84} INFO - USD,FJD,2.239201,2024-01-09
+
+[2025-02-27T10:45:56.986+0000] {3_4_2_homework_assignment.py:84} INFO - USD,FKP,0.783532,2024-01-09
+
+[2025-02-27T10:45:56.986+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GBP,0.786775,2024-01-09
+
+[2025-02-27T10:45:56.986+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GEL,2.685021,2024-01-09
+
+[2025-02-27T10:45:56.986+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GGP,0.783532,2024-01-09
+
+[2025-02-27T10:45:56.987+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GHS,11.910749,2024-01-09
+
+[2025-02-27T10:45:56.987+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GIP,0.783532,2024-01-09
+
+[2025-02-27T10:45:56.987+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GMD,67.275025,2024-01-09
+
+[2025-02-27T10:45:56.987+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GNF,8594.6287,2024-01-09
+
+[2025-02-27T10:45:56.987+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GTQ,7.819558,2024-01-09
+
+[2025-02-27T10:45:56.988+0000] {3_4_2_homework_assignment.py:84} INFO - USD,GYD,209.135385,2024-01-09
+
+[2025-02-27T10:45:56.988+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HKD,7.815775,2024-01-09
+
+[2025-02-27T10:45:56.988+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HNL,24.652749,2024-01-09
+
+[2025-02-27T10:45:56.988+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HRK,6.98177,2024-01-09
+
+[2025-02-27T10:45:56.988+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HTG,131.662933,2024-01-09
+
+[2025-02-27T10:45:56.989+0000] {3_4_2_homework_assignment.py:84} INFO - USD,HUF,346.873031,2024-01-09
+
+[2025-02-27T10:45:56.989+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IDR,15542.65,2024-01-09
+
+[2025-02-27T10:45:56.989+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ILS,3.73325,2024-01-09
+
+[2025-02-27T10:45:56.989+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IMP,0.783532,2024-01-09
+
+[2025-02-27T10:45:56.989+0000] {3_4_2_homework_assignment.py:84} INFO - USD,INR,83.15635,2024-01-09
+
+[2025-02-27T10:45:56.990+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IQD,1309.448696,2024-01-09
+
+[2025-02-27T10:45:56.990+0000] {3_4_2_homework_assignment.py:84} INFO - USD,IRR,42037.495986,2024-01-09
+
+[2025-02-27T10:45:56.990+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ISK,137.501353,2024-01-09
+
+[2025-02-27T10:45:56.990+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JEP,0.783532,2024-01-09
+
+[2025-02-27T10:45:56.990+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JMD,154.379355,2024-01-09
+
+[2025-02-27T10:45:56.991+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JOD,0.709398,2024-01-09
+
+[2025-02-27T10:45:56.991+0000] {3_4_2_homework_assignment.py:84} INFO - USD,JPY,144.443502,2024-01-09
+
+[2025-02-27T10:45:56.991+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KES,158.250442,2024-01-09
+
+[2025-02-27T10:45:56.991+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KGS,89.281302,2024-01-09
+
+[2025-02-27T10:45:56.991+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KHR,4095.834667,2024-01-09
+
+[2025-02-27T10:45:56.992+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KMF,449.499754,2024-01-09
+
+[2025-02-27T10:45:56.992+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KPW,899.981435,2024-01-09
+
+[2025-02-27T10:45:56.992+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KRW,1320.589961,2024-01-09
+
+[2025-02-27T10:45:56.992+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KWD,0.30749,2024-01-09
+
+[2025-02-27T10:45:56.992+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KYD,0.833067,2024-01-09
+
+[2025-02-27T10:45:56.993+0000] {3_4_2_homework_assignment.py:84} INFO - USD,KZT,454.528828,2024-01-09
+
+[2025-02-27T10:45:56.993+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LAK,20602.62448,2024-01-09
+
+[2025-02-27T10:45:56.993+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LBP,15024.461616,2024-01-09
+
+[2025-02-27T10:45:56.993+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LKR,322.500114,2024-01-09
+
+[2025-02-27T10:45:56.993+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LRD,188.825005,2024-01-09
+
+[2025-02-27T10:45:56.994+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LSL,18.600056,2024-01-09
+
+[2025-02-27T10:45:56.994+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LTL,2.95274,2024-01-09
+
+[2025-02-27T10:45:56.994+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LVL,0.60489,2024-01-09
+
+[2025-02-27T10:45:56.994+0000] {3_4_2_homework_assignment.py:84} INFO - USD,LYD,4.79613,2024-01-09
+
+[2025-02-27T10:45:56.994+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MAD,9.952906,2024-01-09
+
+[2025-02-27T10:45:56.995+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MDL,17.74313,2024-01-09
+
+[2025-02-27T10:45:56.995+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MGA,4572.264643,2024-01-09
+
+[2025-02-27T10:45:56.995+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MKD,56.277155,2024-01-09
+
+[2025-02-27T10:45:56.995+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MMK,2099.218143,2024-01-09
+
+[2025-02-27T10:45:56.995+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MNT,3423.951251,2024-01-09
+
+[2025-02-27T10:45:56.995+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MOP,8.046637,2024-01-09
+
+[2025-02-27T10:45:56.996+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MRU,39.650314,2024-01-09
+
+[2025-02-27T10:45:56.996+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MUR,45.190082,2024-01-09
+
+[2025-02-27T10:45:56.996+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MVR,15.409745,2024-01-09
+
+[2025-02-27T10:45:56.996+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MWK,1682.776279,2024-01-09
+
+[2025-02-27T10:45:56.997+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MXN,16.972115,2024-01-09
+
+[2025-02-27T10:45:56.997+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MYR,4.6435,2024-01-09
+
+[2025-02-27T10:45:56.997+0000] {3_4_2_homework_assignment.py:84} INFO - USD,MZN,63.24995,2024-01-09
+
+[2025-02-27T10:45:56.997+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NAD,18.583536,2024-01-09
+
+[2025-02-27T10:45:56.998+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NGN,914.499594,2024-01-09
+
+[2025-02-27T10:45:56.998+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NIO,36.585923,2024-01-09
+
+[2025-02-27T10:45:56.998+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NOK,10.366935,2024-01-09
+
+[2025-02-27T10:45:56.998+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NPR,133.065394,2024-01-09
+
+[2025-02-27T10:45:56.998+0000] {3_4_2_homework_assignment.py:84} INFO - USD,NZD,1.603205,2024-01-09
+
+[2025-02-27T10:45:56.999+0000] {3_4_2_homework_assignment.py:84} INFO - USD,OMR,0.384871,2024-01-09
+
+[2025-02-27T10:45:56.999+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PAB,0.99968,2024-01-09
+
+[2025-02-27T10:45:56.999+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PEN,3.696036,2024-01-09
+
+[2025-02-27T10:45:56.999+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PGK,3.732797,2024-01-09
+
+[2025-02-27T10:45:56.999+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PHP,56.127003,2024-01-09
+
+[2025-02-27T10:45:57.000+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PKR,281.216932,2024-01-09
+
+[2025-02-27T10:45:57.000+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PLN,3.977706,2024-01-09
+
+[2025-02-27T10:45:57.000+0000] {3_4_2_homework_assignment.py:84} INFO - USD,PYG,7266.24297,2024-01-09
+
+[2025-02-27T10:45:57.000+0000] {3_4_2_homework_assignment.py:84} INFO - USD,QAR,3.641501,2024-01-09
+
+[2025-02-27T10:45:57.000+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RON,4.548695,2024-01-09
+
+[2025-02-27T10:45:57.001+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RSD,107.235308,2024-01-09
+
+[2025-02-27T10:45:57.001+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RUB,90.867862,2024-01-09
+
+[2025-02-27T10:45:57.001+0000] {3_4_2_homework_assignment.py:84} INFO - USD,RWF,1264.048283,2024-01-09
+
+[2025-02-27T10:45:57.001+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SAR,3.749954,2024-01-09
+
+[2025-02-27T10:45:57.002+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SBD,8.453689,2024-01-09
+
+[2025-02-27T10:45:57.002+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SCR,13.36204,2024-01-09
+
+[2025-02-27T10:45:57.002+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SDG,601.000264,2024-01-09
+
+[2025-02-27T10:45:57.002+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SEK,10.251425,2024-01-09
+
+[2025-02-27T10:45:57.002+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SGD,1.331025,2024-01-09
+
+[2025-02-27T10:45:57.003+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SHP,1.2754,2024-01-09
+
+[2025-02-27T10:45:57.003+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SLE,22.515143,2024-01-09
+
+[2025-02-27T10:45:57.003+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SLL,19749.999818,2024-01-09
+
+[2025-02-27T10:45:57.003+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SOS,571.000093,2024-01-09
+
+[2025-02-27T10:45:57.003+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SRD,36.835982,2024-01-09
+
+[2025-02-27T10:45:57.004+0000] {3_4_2_homework_assignment.py:84} INFO - USD,STD,20697.981008,2024-01-09
+
+[2025-02-27T10:45:57.004+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SYP,13001.88942,2024-01-09
+
+[2025-02-27T10:45:57.004+0000] {3_4_2_homework_assignment.py:84} INFO - USD,SZL,18.702391,2024-01-09
+
+[2025-02-27T10:45:57.004+0000] {3_4_2_homework_assignment.py:84} INFO - USD,THB,34.924996,2024-01-09
+
+[2025-02-27T10:45:57.004+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TJS,10.951031,2024-01-09
+
+[2025-02-27T10:45:57.005+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TMT,3.51,2024-01-09
+
+[2025-02-27T10:45:57.005+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TND,3.094007,2024-01-09
+
+[2025-02-27T10:45:57.005+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TOP,2.34535,2024-01-09
+
+[2025-02-27T10:45:57.005+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TRY,29.96686,2024-01-09
+
+[2025-02-27T10:45:57.005+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TTD,6.785303,2024-01-09
+
+[2025-02-27T10:45:57.006+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TWD,31.076028,2024-01-09
+
+[2025-02-27T10:45:57.006+0000] {3_4_2_homework_assignment.py:84} INFO - USD,TZS,2515.000251,2024-01-09
+
+[2025-02-27T10:45:57.006+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UAH,38.141832,2024-01-09
+
+[2025-02-27T10:45:57.006+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UGX,3798.602729,2024-01-09
+
+[2025-02-27T10:45:57.006+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UYU,39.329362,2024-01-09
+
+[2025-02-27T10:45:57.007+0000] {3_4_2_homework_assignment.py:84} INFO - USD,UZS,12384.897448,2024-01-09
+
+[2025-02-27T10:45:57.007+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VEF,3595949.028453,2024-01-09
+
+[2025-02-27T10:45:57.007+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VES,35.893617,2024-01-09
+
+[2025-02-27T10:45:57.007+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VND,24370.0,2024-01-09
+
+[2025-02-27T10:45:57.007+0000] {3_4_2_homework_assignment.py:84} INFO - USD,VUV,118.996053,2024-01-09
+
+[2025-02-27T10:45:57.008+0000] {3_4_2_homework_assignment.py:84} INFO - USD,WST,2.712028,2024-01-09
+
+[2025-02-27T10:45:57.008+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XAF,599.8418,2024-01-09
+
+[2025-02-27T10:45:57.008+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XAG,0.043506,2024-01-09
+
+[2025-02-27T10:45:57.008+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XAU,0.000492,2024-01-09
+
+[2025-02-27T10:45:57.008+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XCD,2.70255,2024-01-09
+
+[2025-02-27T10:45:57.009+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XDR,0.749028,2024-01-09
+
+[2025-02-27T10:45:57.009+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XOF,599.830829,2024-01-09
+
+[2025-02-27T10:45:57.009+0000] {3_4_2_homework_assignment.py:84} INFO - USD,XPF,109.400846,2024-01-09
+
+[2025-02-27T10:45:57.009+0000] {3_4_2_homework_assignment.py:84} INFO - USD,YER,250.349773,2024-01-09
+
+[2025-02-27T10:45:57.009+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZAR,18.655403,2024-01-09
+
+[2025-02-27T10:45:57.010+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZMK,9001.201412,2024-01-09
+
+[2025-02-27T10:45:57.010+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZMW,25.965891,2024-01-09
+
+[2025-02-27T10:45:57.010+0000] {3_4_2_homework_assignment.py:84} INFO - USD,ZWL,321.999592,2024-01-09
+
+[2025-02-27T10:45:57.010+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-02-27T10:45:57.014+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=3_4_2_homework_assignment, task_id=transform_data_task, execution_date=20240109T000000, start_date=20250227T104556, end_date=20250227T104557
+[2025-02-27T10:45:57.034+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0

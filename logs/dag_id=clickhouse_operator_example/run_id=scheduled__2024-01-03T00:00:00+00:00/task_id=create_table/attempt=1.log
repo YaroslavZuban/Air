@@ -1,0 +1,354 @@
+[2025-03-11T09:19:56.143+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:19:56.149+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:19:56.149+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-11T09:19:56.171+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): create_table> on 2024-01-03 00:00:00+00:00
+[2025-03-11T09:19:56.176+0000] {standard_task_runner.py:60} INFO - Started process 517 to run task
+[2025-03-11T09:19:56.178+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'clickhouse_operator_example', 'create_table', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/5_2_operator.py', '--cfg-path', '/tmp/tmpjaur7eos']
+[2025-03-11T09:19:56.180+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask create_table
+[2025-03-11T09:19:56.214+0000] {task_command.py:423} INFO - Running <TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-11T09:19:56.407+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='clickhouse_operator_example' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-11T09:19:56.413+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T09:19:56.413+0000] {clickhouse.py:79} INFO - CREATE TABLE IF NOT EXISTS currency_sql (source String, currency String, value Float, date String) ENGINE Log
+[2025-03-11T09:19:56.416+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 83, in execute
+    return self._hook_execute()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 69, in _hook_execute
+    return hook.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 80, in execute
+    last_result = conn.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 258, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 399, in connect
+    return self._init_connection(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 343, in _init_connection
+    self.receive_hello()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 534, in receive_hello
+    raise errors.UnexpectedPacketFromServerError(message)
+clickhouse_driver.errors.UnexpectedPacketFromServerError: Code: 102. Unexpected packet from server clickhouse:8123 (expected Hello or Exception, got Unknown packet)
+[2025-03-11T09:19:56.420+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=clickhouse_operator_example, task_id=create_table, execution_date=20240103T000000, start_date=20250311T091956, end_date=20250311T091956
+[2025-03-11T09:19:56.436+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 52 for task create_table (Code: 102. Unexpected packet from server clickhouse:8123 (expected Hello or Exception, got Unknown packet); 517)
+[2025-03-11T09:19:56.472+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-11T09:19:56.487+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-11T09:22:37.086+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:22:37.091+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:22:37.092+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-11T09:22:37.103+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): create_table> on 2024-01-03 00:00:00+00:00
+[2025-03-11T09:22:37.108+0000] {standard_task_runner.py:60} INFO - Started process 643 to run task
+[2025-03-11T09:22:37.110+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'clickhouse_operator_example', 'create_table', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/5_2_operator.py', '--cfg-path', '/tmp/tmp1llx1wer']
+[2025-03-11T09:22:37.111+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask create_table
+[2025-03-11T09:22:37.138+0000] {task_command.py:423} INFO - Running <TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-11T09:22:37.295+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='clickhouse_operator_example' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-11T09:22:37.300+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T09:22:37.300+0000] {clickhouse.py:79} INFO - CREATE TABLE IF NOT EXISTS currency_sql (date String, currency_source String, currency String, value Float) ENGINE Log
+[2025-03-11T09:22:37.302+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 83, in execute
+    return self._hook_execute()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 69, in _hook_execute
+    return hook.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 80, in execute
+    last_result = conn.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 258, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 399, in connect
+    return self._init_connection(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 343, in _init_connection
+    self.receive_hello()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 534, in receive_hello
+    raise errors.UnexpectedPacketFromServerError(message)
+clickhouse_driver.errors.UnexpectedPacketFromServerError: Code: 102. Unexpected packet from server clickhouse:8123 (expected Hello or Exception, got Unknown packet)
+[2025-03-11T09:22:37.305+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=clickhouse_operator_example, task_id=create_table, execution_date=20240103T000000, start_date=20250311T092237, end_date=20250311T092237
+[2025-03-11T09:22:37.315+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 52 for task create_table (Code: 102. Unexpected packet from server clickhouse:8123 (expected Hello or Exception, got Unknown packet); 643)
+[2025-03-11T09:22:37.363+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-11T09:22:37.377+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-11T09:24:37.212+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:24:37.219+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:24:37.219+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-11T09:24:37.237+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): create_table> on 2024-01-03 00:00:00+00:00
+[2025-03-11T09:24:37.243+0000] {standard_task_runner.py:60} INFO - Started process 756 to run task
+[2025-03-11T09:24:37.247+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'clickhouse_operator_example', 'create_table', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/5_2_operator.py', '--cfg-path', '/tmp/tmpg2fefu6o']
+[2025-03-11T09:24:37.248+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask create_table
+[2025-03-11T09:24:37.290+0000] {task_command.py:423} INFO - Running <TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-11T09:24:37.450+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='clickhouse_operator_example' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-11T09:24:37.453+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T09:24:37.453+0000] {clickhouse.py:79} INFO - CREATE TABLE IF NOT EXISTS currency_sql (date String, currency_source String, currency String, value Float) ENGINE Log
+[2025-03-11T09:24:37.455+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 83, in execute
+    return self._hook_execute()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 69, in _hook_execute
+    return hook.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 80, in execute
+    last_result = conn.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 258, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 399, in connect
+    return self._init_connection(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 343, in _init_connection
+    self.receive_hello()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 534, in receive_hello
+    raise errors.UnexpectedPacketFromServerError(message)
+clickhouse_driver.errors.UnexpectedPacketFromServerError: Code: 102. Unexpected packet from server clickhouse:8123 (expected Hello or Exception, got Unknown packet)
+[2025-03-11T09:24:37.458+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=clickhouse_operator_example, task_id=create_table, execution_date=20240103T000000, start_date=20250311T092437, end_date=20250311T092437
+[2025-03-11T09:24:37.466+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 52 for task create_table (Code: 102. Unexpected packet from server clickhouse:8123 (expected Hello or Exception, got Unknown packet); 756)
+[2025-03-11T09:24:37.500+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-11T09:24:37.512+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-11T09:28:21.756+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:28:21.761+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:28:21.761+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-11T09:28:21.773+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): create_table> on 2024-01-03 00:00:00+00:00
+[2025-03-11T09:28:21.777+0000] {standard_task_runner.py:60} INFO - Started process 899 to run task
+[2025-03-11T09:28:21.780+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'clickhouse_operator_example', 'create_table', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/5_2_operator.py', '--cfg-path', '/tmp/tmpx0wc5n4w']
+[2025-03-11T09:28:21.783+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask create_table
+[2025-03-11T09:28:21.842+0000] {task_command.py:423} INFO - Running <TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-11T09:28:22.020+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='clickhouse_operator_example' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-11T09:28:22.024+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T09:28:22.024+0000] {clickhouse.py:79} INFO - CREATE TABLE IF NOT EXISTS currency_sql (date String, currency_source String, currency String, value Float) ENGINE Log
+[2025-03-11T09:28:26.095+0000] {connection.py:411} WARNING - Failed to connect to airflow_network:8123
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 399, in connect
+    return self._init_connection(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 329, in _init_connection
+    self.socket = self._create_socket(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 280, in _create_socket
+    for res in socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM):
+  File "/usr/local/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+[2025-03-11T09:28:26.096+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 83, in execute
+    return self._hook_execute()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 69, in _hook_execute
+    return hook.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 80, in execute
+    last_result = conn.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 258, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 420, in connect
+    raise err
+clickhouse_driver.errors.NetworkError: Code: 210. Name or service not known (airflow_network:8123)
+[2025-03-11T09:28:26.099+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=clickhouse_operator_example, task_id=create_table, execution_date=20240103T000000, start_date=20250311T092821, end_date=20250311T092826
+[2025-03-11T09:28:26.110+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 52 for task create_table (Code: 210. Name or service not known (airflow_network:8123); 899)
+[2025-03-11T09:28:26.124+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-11T09:28:26.137+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-11T09:30:00.785+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:30:00.790+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:30:00.790+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-11T09:30:00.803+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): create_table> on 2024-01-03 00:00:00+00:00
+[2025-03-11T09:30:00.809+0000] {standard_task_runner.py:60} INFO - Started process 1001 to run task
+[2025-03-11T09:30:00.812+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'clickhouse_operator_example', 'create_table', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/5_2_operator.py', '--cfg-path', '/tmp/tmpetgv3sto']
+[2025-03-11T09:30:00.813+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask create_table
+[2025-03-11T09:30:00.846+0000] {task_command.py:423} INFO - Running <TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-11T09:30:01.073+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='clickhouse_operator_example' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-11T09:30:01.078+0000] {base.py:83} INFO - Using connection ID 'clickhouse_def' for task execution.
+[2025-03-11T09:30:01.079+0000] {clickhouse.py:79} INFO - CREATE TABLE IF NOT EXISTS currency_sql (date String, currency_source String, currency String, value Float) ENGINE Log
+[2025-03-11T09:30:01.085+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 83, in execute
+    return self._hook_execute()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 69, in _hook_execute
+    return hook.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 80, in execute
+    last_result = conn.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 258, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 399, in connect
+    return self._init_connection(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 343, in _init_connection
+    self.receive_hello()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 534, in receive_hello
+    raise errors.UnexpectedPacketFromServerError(message)
+clickhouse_driver.errors.UnexpectedPacketFromServerError: Code: 102. Unexpected packet from server clickhouse:8123 (expected Hello or Exception, got Unknown packet)
+[2025-03-11T09:30:01.090+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=clickhouse_operator_example, task_id=create_table, execution_date=20240103T000000, start_date=20250311T093000, end_date=20250311T093001
+[2025-03-11T09:30:01.104+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 52 for task create_table (Code: 102. Unexpected packet from server clickhouse:8123 (expected Hello or Exception, got Unknown packet); 1001)
+[2025-03-11T09:30:01.145+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-11T09:30:01.168+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-11T09:52:59.252+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:52:59.259+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:52:59.259+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-11T09:52:59.276+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): create_table> on 2024-01-03 00:00:00+00:00
+[2025-03-11T09:52:59.282+0000] {standard_task_runner.py:60} INFO - Started process 1557 to run task
+[2025-03-11T09:52:59.285+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'clickhouse_operator_example', 'create_table', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/5_2_operator.py', '--cfg-path', '/tmp/tmpe3uxt2dm']
+[2025-03-11T09:52:59.287+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask create_table
+[2025-03-11T09:52:59.320+0000] {task_command.py:423} INFO - Running <TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-11T09:52:59.506+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='clickhouse_operator_example' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-11T09:52:59.512+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 83, in execute
+    return self._hook_execute()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 69, in _hook_execute
+    return hook.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 76, in execute
+    with _disconnecting(self.get_conn()) as conn:
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 53, in get_conn
+    conn = self.get_connection(self._clickhouse_conn_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/hooks/base.py", line 82, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/connection.py", line 479, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `clickhouse_def` isn't defined
+[2025-03-11T09:52:59.515+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=clickhouse_operator_example, task_id=create_table, execution_date=20240103T000000, start_date=20250311T095259, end_date=20250311T095259
+[2025-03-11T09:52:59.525+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 52 for task create_table (The conn_id `clickhouse_def` isn't defined; 1557)
+[2025-03-11T09:52:59.540+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-11T09:52:59.555+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-11T09:54:08.289+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:54:08.299+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:54:08.300+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-11T09:54:08.318+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): create_table> on 2024-01-03 00:00:00+00:00
+[2025-03-11T09:54:08.326+0000] {standard_task_runner.py:60} INFO - Started process 1649 to run task
+[2025-03-11T09:54:08.329+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'clickhouse_operator_example', 'create_table', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/5_2_operator.py', '--cfg-path', '/tmp/tmp9j_hz4n0']
+[2025-03-11T09:54:08.332+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask create_table
+[2025-03-11T09:54:08.372+0000] {task_command.py:423} INFO - Running <TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-11T09:54:08.547+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='clickhouse_operator_example' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-11T09:54:08.553+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 83, in execute
+    return self._hook_execute()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 69, in _hook_execute
+    return hook.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 76, in execute
+    with _disconnecting(self.get_conn()) as conn:
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 53, in get_conn
+    conn = self.get_connection(self._clickhouse_conn_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/hooks/base.py", line 82, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/connection.py", line 479, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `clickhouse_def` isn't defined
+[2025-03-11T09:54:08.555+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=clickhouse_operator_example, task_id=create_table, execution_date=20240103T000000, start_date=20250311T095408, end_date=20250311T095408
+[2025-03-11T09:54:08.563+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 52 for task create_table (The conn_id `clickhouse_def` isn't defined; 1649)
+[2025-03-11T09:54:08.583+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-11T09:54:08.596+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-11T09:55:18.629+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:55:18.634+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:55:18.635+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-11T09:55:18.648+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): create_table> on 2024-01-03 00:00:00+00:00
+[2025-03-11T09:55:18.653+0000] {standard_task_runner.py:60} INFO - Started process 1743 to run task
+[2025-03-11T09:55:18.656+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'clickhouse_operator_example', 'create_table', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/5_2_operator.py', '--cfg-path', '/tmp/tmpsat59vpb']
+[2025-03-11T09:55:18.657+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask create_table
+[2025-03-11T09:55:18.693+0000] {task_command.py:423} INFO - Running <TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-11T09:55:18.885+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='clickhouse_operator_example' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-11T09:55:18.889+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T09:55:18.890+0000] {clickhouse.py:79} INFO - CREATE TABLE IF NOT EXISTS currency_sql (date String, currency_source String, currency String, value Float) ENGINE Log
+[2025-03-11T09:55:18.890+0000] {connection.py:411} WARNING - Failed to connect to localhost:9000
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 399, in connect
+    return self._init_connection(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 329, in _init_connection
+    self.socket = self._create_socket(host, port)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 301, in _create_socket
+    raise err
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 292, in _create_socket
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2025-03-11T09:55:18.892+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 83, in execute
+    return self._hook_execute()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 69, in _hook_execute
+    return hook.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 80, in execute
+    last_result = conn.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 258, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/connection.py", line 420, in connect
+    raise err
+clickhouse_driver.errors.NetworkError: Code: 210. Connection refused (localhost:9000)
+[2025-03-11T09:55:18.896+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=clickhouse_operator_example, task_id=create_table, execution_date=20240103T000000, start_date=20250311T095518, end_date=20250311T095518
+[2025-03-11T09:55:18.905+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 52 for task create_table (Code: 210. Connection refused (localhost:9000); 1743)
+[2025-03-11T09:55:18.948+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-11T09:55:18.964+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-11T09:56:52.678+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:56:52.692+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T09:56:52.693+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-11T09:56:52.719+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): create_table> on 2024-01-03 00:00:00+00:00
+[2025-03-11T09:56:52.729+0000] {standard_task_runner.py:60} INFO - Started process 1858 to run task
+[2025-03-11T09:56:52.733+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'clickhouse_operator_example', 'create_table', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/5_2_operator.py', '--cfg-path', '/tmp/tmprngphb4h']
+[2025-03-11T09:56:52.736+0000] {standard_task_runner.py:88} INFO - Job 53: Subtask create_table
+[2025-03-11T09:56:52.791+0000] {task_command.py:423} INFO - Running <TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-11T09:56:53.047+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='clickhouse_operator_example' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-11T09:56:53.052+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T09:56:53.053+0000] {clickhouse.py:79} INFO - CREATE TABLE IF NOT EXISTS currency_sql (date String, currency_source String, currency String, value Float) ENGINE Log
+[2025-03-11T09:56:53.068+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=clickhouse_operator_example, task_id=create_table, execution_date=20240103T000000, start_date=20250311T095652, end_date=20250311T095653
+[2025-03-11T09:56:53.107+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-11T09:56:53.126+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-11T10:05:19.277+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T10:05:19.283+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-11T10:05:19.284+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-11T10:05:19.299+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): create_table> on 2024-01-03 00:00:00+00:00
+[2025-03-11T10:05:19.305+0000] {standard_task_runner.py:60} INFO - Started process 2173 to run task
+[2025-03-11T10:05:19.307+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'clickhouse_operator_example', 'create_table', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/5_2_operator.py', '--cfg-path', '/tmp/tmp2_asgybl']
+[2025-03-11T10:05:19.309+0000] {standard_task_runner.py:88} INFO - Job 53: Subtask create_table
+[2025-03-11T10:05:19.344+0000] {task_command.py:423} INFO - Running <TaskInstance: clickhouse_operator_example.create_table scheduled__2024-01-03T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-11T10:05:19.672+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='clickhouse_operator_example' AIRFLOW_CTX_TASK_ID='create_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-11T10:05:19.678+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T10:05:19.679+0000] {clickhouse.py:79} INFO - CREATE TABLE IF NOT EXISTS currency_sql (date String, currency_source String, currency String, value Float) ENGINE Log
+[2025-03-11T10:05:19.703+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=clickhouse_operator_example, task_id=create_table, execution_date=20240103T000000, start_date=20250311T100519, end_date=20250311T100519
+[2025-03-11T10:05:19.761+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-11T10:05:19.777+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

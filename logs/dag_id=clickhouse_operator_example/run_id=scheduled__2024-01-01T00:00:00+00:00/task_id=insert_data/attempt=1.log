@@ -1,0 +1,109 @@
+[2025-03-11T09:56:47.783+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickhouse_operator_example.insert_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-03-11T09:56:47.790+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickhouse_operator_example.insert_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-03-11T09:56:47.791+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-11T09:56:47.804+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): insert_data> on 2024-01-01 00:00:00+00:00
+[2025-03-11T09:56:47.811+0000] {standard_task_runner.py:60} INFO - Started process 1839 to run task
+[2025-03-11T09:56:47.813+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'clickhouse_operator_example', 'insert_data', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/5_2_operator.py', '--cfg-path', '/tmp/tmpgfoxhj3z']
+[2025-03-11T09:56:47.815+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask insert_data
+[2025-03-11T09:56:47.853+0000] {task_command.py:423} INFO - Running <TaskInstance: clickhouse_operator_example.insert_data scheduled__2024-01-01T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-11T09:56:48.129+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='clickhouse_operator_example' AIRFLOW_CTX_TASK_ID='insert_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2025-03-11T09:56:48.134+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T09:56:48.135+0000] {clickhouse.py:79} INFO -  INSERT INTO currency_sql
+SELECT '2024-01-01' AS date, currency_source, currency, value   
+FROM (
+    SELECT arrayJoin(splitByChar(',', replaceAll(replaceAll(replaceAll(visitParamExtractRaw(column, '2024-01-01'), '{', ''), '}', ''), '"', ''))) AS col1,
+           LEFT(col1, 3) AS currency_source,
+           SUBSTRING(col1, 4, 3) AS currency,
+           SUBSTRING(col1, 8) AS value
+    FROM url(https://api.exchangerate.host/timeframe?access_key=422bab0c9e08a5476912061877017b8d&source=USD&start_date='2024-01-01'&end_date='2024-01-01'
+  , LineAsString, 'column String')
+)
+   
+[2025-03-11T09:56:48.158+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 83, in execute
+    return self._hook_execute()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 69, in _hook_execute
+    return hook.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 80, in execute
+    last_result = conn.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 382, in execute
+    rv = self.process_ordinary_query(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 580, in process_ordinary_query
+    return self.receive_result(with_column_types=with_column_types,
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 212, in receive_result
+    return result.get_result()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/result.py", line 50, in get_result
+    for packet in self.packet_generator:
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 228, in packet_generator
+    packet = self.receive_packet()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 245, in receive_packet
+    raise packet.exception
+clickhouse_driver.errors.ServerException: Code: 62.
+DB::Exception: Syntax error: failed at position 542 ('LineAsString') (line 9, col 5): LineAsString, 'column String')
+)
+   . Expected end of query. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000dd0ee7b
+1. DB::Exception::createDeprecated(String const&, int, bool) @ 0x000000000dd7b5ad
+2. DB::parseQueryAndMovePosition(DB::IParser&, char const*&, char const*, String const&, bool, unsigned long, unsigned long, unsigned long) @ 0x00000000149268f2
+3. DB::executeQueryImpl(char const*, char const*, std::shared_ptr<DB::Context>, DB::QueryFlags, DB::QueryProcessingStage::Enum, DB::ReadBuffer*) @ 0x0000000012b8b549
+4. DB::executeQuery(String const&, std::shared_ptr<DB::Context>, DB::QueryFlags, DB::QueryProcessingStage::Enum) @ 0x0000000012b8a7bc
+5. DB::TCPHandler::runImpl() @ 0x0000000013e7db2c
+6. DB::TCPHandler::run() @ 0x0000000013e9b419
+7. Poco::Net::TCPServerConnection::start() @ 0x0000000017458027
+8. Poco::Net::TCPServerDispatcher::run() @ 0x0000000017458479
+9. Poco::PooledThread::run() @ 0x00000000174249db
+10. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000017422ebd
+11. ? @ 0x00007f2c1bb03ac3
+12. ? @ 0x00007f2c1bb95850
+
+[2025-03-11T09:56:48.167+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=clickhouse_operator_example, task_id=insert_data, execution_date=20240101T000000, start_date=20250311T095647, end_date=20250311T095648
+[2025-03-11T09:56:48.188+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 52 for task insert_data (Code: 62.
+DB::Exception: Syntax error: failed at position 542 ('LineAsString') (line 9, col 5): LineAsString, 'column String')
+)
+   . Expected end of query. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000dd0ee7b
+1. DB::Exception::createDeprecated(String const&, int, bool) @ 0x000000000dd7b5ad
+2. DB::parseQueryAndMovePosition(DB::IParser&, char const*&, char const*, String const&, bool, unsigned long, unsigned long, unsigned long) @ 0x00000000149268f2
+3. DB::executeQueryImpl(char const*, char const*, std::shared_ptr<DB::Context>, DB::QueryFlags, DB::QueryProcessingStage::Enum, DB::ReadBuffer*) @ 0x0000000012b8b549
+4. DB::executeQuery(String const&, std::shared_ptr<DB::Context>, DB::QueryFlags, DB::QueryProcessingStage::Enum) @ 0x0000000012b8a7bc
+5. DB::TCPHandler::runImpl() @ 0x0000000013e7db2c
+6. DB::TCPHandler::run() @ 0x0000000013e9b419
+7. Poco::Net::TCPServerConnection::start() @ 0x0000000017458027
+8. Poco::Net::TCPServerDispatcher::run() @ 0x0000000017458479
+9. Poco::PooledThread::run() @ 0x00000000174249db
+10. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000017422ebd
+11. ? @ 0x00007f2c1bb03ac3
+12. ? @ 0x00007f2c1bb95850
+; 1839)
+[2025-03-11T09:56:48.227+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-11T09:56:48.250+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-11T10:05:15.326+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickhouse_operator_example.insert_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-03-11T10:05:15.333+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickhouse_operator_example.insert_data scheduled__2024-01-01T00:00:00+00:00 [queued]>
+[2025-03-11T10:05:15.334+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-11T10:05:15.347+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): insert_data> on 2024-01-01 00:00:00+00:00
+[2025-03-11T10:05:15.353+0000] {standard_task_runner.py:60} INFO - Started process 2155 to run task
+[2025-03-11T10:05:15.355+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'clickhouse_operator_example', 'insert_data', 'scheduled__2024-01-01T00:00:00+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/5_2_operator.py', '--cfg-path', '/tmp/tmp_nem7g89']
+[2025-03-11T10:05:15.357+0000] {standard_task_runner.py:88} INFO - Job 52: Subtask insert_data
+[2025-03-11T10:05:15.389+0000] {task_command.py:423} INFO - Running <TaskInstance: clickhouse_operator_example.insert_data scheduled__2024-01-01T00:00:00+00:00 [running]> on host 9a2e4036dec3
+[2025-03-11T10:05:15.614+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='clickhouse_operator_example' AIRFLOW_CTX_TASK_ID='insert_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-01T00:00:00+00:00'
+[2025-03-11T10:05:15.618+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T10:05:15.619+0000] {clickhouse.py:79} INFO -  INSERT INTO currency_sql
+SELECT '2024-01-01' AS date, currency_source, currency, value   
+FROM (
+    SELECT arrayJoin(splitByChar(',', replaceAll(replaceAll(replaceAll(visitParamExtractRaw(column, '2024-01-01'), '{', ''), '}', ''), '"', ''))) AS col1,
+           LEFT(col1, 3) AS currency_source,
+           SUBSTRING(col1, 4, 3) AS currency,
+           SUBSTRING(col1, 8) AS value
+    FROM url('https://api.exchangerate.host/timeframe?access_key=422bab0c9e08a5476912061877017b8d&source=USD&start_date=2024-01-01&end_date=2024-01-01'
+  , LineAsString, 'column String')
+)
+   
+[2025-03-11T10:05:15.752+0000] {unix.py:142} WARNING - /etc/timezone is deprecated on Debian, and no longer reliable. Ignoring.
+[2025-03-11T10:05:16.467+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=clickhouse_operator_example, task_id=insert_data, execution_date=20240101T000000, start_date=20250311T100515, end_date=20250311T100516
+[2025-03-11T10:05:16.491+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-11T10:05:16.500+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

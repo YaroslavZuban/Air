@@ -824,3 +824,17 @@
 [2025-03-11T10:05:38.193+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:05:38.193+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-03-11T10:05:38.202+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:05:38.202+0000] {dag.py:3823} INFO - Setting next_dagrun for dag to None, run_after=None
 [2025-03-11T10:05:38.222+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_xcom.py took 0.067 seconds
+[2025-03-11T10:06:08.503+0000] {processor.py:161} INFO - Started process (PID=2258) to work on /opt/airflow/dags/5_1_xcom.py
+[2025-03-11T10:06:08.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_xcom.py for tasks to queue
+[2025-03-11T10:06:08.505+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:08.505+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_xcom.py
+[2025-03-11T10:06:08.523+0000] {processor.py:840} INFO - DAG(s) 'dag' retrieved from /opt/airflow/dags/5_1_xcom.py
+[2025-03-11T10:06:08.548+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:08.548+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T10:06:08.561+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:08.561+0000] {dag.py:3823} INFO - Setting next_dagrun for dag to None, run_after=None
+[2025-03-11T10:06:08.591+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_xcom.py took 0.091 seconds
+[2025-03-11T10:06:38.841+0000] {processor.py:161} INFO - Started process (PID=2269) to work on /opt/airflow/dags/5_1_xcom.py
+[2025-03-11T10:06:38.842+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_xcom.py for tasks to queue
+[2025-03-11T10:06:38.843+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:38.843+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_xcom.py
+[2025-03-11T10:06:38.861+0000] {processor.py:840} INFO - DAG(s) 'dag' retrieved from /opt/airflow/dags/5_1_xcom.py
+[2025-03-11T10:06:38.882+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:38.882+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T10:06:38.893+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:38.893+0000] {dag.py:3823} INFO - Setting next_dagrun for dag to None, run_after=None
+[2025-03-11T10:06:38.916+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_xcom.py took 0.077 seconds

@@ -38747,3 +38747,17 @@ File Path                                       PID    Runtime      # DAGs    # 
 /opt/airflow/dags/default_pool.py                                        1           0  0.10s           2025-03-11T10:05:17
 /opt/airflow/dags/exchangerate_api_work.py                               1           0  0.91s           2025-03-11T10:05:26
 ================================================================================
+[2025-03-11T10:06:10.463+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/3_4_2_homework_assignment.py                           1           0  0.81s           2025-03-11T10:06:10
+/opt/airflow/dags/4_4_house_assignment.py                                1           0  0.71s           2025-03-11T10:05:40
+/opt/airflow/dags/5_1_2_xcom.py                                          1           0  0.81s           2025-03-11T10:06:05
+/opt/airflow/dags/5_1_xcom.py                                            1           0  0.11s           2025-03-11T10:06:08
+/opt/airflow/dags/5_2_operator.py                                        1           0  0.21s           2025-03-11T10:06:01
+/opt/airflow/dags/default_pool.py                                        1           0  0.11s           2025-03-11T10:05:47
+/opt/airflow/dags/exchangerate_api_work.py                               1           0  0.71s           2025-03-11T10:05:57
+================================================================================

@@ -1317,3 +1317,14 @@ airflow.exceptions.AirflowNotFoundException: The conn_id `clickhouse_default` is
 [2025-03-11T10:05:39.885+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:05:39.885+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-03-11T10:05:39.898+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:05:39.898+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
 [2025-03-11T10:05:39.917+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.607 seconds
+[2025-03-11T10:06:11.518+0000] {processor.py:161} INFO - Started process (PID=2261) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T10:06:11.519+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T10:06:11.520+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:11.520+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T10:06:11.996+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:11.995+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T10:06:11.997+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:11.997+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T10:06:11.999+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:11.999+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T10:06:12.000+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:12.000+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T10:06:12.008+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T10:06:12.081+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:12.080+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T10:06:12.097+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:12.096+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T10:06:12.121+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.606 seconds

@@ -824,3 +824,17 @@
 [2025-03-11T10:06:28.832+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:28.832+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-03-11T10:06:28.845+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:28.845+0000] {dag.py:3823} INFO - Setting next_dagrun for 0_Examples_3_4_1_ETL_2 to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
 [2025-03-11T10:06:28.862+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/exchangerate_api_work.py took 0.877 seconds
+[2025-03-11T10:06:59.273+0000] {processor.py:161} INFO - Started process (PID=2275) to work on /opt/airflow/dags/exchangerate_api_work.py
+[2025-03-11T10:06:59.274+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/exchangerate_api_work.py for tasks to queue
+[2025-03-11T10:06:59.274+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:59.274+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/exchangerate_api_work.py
+[2025-03-11T10:06:59.769+0000] {processor.py:840} INFO - DAG(s) '0_Examples_3_4_1_ETL_2' retrieved from /opt/airflow/dags/exchangerate_api_work.py
+[2025-03-11T10:06:59.835+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:59.834+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T10:06:59.847+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:59.847+0000] {dag.py:3823} INFO - Setting next_dagrun for 0_Examples_3_4_1_ETL_2 to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-11T10:06:59.864+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/exchangerate_api_work.py took 0.594 seconds
+[2025-03-11T10:07:30.573+0000] {processor.py:161} INFO - Started process (PID=2286) to work on /opt/airflow/dags/exchangerate_api_work.py
+[2025-03-11T10:07:30.574+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/exchangerate_api_work.py for tasks to queue
+[2025-03-11T10:07:30.575+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:07:30.574+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/exchangerate_api_work.py
+[2025-03-11T10:07:31.249+0000] {processor.py:840} INFO - DAG(s) '0_Examples_3_4_1_ETL_2' retrieved from /opt/airflow/dags/exchangerate_api_work.py
+[2025-03-11T10:07:31.325+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:07:31.325+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T10:07:31.344+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:07:31.343+0000] {dag.py:3823} INFO - Setting next_dagrun for 0_Examples_3_4_1_ETL_2 to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-11T10:07:31.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/exchangerate_api_work.py took 0.803 seconds

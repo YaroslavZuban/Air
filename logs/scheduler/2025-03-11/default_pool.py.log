@@ -831,3 +831,17 @@
 [2025-03-11T10:06:17.833+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:17.833+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-03-11T10:06:17.844+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:17.843+0000] {dag.py:3823} INFO - Setting next_dagrun for parallel_tasks_example to None, run_after=None
 [2025-03-11T10:06:17.869+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/default_pool.py took 0.078 seconds
+[2025-03-11T10:06:48.219+0000] {processor.py:161} INFO - Started process (PID=2274) to work on /opt/airflow/dags/default_pool.py
+[2025-03-11T10:06:48.220+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/default_pool.py for tasks to queue
+[2025-03-11T10:06:48.221+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:48.220+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/default_pool.py
+[2025-03-11T10:06:48.239+0000] {processor.py:840} INFO - DAG(s) 'parallel_tasks_example' retrieved from /opt/airflow/dags/default_pool.py
+[2025-03-11T10:06:48.261+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:48.261+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T10:06:48.270+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:06:48.270+0000] {dag.py:3823} INFO - Setting next_dagrun for parallel_tasks_example to None, run_after=None
+[2025-03-11T10:06:48.292+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/default_pool.py took 0.077 seconds
+[2025-03-11T10:07:18.584+0000] {processor.py:161} INFO - Started process (PID=2285) to work on /opt/airflow/dags/default_pool.py
+[2025-03-11T10:07:18.585+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/default_pool.py for tasks to queue
+[2025-03-11T10:07:18.586+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:07:18.585+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/default_pool.py
+[2025-03-11T10:07:18.603+0000] {processor.py:840} INFO - DAG(s) 'parallel_tasks_example' retrieved from /opt/airflow/dags/default_pool.py
+[2025-03-11T10:07:18.629+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:07:18.628+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T10:07:18.640+0000] {logging_mixin.py:188} INFO - [2025-03-11T10:07:18.639+0000] {dag.py:3823} INFO - Setting next_dagrun for parallel_tasks_example to None, run_after=None
+[2025-03-11T10:07:18.666+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/default_pool.py took 0.085 seconds

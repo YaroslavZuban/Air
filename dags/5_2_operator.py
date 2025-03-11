@@ -9,7 +9,7 @@ dag = DAG(
     schedule_interval='@daily',  # Запускать вручную
     start_date=datetime(2024, 1, 1),
     end_date=datetime(2024, 1, 4),
-    tags=['Домашние_задание']
+    tags=['Домашнее_задание']
 )
 
 

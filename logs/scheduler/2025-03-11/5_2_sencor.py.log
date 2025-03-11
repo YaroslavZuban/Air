@@ -1,0 +1,1866 @@
+[2025-03-11T12:59:58.433+0000] {processor.py:161} INFO - Started process (PID=5965) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T12:59:58.434+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T12:59:58.435+0000] {logging_mixin.py:188} INFO - [2025-03-11T12:59:58.435+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T12:59:58.444+0000] {logging_mixin.py:188} INFO - [2025-03-11T12:59:58.443+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T12:59:58.445+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T12:59:58.460+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.029 seconds
+[2025-03-11T13:00:29.375+0000] {processor.py:161} INFO - Started process (PID=5977) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:00:29.376+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:00:29.377+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:00:29.377+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:00:29.386+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:00:29.385+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:00:29.387+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:00:29.403+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.031 seconds
+[2025-03-11T13:01:00.442+0000] {processor.py:161} INFO - Started process (PID=5989) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:01:00.443+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:01:00.444+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:01:00.443+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:01:00.453+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:01:00.453+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:01:00.454+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:01:00.471+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.032 seconds
+[2025-03-11T13:01:31.521+0000] {processor.py:161} INFO - Started process (PID=6001) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:01:31.522+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:01:31.522+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:01:31.522+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:01:31.531+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:01:31.531+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:01:31.532+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:01:31.550+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.031 seconds
+[2025-03-11T13:02:02.188+0000] {processor.py:161} INFO - Started process (PID=6013) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:02:02.189+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:02:02.191+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:02:02.190+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:02:02.206+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:02:02.204+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:02:02.207+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:02:02.249+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.065 seconds
+[2025-03-11T13:02:32.339+0000] {processor.py:161} INFO - Started process (PID=6025) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:02:32.340+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:02:32.341+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:02:32.341+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:02:32.351+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:02:32.350+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:02:32.352+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:02:32.368+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.031 seconds
+[2025-03-11T13:03:03.062+0000] {processor.py:161} INFO - Started process (PID=6037) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:03:03.063+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:03:03.064+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:03:03.064+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:03:03.074+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:03:03.073+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:03:03.075+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:03:03.090+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.031 seconds
+[2025-03-11T13:03:33.456+0000] {processor.py:161} INFO - Started process (PID=6049) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:03:33.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:03:33.458+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:03:33.458+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:03:33.469+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:03:33.469+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:03:33.470+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:03:33.493+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.040 seconds
+[2025-03-11T13:04:03.630+0000] {processor.py:161} INFO - Started process (PID=6061) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:04:03.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:04:03.632+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:04:03.632+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:04:03.643+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:04:03.642+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:04:03.644+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:04:03.664+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.037 seconds
+[2025-03-11T13:04:34.058+0000] {processor.py:161} INFO - Started process (PID=6073) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:04:34.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:04:34.062+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:04:34.061+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:04:34.074+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:04:34.072+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:04:34.075+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:04:34.098+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.043 seconds
+[2025-03-11T13:05:05.126+0000] {processor.py:161} INFO - Started process (PID=6085) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:05:05.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:05:05.128+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:05:05.128+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:05:05.136+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:05:05.136+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:05:05.136+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:05:05.151+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.028 seconds
+[2025-03-11T13:05:36.155+0000] {processor.py:161} INFO - Started process (PID=6097) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:05:36.156+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:05:36.157+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:05:36.156+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:05:36.167+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:05:36.166+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:05:36.167+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:05:36.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.035 seconds
+[2025-03-11T13:06:06.874+0000] {processor.py:161} INFO - Started process (PID=6109) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:06:06.875+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:06:06.876+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:06:06.876+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:06:06.885+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:06:06.884+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:06:06.885+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:06:06.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.031 seconds
+[2025-03-11T13:06:37.606+0000] {processor.py:161} INFO - Started process (PID=6121) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:06:37.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:06:37.608+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:06:37.608+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:06:37.620+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:06:37.619+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:06:37.621+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:06:37.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.041 seconds
+[2025-03-11T13:07:08.657+0000] {processor.py:161} INFO - Started process (PID=6133) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:07:08.658+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:07:08.659+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:07:08.659+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:07:08.669+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:07:08.668+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:07:08.669+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:07:08.687+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.032 seconds
+[2025-03-11T13:07:38.830+0000] {processor.py:161} INFO - Started process (PID=6145) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:07:38.831+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:07:38.832+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:07:38.831+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:07:38.841+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:07:38.840+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:07:38.841+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:07:38.859+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.031 seconds
+[2025-03-11T13:08:09.872+0000] {processor.py:161} INFO - Started process (PID=6157) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:08:09.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:08:09.874+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:08:09.874+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:08:09.883+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:08:09.882+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:08:09.884+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:08:09.900+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.030 seconds
+[2025-03-11T13:08:40.989+0000] {processor.py:161} INFO - Started process (PID=6169) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:08:40.990+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:08:40.991+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:08:40.990+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:08:41.001+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:08:41.000+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:08:41.001+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:08:41.025+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.039 seconds
+[2025-03-11T13:09:12.102+0000] {processor.py:161} INFO - Started process (PID=6181) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:09:12.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:09:12.107+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:09:12.105+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:09:12.124+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:09:12.123+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:09:12.126+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:09:12.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.054 seconds
+[2025-03-11T13:09:42.998+0000] {processor.py:161} INFO - Started process (PID=6193) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:09:42.999+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:09:43.000+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:09:42.999+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:09:43.010+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:09:43.009+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:09:43.010+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:09:43.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.033 seconds
+[2025-03-11T13:10:14.107+0000] {processor.py:161} INFO - Started process (PID=6205) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:10:14.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:10:14.109+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:10:14.108+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:10:14.118+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:10:14.117+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:10:14.118+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:10:14.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.028 seconds
+[2025-03-11T13:10:45.192+0000] {processor.py:161} INFO - Started process (PID=6217) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:10:45.193+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:10:45.194+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:10:45.194+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:10:45.203+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:10:45.203+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:10:45.204+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:10:45.220+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.031 seconds
+[2025-03-11T13:11:15.356+0000] {processor.py:161} INFO - Started process (PID=6229) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:11:15.357+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:11:15.359+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:11:15.358+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:11:15.369+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:11:15.368+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:11:15.369+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:11:15.388+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.034 seconds
+[2025-03-11T13:11:46.327+0000] {processor.py:161} INFO - Started process (PID=6241) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:11:46.328+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:11:46.329+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:11:46.329+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:11:46.339+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:11:46.338+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:11:46.340+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:11:46.361+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.037 seconds
+[2025-03-11T13:12:16.483+0000] {processor.py:161} INFO - Started process (PID=6253) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:12:16.484+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:12:16.484+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:12:16.484+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:12:16.493+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:12:16.492+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:12:16.493+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:12:16.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.030 seconds
+[2025-03-11T13:12:47.084+0000] {processor.py:161} INFO - Started process (PID=6265) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:12:47.085+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:12:47.086+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:12:47.086+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:12:47.095+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:12:47.094+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:12:47.095+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:12:47.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.029 seconds
+[2025-03-11T13:13:17.448+0000] {processor.py:161} INFO - Started process (PID=6277) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:13:17.449+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:13:17.450+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:13:17.450+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:13:17.462+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:13:17.461+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:13:17.463+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:13:17.485+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.040 seconds
+[2025-03-11T13:13:47.579+0000] {processor.py:161} INFO - Started process (PID=6289) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:13:47.580+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:13:47.581+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:13:47.581+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:13:47.591+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:13:47.590+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:13:47.591+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:13:47.610+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.033 seconds
+[2025-03-11T13:14:18.636+0000] {processor.py:161} INFO - Started process (PID=6301) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:14:18.637+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:14:18.638+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:14:18.638+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:14:18.648+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:14:18.647+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:14:18.648+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:14:18.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.037 seconds
+[2025-03-11T13:14:48.768+0000] {processor.py:161} INFO - Started process (PID=6313) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:14:48.769+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:14:48.770+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:14:48.770+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:14:48.779+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:14:48.778+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:14:48.780+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:14:48.798+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.032 seconds
+[2025-03-11T13:15:19.742+0000] {processor.py:161} INFO - Started process (PID=6325) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:15:19.743+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:15:19.744+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:15:19.743+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:15:19.754+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:15:19.753+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:15:19.754+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:15:19.774+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.035 seconds
+[2025-03-11T13:15:49.866+0000] {processor.py:161} INFO - Started process (PID=6337) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:15:49.867+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:15:49.868+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:15:49.868+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:15:49.879+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:15:49.878+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:15:49.880+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:15:49.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.038 seconds
+[2025-03-11T13:16:20.773+0000] {processor.py:161} INFO - Started process (PID=6349) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:16:20.774+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:16:20.775+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:16:20.775+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:16:20.786+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:16:20.785+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:16:20.787+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:16:20.810+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.040 seconds
+[2025-03-11T13:16:51.039+0000] {processor.py:161} INFO - Started process (PID=6361) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:16:51.040+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:16:51.041+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:16:51.041+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:16:51.052+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:16:51.051+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:16:51.053+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:16:51.074+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.038 seconds
+[2025-03-11T13:17:22.245+0000] {processor.py:161} INFO - Started process (PID=6373) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:17:22.247+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:17:22.247+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:17:22.247+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:17:22.257+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:17:22.257+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 18
+    ВАШ КОД НУЖНО ОТПРАВИТЬ В XCOM ТОЛЬКО ЗНАЧЕНИЕ report_id
+           ^
+SyntaxError: invalid syntax
+[2025-03-11T13:17:22.258+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:17:22.283+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.041 seconds
+[2025-03-11T13:17:32.350+0000] {processor.py:161} INFO - Started process (PID=6374) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:17:32.351+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:17:32.352+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:17:32.352+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:17:32.375+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:17:32.367+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:17:32.376+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:17:32.411+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.064 seconds
+[2025-03-11T13:18:03.265+0000] {processor.py:161} INFO - Started process (PID=6386) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:18:03.266+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:18:03.267+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:18:03.267+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:18:03.277+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:18:03.275+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:18:03.277+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:18:03.293+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.030 seconds
+[2025-03-11T13:18:34.361+0000] {processor.py:161} INFO - Started process (PID=6398) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:18:34.362+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:18:34.363+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:18:34.362+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:18:34.372+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:18:34.369+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:18:34.372+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:18:34.387+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.028 seconds
+[2025-03-11T13:19:05.212+0000] {processor.py:161} INFO - Started process (PID=6410) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:19:05.213+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:19:05.214+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:19:05.214+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:19:05.223+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:19:05.221+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:19:05.224+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:19:05.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.028 seconds
+[2025-03-11T13:19:36.397+0000] {processor.py:161} INFO - Started process (PID=6422) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:19:36.397+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:19:36.398+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:19:36.398+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:19:36.408+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:19:36.406+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:19:36.409+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:19:36.426+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.032 seconds
+[2025-03-11T13:20:07.455+0000] {processor.py:161} INFO - Started process (PID=6434) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:20:07.456+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:20:07.456+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:20:07.456+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:20:07.467+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:20:07.463+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:20:07.467+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:20:07.483+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.030 seconds
+[2025-03-11T13:20:38.373+0000] {processor.py:161} INFO - Started process (PID=6446) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:20:38.374+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:20:38.375+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:20:38.374+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:20:38.389+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:20:38.385+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:20:38.390+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:20:38.408+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.039 seconds
+[2025-03-11T13:21:09.172+0000] {processor.py:161} INFO - Started process (PID=6458) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:21:09.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:21:09.174+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:21:09.174+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:21:09.185+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:21:09.182+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:21:09.186+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:21:09.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.034 seconds
+[2025-03-11T13:21:40.190+0000] {processor.py:161} INFO - Started process (PID=6470) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:21:40.191+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:21:40.192+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:21:40.192+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:21:40.202+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:21:40.199+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:21:40.202+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:21:40.219+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.030 seconds
+[2025-03-11T13:22:11.152+0000] {processor.py:161} INFO - Started process (PID=6482) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:22:11.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:22:11.154+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:22:11.154+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:22:11.165+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:22:11.162+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:22:11.165+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:22:11.185+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.035 seconds
+[2025-03-11T13:22:42.096+0000] {processor.py:161} INFO - Started process (PID=6494) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:22:42.097+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:22:42.098+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:22:42.098+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:22:42.109+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:22:42.106+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:22:42.109+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:22:42.129+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.036 seconds
+[2025-03-11T13:23:12.989+0000] {processor.py:161} INFO - Started process (PID=6506) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:23:12.990+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:23:12.991+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:23:12.991+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:23:13.003+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:23:13.000+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:23:13.004+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:23:13.027+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.040 seconds
+[2025-03-11T13:23:44.047+0000] {processor.py:161} INFO - Started process (PID=6518) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:23:44.048+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:23:44.049+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:23:44.048+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:23:44.059+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:23:44.056+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:23:44.060+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:23:44.078+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.033 seconds
+[2025-03-11T13:24:15.156+0000] {processor.py:161} INFO - Started process (PID=6530) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:24:15.157+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:24:15.158+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:24:15.157+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:24:15.167+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:24:15.165+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:24:15.168+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:24:15.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.033 seconds
+[2025-03-11T13:24:46.224+0000] {processor.py:161} INFO - Started process (PID=6542) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:24:46.225+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:24:46.225+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:24:46.225+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:24:46.235+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:24:46.232+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:24:46.236+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:24:46.253+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.031 seconds
+[2025-03-11T13:25:17.100+0000] {processor.py:161} INFO - Started process (PID=6554) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:25:17.100+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:25:17.101+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:25:17.101+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:25:17.110+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:25:17.108+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:25:17.111+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:25:17.126+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.028 seconds
+[2025-03-11T13:25:48.093+0000] {processor.py:161} INFO - Started process (PID=6566) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:25:48.093+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:25:48.094+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:25:48.094+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:25:48.104+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:25:48.101+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:25:48.104+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:25:48.123+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.032 seconds
+[2025-03-11T13:26:18.962+0000] {processor.py:161} INFO - Started process (PID=6578) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:26:18.963+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:26:18.964+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:26:18.963+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:26:18.974+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:26:18.971+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:26:18.974+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:26:18.990+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.032 seconds
+[2025-03-11T13:26:49.916+0000] {processor.py:161} INFO - Started process (PID=6590) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:26:49.917+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:26:49.918+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:26:49.918+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:26:49.929+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:26:49.927+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:26:49.930+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:26:49.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.033 seconds
+[2025-03-11T13:27:20.979+0000] {processor.py:161} INFO - Started process (PID=6602) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:27:20.980+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:27:20.981+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:27:20.980+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:27:20.992+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:27:20.989+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:27:20.992+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:27:21.015+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.039 seconds
+[2025-03-11T13:27:51.861+0000] {processor.py:161} INFO - Started process (PID=6614) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:27:51.862+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:27:51.862+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:27:51.862+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:27:51.873+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:27:51.869+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:27:51.873+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:27:51.888+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.029 seconds
+[2025-03-11T13:28:22.930+0000] {processor.py:161} INFO - Started process (PID=6626) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:28:22.931+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:28:22.932+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:28:22.932+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:28:22.944+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:28:22.941+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:28:22.944+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:28:22.963+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.036 seconds
+[2025-03-11T13:28:53.785+0000] {processor.py:161} INFO - Started process (PID=6638) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:28:53.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:28:53.787+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:28:53.787+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:28:53.798+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:28:53.795+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:28:53.798+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:28:53.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.032 seconds
+[2025-03-11T13:29:24.648+0000] {processor.py:161} INFO - Started process (PID=6650) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:29:24.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:29:24.649+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:29:24.649+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:29:24.660+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:29:24.657+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:29:24.660+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:29:24.678+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.033 seconds
+[2025-03-11T13:29:55.710+0000] {processor.py:161} INFO - Started process (PID=6662) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:29:55.711+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:29:55.712+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:29:55.711+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:29:55.724+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:29:55.721+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:29:55.725+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:29:55.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.037 seconds
+[2025-03-11T13:30:25.935+0000] {processor.py:161} INFO - Started process (PID=6674) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:30:25.937+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:30:25.938+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:30:25.937+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:30:25.950+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:30:25.947+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:30:25.951+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:30:25.972+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.039 seconds
+[2025-03-11T13:30:56.408+0000] {processor.py:161} INFO - Started process (PID=6686) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:30:56.409+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:30:56.410+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:30:56.410+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:30:56.421+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:30:56.418+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:30:56.421+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:30:56.438+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.032 seconds
+[2025-03-11T13:31:27.369+0000] {processor.py:161} INFO - Started process (PID=6698) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:31:27.370+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:31:27.371+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:31:27.370+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:31:27.380+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:31:27.377+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:31:27.381+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:31:27.396+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.029 seconds
+[2025-03-11T13:31:58.329+0000] {processor.py:161} INFO - Started process (PID=6710) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:31:58.329+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:31:58.330+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:31:58.330+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:31:58.340+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:31:58.337+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:31:58.340+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:31:58.356+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.029 seconds
+[2025-03-11T13:32:29.266+0000] {processor.py:161} INFO - Started process (PID=6722) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:32:29.268+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:32:29.269+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:32:29.268+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:32:29.280+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:32:29.277+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:32:29.281+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:32:29.304+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.040 seconds
+[2025-03-11T13:32:59.497+0000] {processor.py:161} INFO - Started process (PID=6734) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:32:59.498+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:32:59.499+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:32:59.499+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:32:59.511+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:32:59.507+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:32:59.511+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:32:59.530+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.036 seconds
+[2025-03-11T13:33:30.248+0000] {processor.py:161} INFO - Started process (PID=6746) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:33:30.249+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:33:30.250+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:33:30.249+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:33:30.259+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:33:30.256+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:33:30.259+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:33:30.274+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.028 seconds
+[2025-03-11T13:34:01.320+0000] {processor.py:161} INFO - Started process (PID=6758) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:34:01.321+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:34:01.322+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:34:01.322+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:34:01.331+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:34:01.329+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:34:01.331+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:34:01.346+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.028 seconds
+[2025-03-11T13:34:31.447+0000] {processor.py:161} INFO - Started process (PID=6770) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:34:31.448+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:34:31.449+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:34:31.449+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:34:31.462+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:34:31.458+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:34:31.462+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:34:31.480+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.035 seconds
+[2025-03-11T13:35:02.215+0000] {processor.py:161} INFO - Started process (PID=6782) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:35:02.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:35:02.217+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:35:02.216+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:35:02.229+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:35:02.225+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:35:02.230+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:35:02.247+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.035 seconds
+[2025-03-11T13:35:32.904+0000] {processor.py:161} INFO - Started process (PID=6794) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:35:32.905+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:35:32.905+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:35:32.905+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:35:32.915+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:35:32.912+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:35:32.915+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:35:32.931+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.029 seconds
+[2025-03-11T13:36:03.520+0000] {processor.py:161} INFO - Started process (PID=6806) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:36:03.521+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:36:03.522+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:36:03.522+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:36:03.533+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:36:03.530+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:36:03.533+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:36:03.553+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.035 seconds
+[2025-03-11T13:36:33.636+0000] {processor.py:161} INFO - Started process (PID=6818) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:36:33.637+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:36:33.638+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:36:33.638+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:36:33.650+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:36:33.647+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:36:33.651+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:36:33.671+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.037 seconds
+[2025-03-11T13:37:04.615+0000] {processor.py:161} INFO - Started process (PID=6830) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:37:04.616+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:37:04.616+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:37:04.616+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:37:04.625+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:37:04.623+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:37:04.626+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:37:04.642+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.029 seconds
+[2025-03-11T13:37:35.580+0000] {processor.py:161} INFO - Started process (PID=6842) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:37:35.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:37:35.582+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:37:35.582+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:37:35.594+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:37:35.590+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:37:35.594+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:37:35.612+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.035 seconds
+[2025-03-11T13:38:06.551+0000] {processor.py:161} INFO - Started process (PID=6854) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:38:06.552+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:38:06.553+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:38:06.553+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:38:06.563+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:38:06.561+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:38:06.564+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:38:06.580+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.032 seconds
+[2025-03-11T13:38:37.506+0000] {processor.py:161} INFO - Started process (PID=6866) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:38:37.507+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:38:37.508+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:38:37.508+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:38:37.519+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:38:37.516+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:38:37.520+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:38:37.538+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.034 seconds
+[2025-03-11T13:39:08.479+0000] {processor.py:161} INFO - Started process (PID=6878) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:39:08.480+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:39:08.481+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:39:08.480+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:39:08.490+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:39:08.487+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:39:08.490+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:39:08.507+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.031 seconds
+[2025-03-11T13:39:39.439+0000] {processor.py:161} INFO - Started process (PID=6890) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:39:39.440+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:39:39.441+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:39:39.441+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:39:39.450+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:39:39.448+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:39:39.451+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:39:39.467+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.029 seconds
+[2025-03-11T13:40:10.512+0000] {processor.py:161} INFO - Started process (PID=6902) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:40:10.513+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:40:10.514+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:40:10.513+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:40:10.524+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:40:10.521+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:40:10.525+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:40:10.543+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.035 seconds
+[2025-03-11T13:40:41.588+0000] {processor.py:161} INFO - Started process (PID=6914) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:40:41.589+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:40:41.590+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:40:41.590+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:40:41.599+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:40:41.597+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:40:41.600+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:40:41.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.028 seconds
+[2025-03-11T13:41:12.666+0000] {processor.py:161} INFO - Started process (PID=6926) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:41:12.666+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:41:12.667+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:41:12.667+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:41:12.678+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:41:12.675+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:41:12.678+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:41:12.694+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.030 seconds
+[2025-03-11T13:41:43.756+0000] {processor.py:161} INFO - Started process (PID=6938) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:41:43.757+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:41:43.759+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:41:43.758+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:41:43.779+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:41:43.773+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:41:43.780+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:41:43.809+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.056 seconds
+[2025-03-11T13:42:14.855+0000] {processor.py:161} INFO - Started process (PID=6950) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:42:14.856+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:42:14.857+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:42:14.857+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:42:14.869+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:42:14.866+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:42:14.870+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:42:14.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.040 seconds
+[2025-03-11T13:42:45.010+0000] {processor.py:161} INFO - Started process (PID=6962) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:42:45.011+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:42:45.011+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:42:45.011+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:42:45.021+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:42:45.018+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:42:45.022+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:42:45.042+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.034 seconds
+[2025-03-11T13:42:46.151+0000] {processor.py:161} INFO - Started process (PID=6963) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:42:46.152+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:42:46.153+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:42:46.152+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:42:46.169+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:42:46.166+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:42:46.170+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:42:46.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.038 seconds
+[2025-03-11T13:43:17.139+0000] {processor.py:161} INFO - Started process (PID=6975) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:43:17.140+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:43:17.142+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:17.141+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:43:17.158+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:17.153+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/5_2_sencor.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/5_2_sencor.py", line 10, in <module>
+    dag = DAG(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dag.py", line 498, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'ВАШЕ ИМЯ' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-03-11T13:43:17.158+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:43:17.185+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.050 seconds
+[2025-03-11T13:43:23.743+0000] {processor.py:161} INFO - Started process (PID=6976) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:43:23.744+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:43:23.745+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:23.745+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:43:23.773+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:43:23.779+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:43:23.876+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:23.876+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:5_2_sencor
+[2025-03-11T13:43:23.887+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:23.887+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:5_2_sencor
+[2025-03-11T13:43:23.895+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:23.894+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:5_2_sencor
+[2025-03-11T13:43:23.895+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:23.895+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:43:23.906+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:23.906+0000] {dag.py:3058} INFO - Creating ORM DAG for 5_2_sencor
+[2025-03-11T13:43:23.907+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:23.907+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:43:23.937+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.196 seconds
+[2025-03-11T13:43:54.672+0000] {processor.py:161} INFO - Started process (PID=6988) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:43:54.673+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:43:54.674+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:54.674+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:43:54.688+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:43:54.694+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:43:54.710+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:54.710+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:43:54.719+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:54.719+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:43:54.741+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.072 seconds
+[2025-03-11T13:43:58.662+0000] {processor.py:161} INFO - Started process (PID=6991) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:43:58.663+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:43:58.664+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:58.663+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:43:58.686+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:43:58.692+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:43:58.784+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:58.783+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:43:58.802+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:43:58.801+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:43:58.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.191 seconds
+[2025-03-11T13:44:30.314+0000] {processor.py:161} INFO - Started process (PID=7021) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:44:30.315+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:44:30.315+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:44:30.315+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:44:30.329+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:44:30.333+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:44:30.346+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:44:30.346+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:44:30.355+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:44:30.355+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:44:30.380+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.069 seconds
+[2025-03-11T13:45:01.389+0000] {processor.py:161} INFO - Started process (PID=7033) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:45:01.390+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:45:01.391+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:45:01.391+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:45:01.408+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:45:01.412+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:45:01.427+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:45:01.427+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:45:01.436+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:45:01.436+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:45:01.458+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.072 seconds
+[2025-03-11T13:45:32.330+0000] {processor.py:161} INFO - Started process (PID=7045) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:45:32.331+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:45:32.332+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:45:32.331+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:45:32.345+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:45:32.348+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:45:32.363+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:45:32.363+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:45:32.374+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:45:32.374+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:45:32.395+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.067 seconds
+[2025-03-11T13:46:03.780+0000] {processor.py:161} INFO - Started process (PID=7057) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:46:03.782+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:46:03.783+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:46:03.782+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:46:03.797+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:46:03.802+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:46:03.819+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:46:03.819+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:46:03.830+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:46:03.829+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:46:03.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.078 seconds
+[2025-03-11T13:46:34.456+0000] {processor.py:161} INFO - Started process (PID=7069) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:46:34.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:46:34.459+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:46:34.458+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:46:34.473+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:46:34.477+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:46:34.494+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:46:34.494+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:46:34.505+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:46:34.505+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:46:34.530+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.077 seconds
+[2025-03-11T13:47:05.282+0000] {processor.py:161} INFO - Started process (PID=7081) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:47:05.283+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:47:05.284+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:47:05.284+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:47:05.298+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:47:05.302+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:47:05.319+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:47:05.318+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:47:05.329+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:47:05.329+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:47:05.352+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.073 seconds
+[2025-03-11T13:47:36.179+0000] {processor.py:161} INFO - Started process (PID=7093) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:47:36.181+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:47:36.182+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:47:36.182+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:47:36.200+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:47:36.206+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:47:36.226+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:47:36.225+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:47:36.241+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:47:36.241+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:47:36.299+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.124 seconds
+[2025-03-11T13:48:05.565+0000] {processor.py:161} INFO - Started process (PID=7103) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:48:05.566+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:48:05.567+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:48:05.567+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:48:05.587+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:48:05.597+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:48:05.635+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:48:05.634+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:48:05.653+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:48:05.652+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:48:05.703+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.139 seconds
+[2025-03-11T13:48:36.009+0000] {processor.py:161} INFO - Started process (PID=7115) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:48:36.010+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:48:36.011+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:48:36.011+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:48:36.022+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:48:36.026+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:48:36.092+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:48:36.092+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:48:36.098+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:48:36.098+0000] {dag.py:3058} INFO - Creating ORM DAG for 5_2_sencor
+[2025-03-11T13:48:36.099+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:48:36.099+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:48:36.116+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.109 seconds
+[2025-03-11T13:49:06.454+0000] {processor.py:161} INFO - Started process (PID=7144) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:49:06.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:49:06.456+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:49:06.456+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:49:06.468+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:49:06.471+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:49:06.483+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:49:06.483+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:49:06.491+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:49:06.491+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:49:06.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.058 seconds
+[2025-03-11T13:49:37.099+0000] {processor.py:161} INFO - Started process (PID=7156) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:49:37.100+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:49:37.101+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:49:37.100+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:49:37.114+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:49:37.117+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:49:37.131+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:49:37.131+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:49:37.140+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:49:37.140+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:49:37.161+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.065 seconds
+[2025-03-11T13:50:07.521+0000] {processor.py:161} INFO - Started process (PID=7168) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:50:07.522+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:50:07.523+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:50:07.522+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:50:07.541+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:50:07.546+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:50:07.580+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:50:07.580+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:50:07.598+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:50:07.596+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:50:07.636+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.120 seconds
+[2025-03-11T13:50:38.126+0000] {processor.py:161} INFO - Started process (PID=7180) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:50:38.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:50:38.127+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:50:38.127+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:50:38.141+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:50:38.144+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:50:38.159+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:50:38.158+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:50:38.169+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:50:38.168+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:50:38.191+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.068 seconds
+[2025-03-11T13:51:09.034+0000] {processor.py:161} INFO - Started process (PID=7192) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:51:09.035+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:51:09.036+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:51:09.035+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:51:09.051+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:51:09.054+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:51:09.071+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:51:09.070+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:51:09.080+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:51:09.080+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:51:09.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.072 seconds
+[2025-03-11T13:51:39.791+0000] {processor.py:161} INFO - Started process (PID=7204) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:51:39.792+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:51:39.793+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:51:39.792+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:51:39.808+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:51:39.812+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:51:39.827+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:51:39.826+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:51:39.836+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:51:39.836+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:51:39.860+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.072 seconds
+[2025-03-11T13:52:10.236+0000] {processor.py:161} INFO - Started process (PID=7216) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:52:10.237+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:52:10.238+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:52:10.238+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:52:10.253+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:52:10.257+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:52:10.274+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:52:10.274+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:52:10.284+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:52:10.284+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:52:10.307+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.073 seconds
+[2025-03-11T13:52:40.973+0000] {processor.py:161} INFO - Started process (PID=7228) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:52:40.974+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:52:40.975+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:52:40.975+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:52:40.987+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:52:40.990+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:52:41.002+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:52:41.002+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:52:41.010+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:52:41.010+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:52:41.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.056 seconds
+[2025-03-11T13:53:11.229+0000] {processor.py:161} INFO - Started process (PID=7240) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:53:11.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:53:11.231+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:53:11.231+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:53:11.248+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:53:11.252+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:53:11.269+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:53:11.269+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:53:11.278+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:53:11.278+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:53:11.303+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.077 seconds
+[2025-03-11T13:53:41.873+0000] {processor.py:161} INFO - Started process (PID=7252) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:53:41.874+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:53:41.875+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:53:41.875+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:53:41.889+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:53:41.894+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:53:41.909+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:53:41.909+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:53:41.920+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:53:41.919+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:53:41.944+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.073 seconds
+[2025-03-11T13:54:11.991+0000] {processor.py:161} INFO - Started process (PID=7264) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:54:11.992+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:54:11.993+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:54:11.993+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:54:12.006+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:54:12.009+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:54:12.023+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:54:12.022+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:54:12.031+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:54:12.031+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:54:12.050+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.061 seconds
+[2025-03-11T13:54:42.645+0000] {processor.py:161} INFO - Started process (PID=7276) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:54:42.646+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:54:42.647+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:54:42.647+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:54:42.661+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:54:42.665+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:54:42.680+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:54:42.679+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:54:42.690+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:54:42.689+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:54:42.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.068 seconds
+[2025-03-11T13:55:13.785+0000] {processor.py:161} INFO - Started process (PID=7288) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:55:13.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:55:13.786+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:55:13.786+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:55:13.800+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:55:13.803+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:55:13.817+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:55:13.817+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:55:13.827+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:55:13.827+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:55:13.848+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.066 seconds
+[2025-03-11T13:55:44.793+0000] {processor.py:161} INFO - Started process (PID=7300) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:55:44.794+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:55:44.794+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:55:44.794+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:55:44.808+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:55:44.812+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:55:44.830+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:55:44.829+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:55:44.839+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:55:44.839+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:55:44.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.077 seconds
+[2025-03-11T13:56:14.908+0000] {processor.py:161} INFO - Started process (PID=7329) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:56:14.909+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:56:14.910+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:56:14.910+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:56:14.926+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:56:14.930+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:56:14.946+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:56:14.946+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:56:14.957+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:56:14.957+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:56:14.994+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.089 seconds
+[2025-03-11T13:56:45.699+0000] {processor.py:161} INFO - Started process (PID=7341) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:56:45.700+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:56:45.700+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:56:45.700+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:56:45.713+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:56:45.716+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:56:45.730+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:56:45.730+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:56:45.738+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:56:45.738+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:56:45.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.062 seconds
+[2025-03-11T13:57:16.077+0000] {processor.py:161} INFO - Started process (PID=7353) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:57:16.078+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:57:16.080+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:57:16.079+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:57:16.095+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:57:16.099+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:57:16.118+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:57:16.118+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:57:16.130+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:57:16.130+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:57:16.154+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.082 seconds
+[2025-03-11T13:57:46.919+0000] {processor.py:161} INFO - Started process (PID=7365) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:57:46.920+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:57:46.921+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:57:46.921+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:57:46.934+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:57:46.937+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:57:47.006+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:57:47.005+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:57:47.013+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:57:47.012+0000] {dag.py:3058} INFO - Creating ORM DAG for 5_2_sencor
+[2025-03-11T13:57:47.013+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:57:47.013+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:57:47.034+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.117 seconds
+[2025-03-11T13:58:17.886+0000] {processor.py:161} INFO - Started process (PID=7392) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:58:17.887+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:58:17.888+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:58:17.888+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:58:17.901+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:58:17.905+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:58:17.920+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:58:17.920+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:58:17.929+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:58:17.929+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:58:17.948+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.064 seconds
+[2025-03-11T13:58:49.124+0000] {processor.py:161} INFO - Started process (PID=7404) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:58:49.125+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:58:49.125+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:58:49.125+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:58:49.139+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:58:49.143+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:58:49.161+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:58:49.160+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:58:49.173+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:58:49.172+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:58:49.202+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.081 seconds
+[2025-03-11T13:59:19.508+0000] {processor.py:161} INFO - Started process (PID=7415) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:59:19.509+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:59:19.510+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:59:19.510+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:59:19.523+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:59:19.526+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:59:19.541+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:59:19.540+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:59:19.552+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:59:19.552+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:59:19.579+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.073 seconds
+[2025-03-11T13:59:49.628+0000] {processor.py:161} INFO - Started process (PID=7427) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:59:49.629+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T13:59:49.630+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:59:49.629+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:59:49.645+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T13:59:49.652+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T13:59:49.678+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:59:49.677+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T13:59:49.691+0000] {logging_mixin.py:188} INFO - [2025-03-11T13:59:49.691+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T13:59:49.718+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.093 seconds
+[2025-03-11T14:00:20.106+0000] {processor.py:161} INFO - Started process (PID=7437) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:00:20.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T14:00:20.112+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:00:20.111+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:00:20.138+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T14:00:20.148+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:00:20.196+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:00:20.195+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:00:20.218+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:00:20.217+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T14:00:20.261+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.158 seconds
+[2025-03-11T14:00:51.100+0000] {processor.py:161} INFO - Started process (PID=7449) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:00:51.101+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T14:00:51.103+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:00:51.102+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:00:51.120+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T14:00:51.134+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:00:51.157+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:00:51.156+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:00:51.169+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:00:51.169+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T14:00:51.199+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.102 seconds
+[2025-03-11T14:01:21.365+0000] {processor.py:161} INFO - Started process (PID=7461) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:01:21.366+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T14:01:21.367+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:01:21.366+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:01:21.380+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T14:01:21.384+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:01:21.398+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:01:21.398+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:01:21.406+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:01:21.406+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T14:01:21.427+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.065 seconds
+[2025-03-11T14:01:52.034+0000] {processor.py:161} INFO - Started process (PID=7473) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:01:52.035+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T14:01:52.036+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:01:52.035+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:01:52.049+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T14:01:52.052+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:01:52.124+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:01:52.123+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:01:52.132+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:01:52.132+0000] {dag.py:3058} INFO - Creating ORM DAG for 5_2_sencor
+[2025-03-11T14:01:52.133+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:01:52.133+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T14:01:52.162+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.130 seconds
+[2025-03-11T14:02:28.408+0000] {processor.py:161} INFO - Started process (PID=7516) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:02:28.409+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T14:02:28.410+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:02:28.409+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:02:28.429+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T14:02:28.439+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:02:28.467+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:02:28.466+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:02:28.480+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:02:28.480+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T14:02:28.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.111 seconds
+[2025-03-11T14:02:58.623+0000] {processor.py:161} INFO - Started process (PID=7528) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:02:58.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T14:02:58.625+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:02:58.624+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:02:58.638+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T14:02:58.641+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:02:58.655+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:02:58.655+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:02:58.663+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:02:58.663+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T14:02:58.683+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.062 seconds
+[2025-03-11T14:03:28.748+0000] {processor.py:161} INFO - Started process (PID=7540) to work on /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:03:28.750+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_2_sencor.py for tasks to queue
+[2025-03-11T14:03:28.753+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:03:28.750+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:03:28.780+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-03-11T14:03:28.785+0000] {processor.py:840} INFO - DAG(s) '5_2_sencor' retrieved from /opt/airflow/dags/5_2_sencor.py
+[2025-03-11T14:03:28.805+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:03:28.805+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:03:28.814+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:03:28.813+0000] {dag.py:3823} INFO - Setting next_dagrun for 5_2_sencor to None, run_after=None
+[2025-03-11T14:03:28.835+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_2_sencor.py took 0.091 seconds

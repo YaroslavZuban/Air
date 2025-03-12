@@ -88,3 +88,42 @@ xml.etree.ElementTree.ParseError: not well-formed (invalid token): line 1, colum
 [2025-03-10T09:48:27.793+0000] {python.py:201} INFO - Done. Returned value was: None
 [2025-03-10T09:48:27.796+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=4_4_house_assignment, task_id=transform_data, execution_date=20240102T000000, start_date=20250310T094827, end_date=20250310T094827
 [2025-03-10T09:48:27.840+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-12T14:46:00.201+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 4_4_house_assignment.transform_data scheduled__2024-01-02T00:00:00+00:00 [queued]>
+[2025-03-12T14:46:00.208+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 4_4_house_assignment.transform_data scheduled__2024-01-02T00:00:00+00:00 [queued]>
+[2025-03-12T14:46:00.209+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-12T14:46:00.219+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data> on 2024-01-02 00:00:00+00:00
+[2025-03-12T14:46:00.225+0000] {standard_task_runner.py:60} INFO - Started process 2094 to run task
+[2025-03-12T14:46:00.227+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '4_4_house_assignment', 'transform_data', 'scheduled__2024-01-02T00:00:00+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/4_4_house_assignment.py', '--cfg-path', '/tmp/tmpe8puy2sj']
+[2025-03-12T14:46:00.229+0000] {standard_task_runner.py:88} INFO - Job 18: Subtask transform_data
+[2025-03-12T14:46:00.258+0000] {task_command.py:423} INFO - Running <TaskInstance: 4_4_house_assignment.transform_data scheduled__2024-01-02T00:00:00+00:00 [running]> on host 13d00b3af9e0
+[2025-03-12T14:46:00.300+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='4_4_house_assignment' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-02T00:00:00+00:00'
+[2025-03-12T14:46:00.302+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/4_4_house_assignment.py", line 47, in transform_data
+    tree = ET.parse(s_file, parser=parser).getroot()
+  File "/usr/local/lib/python3.9/xml/etree/ElementTree.py", line 1222, in parse
+    tree.parse(source, parser)
+  File "/usr/local/lib/python3.9/xml/etree/ElementTree.py", line 586, in parse
+    parser.feed(data)
+xml.etree.ElementTree.ParseError: not well-formed (invalid token): line 1, column 0
+[2025-03-12T14:46:00.306+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=4_4_house_assignment, task_id=transform_data, execution_date=20240102T000000, start_date=20250312T144600, end_date=20250312T144600
+[2025-03-12T14:46:00.315+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 18 for task transform_data (not well-formed (invalid token): line 1, column 0; 2094)
+[2025-03-12T14:46:00.360+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-12T14:50:28.726+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 4_4_house_assignment.transform_data scheduled__2024-01-02T00:00:00+00:00 [queued]>
+[2025-03-12T14:50:28.734+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 4_4_house_assignment.transform_data scheduled__2024-01-02T00:00:00+00:00 [queued]>
+[2025-03-12T14:50:28.735+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-12T14:50:28.753+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_data> on 2024-01-02 00:00:00+00:00
+[2025-03-12T14:50:28.759+0000] {standard_task_runner.py:60} INFO - Started process 2447 to run task
+[2025-03-12T14:50:28.761+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '4_4_house_assignment', 'transform_data', 'scheduled__2024-01-02T00:00:00+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/4_4_house_assignment.py', '--cfg-path', '/tmp/tmpxvb4jvkp']
+[2025-03-12T14:50:28.763+0000] {standard_task_runner.py:88} INFO - Job 20: Subtask transform_data
+[2025-03-12T14:50:28.795+0000] {task_command.py:423} INFO - Running <TaskInstance: 4_4_house_assignment.transform_data scheduled__2024-01-02T00:00:00+00:00 [running]> on host 13d00b3af9e0
+[2025-03-12T14:50:28.854+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='4_4_house_assignment' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-02T00:00:00+00:00'
+[2025-03-12T14:50:28.871+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-03-12T14:50:28.876+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=4_4_house_assignment, task_id=transform_data, execution_date=20240102T000000, start_date=20250312T145028, end_date=20250312T145028
+[2025-03-12T14:50:28.935+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0

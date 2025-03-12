@@ -12,6 +12,8 @@ from airflow.models import Variable
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow_clickhouse_plugin.operators.clickhouse import ClickHouseOperator
+from airflow.providers.telegram.operators.telegram import TelegramOperator
+from airflow.exceptions import AirflowException
 from airflow.utils.dates import days_ago
 
 # Настройка подключения к базе данных ClickHouse
@@ -74,15 +76,41 @@ def upload_to_clickhouse(csv_file, table_name, client):
     # Запись data frame в ClickHouse
     client.execute(f'INSERT INTO {table_name} VALUES', data_frame.to_dict('records')) 
 
-# Определяем DAG, это контейнер для описания нашего пайплайна
-dag = DAG(
-     '4_4_house_assignment',
-    schedule_interval='@daily',      
+# Функция, которая вызывает исключение
+def raise_exc():
+    raise AirflowException("This task is designed to fail.")
+
+# Функция для отправки сообщения в Telegram через on_failure_callback
+def notify_failure(context):
+    task_instance = context['task_instance']
+    error_message = f"Task {task_instance.task_id} failed with exception: {context['exception']}"
     
+    # Используем TelegramOperator для отправки сообщения
+    telegram_op = TelegramOperator(
+        task_id='send_telegram_message',
+        telegram_conn_id='telegram_id',  # Укажите ваш conn_id
+        #chat_id='YOUR_CHAT_ID',  # Укажите chat_id, если он не указан в соединении
+        text=error_message
+    )
+    
+    telegram_op.execute(context)
+
+
+# Определяем DAG, это контейнер для описания нашего пайплайна
+default_args = {
+    'owner': 'airflow',
+    'on_failure_callback': notify_failure  # Указываем callback для провала
+}
+
+dag = DAG(
+     '5_2_2_house_assignment',
+     schedule_interval='@daily',      
+    default_args= default_args,
     # Начало и конец загрузки 
      start_date=datetime(2024,1,1),
      end_date=datetime(2024,1,5),
      max_active_runs=1,
+     
      tags=['examples']
 )
 
@@ -125,4 +153,4 @@ task_upload = PythonOperator(
 )
 
 # Связываем задачи в соответствующих дагах. Посмотреть связь можно здесь 
-task_extract >> task_transform >> task_created_db >>task_upload
+task_extract >> task_transform >> task_created_db >> task_upload

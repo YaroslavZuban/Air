@@ -20,6 +20,7 @@ def notify_failure(context):
         #chat_id='YOUR_CHAT_ID',  # Укажите chat_id, если он не указан в соединении
         text=error_message
     )
+    
     telegram_op.execute(context)
 
 # Аргументы DAG

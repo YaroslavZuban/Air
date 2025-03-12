@@ -1,0 +1,36 @@
+[2025-03-12T14:40:00.614+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 5_2_2_house_assignment.extract_data scheduled__2024-01-02T00:00:00+00:00 [queued]>
+[2025-03-12T14:40:00.619+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 5_2_2_house_assignment.extract_data scheduled__2024-01-02T00:00:00+00:00 [queued]>
+[2025-03-12T14:40:00.619+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-12T14:40:00.631+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_data> on 2024-01-02 00:00:00+00:00
+[2025-03-12T14:40:00.637+0000] {standard_task_runner.py:60} INFO - Started process 1680 to run task
+[2025-03-12T14:40:00.642+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '5_2_2_house_assignment', 'extract_data', 'scheduled__2024-01-02T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/5_2_2_house_assignment.py', '--cfg-path', '/tmp/tmp65s1c1_o']
+[2025-03-12T14:40:00.644+0000] {standard_task_runner.py:88} INFO - Job 7: Subtask extract_data
+[2025-03-12T14:40:00.676+0000] {task_command.py:423} INFO - Running <TaskInstance: 5_2_2_house_assignment.extract_data scheduled__2024-01-02T00:00:00+00:00 [running]> on host 13d00b3af9e0
+[2025-03-12T14:40:00.732+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='5_2_2_house_assignment' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-02T00:00:00+00:00'
+[2025-03-12T14:40:01.451+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-03-12T14:40:01.457+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=5_2_2_house_assignment, task_id=extract_data, execution_date=20240102T000000, start_date=20250312T144000, end_date=20250312T144001
+[2025-03-12T14:40:01.498+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-12T14:51:30.476+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 5_2_2_house_assignment.extract_data scheduled__2024-01-02T00:00:00+00:00 [queued]>
+[2025-03-12T14:51:30.482+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 5_2_2_house_assignment.extract_data scheduled__2024-01-02T00:00:00+00:00 [queued]>
+[2025-03-12T14:51:30.482+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-12T14:51:30.501+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_data> on 2024-01-02 00:00:00+00:00
+[2025-03-12T14:51:30.509+0000] {standard_task_runner.py:60} INFO - Started process 2646 to run task
+[2025-03-12T14:51:30.512+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '5_2_2_house_assignment', 'extract_data', 'scheduled__2024-01-02T00:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/5_2_2_house_assignment.py', '--cfg-path', '/tmp/tmpzz_6fht1']
+[2025-03-12T14:51:30.514+0000] {standard_task_runner.py:88} INFO - Job 30: Subtask extract_data
+[2025-03-12T14:51:30.550+0000] {task_command.py:423} INFO - Running <TaskInstance: 5_2_2_house_assignment.extract_data scheduled__2024-01-02T00:00:00+00:00 [running]> on host 13d00b3af9e0
+[2025-03-12T14:51:30.616+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='5_2_2_house_assignment' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-02T00:00:00+00:00'
+[2025-03-12T14:51:30.944+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-03-12T14:51:30.948+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=5_2_2_house_assignment, task_id=extract_data, execution_date=20240102T000000, start_date=20250312T145130, end_date=20250312T145130
+[2025-03-12T14:51:30.966+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-12T14:53:09.866+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 5_2_2_house_assignment.extract_data scheduled__2024-01-02T00:00:00+00:00 [queued]>
+[2025-03-12T14:53:09.883+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 5_2_2_house_assignment.extract_data scheduled__2024-01-02T00:00:00+00:00 [queued]>
+[2025-03-12T14:53:09.884+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-12T14:53:09.905+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_data> on 2024-01-02 00:00:00+00:00
+[2025-03-12T14:53:09.911+0000] {standard_task_runner.py:60} INFO - Started process 2884 to run task
+[2025-03-12T14:53:09.914+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '5_2_2_house_assignment', 'extract_data', 'scheduled__2024-01-02T00:00:00+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/5_2_2_house_assignment.py', '--cfg-path', '/tmp/tmp9rrbyl5b']
+[2025-03-12T14:53:09.916+0000] {standard_task_runner.py:88} INFO - Job 9: Subtask extract_data
+[2025-03-12T14:53:09.953+0000] {task_command.py:423} INFO - Running <TaskInstance: 5_2_2_house_assignment.extract_data scheduled__2024-01-02T00:00:00+00:00 [running]> on host 13d00b3af9e0
+[2025-03-12T14:53:10.012+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='5_2_2_house_assignment' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-02T00:00:00+00:00'
+[2025-03-12T14:53:10.360+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-03-12T14:53:10.365+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=5_2_2_house_assignment, task_id=extract_data, execution_date=20240102T000000, start_date=20250312T145309, end_date=20250312T145310
+[2025-03-12T14:53:10.408+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0

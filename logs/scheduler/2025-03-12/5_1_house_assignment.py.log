@@ -1972,3 +1972,311 @@ ModuleNotFoundError: No module named 'airflow.providers.telegram'
 [2025-03-12T14:29:51.939+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:29:51.939+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-03-12T14:29:51.965+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:29:51.964+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
 [2025-03-12T14:29:51.991+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.093 seconds
+[2025-03-12T14:30:22.492+0000] {processor.py:161} INFO - Started process (PID=1309) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:30:22.493+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:30:22.495+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:30:22.494+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:30:22.511+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:30:22.535+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:30:22.535+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:30:22.554+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:30:22.554+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:30:22.577+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.087 seconds
+[2025-03-12T14:30:52.831+0000] {processor.py:161} INFO - Started process (PID=1326) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:30:52.835+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:30:52.838+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:30:52.837+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:30:52.877+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:30:52.922+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:30:52.922+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:30:52.959+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:30:52.958+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:30:52.993+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.170 seconds
+[2025-03-12T14:31:23.219+0000] {processor.py:161} INFO - Started process (PID=1343) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:31:23.219+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:31:23.220+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:31:23.220+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:31:23.234+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:31:23.252+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:31:23.252+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:31:23.269+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:31:23.269+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:31:23.288+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.071 seconds
+[2025-03-12T14:31:53.736+0000] {processor.py:161} INFO - Started process (PID=1360) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:31:53.737+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:31:53.739+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:31:53.738+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:31:53.760+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:31:53.784+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:31:53.783+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:31:53.811+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:31:53.811+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:31:53.836+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.104 seconds
+[2025-03-12T14:32:24.336+0000] {processor.py:161} INFO - Started process (PID=1377) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:32:24.337+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:32:24.339+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:32:24.339+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:32:24.360+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:32:24.388+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:32:24.388+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:32:24.415+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:32:24.415+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:32:24.443+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.112 seconds
+[2025-03-12T14:32:54.620+0000] {processor.py:161} INFO - Started process (PID=1394) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:32:54.621+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:32:54.622+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:32:54.621+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:32:54.637+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:32:54.657+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:32:54.656+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:32:54.675+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:32:54.674+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:32:54.697+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.080 seconds
+[2025-03-12T14:33:25.024+0000] {processor.py:161} INFO - Started process (PID=1411) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:33:25.025+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:33:25.026+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:33:25.026+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:33:25.041+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:33:25.059+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:33:25.059+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:33:25.075+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:33:25.075+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:33:25.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.073 seconds
+[2025-03-12T14:33:55.490+0000] {processor.py:161} INFO - Started process (PID=1428) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:33:55.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:33:55.492+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:33:55.491+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:33:55.508+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:33:55.530+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:33:55.529+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:33:55.555+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:33:55.554+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:33:55.584+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.097 seconds
+[2025-03-12T14:34:27.044+0000] {processor.py:161} INFO - Started process (PID=1445) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:34:27.046+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:34:27.047+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:34:27.047+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:34:27.067+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:34:27.090+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:34:27.090+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:34:27.108+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:34:27.108+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:34:27.132+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.091 seconds
+[2025-03-12T14:34:57.716+0000] {processor.py:161} INFO - Started process (PID=1462) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:34:57.717+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:34:57.719+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:34:57.718+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:34:57.743+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:34:57.769+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:34:57.768+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:34:57.788+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:34:57.788+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:34:57.813+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.101 seconds
+[2025-03-12T14:35:29.051+0000] {processor.py:161} INFO - Started process (PID=1479) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:35:29.052+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:35:29.053+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:35:29.053+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:35:29.069+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:35:29.089+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:35:29.088+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:35:29.106+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:35:29.106+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:35:29.126+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.077 seconds
+[2025-03-12T14:36:00.297+0000] {processor.py:161} INFO - Started process (PID=1496) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:36:00.299+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:36:00.301+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:36:00.300+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:36:00.322+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:36:00.350+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:36:00.350+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:36:00.379+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:36:00.379+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:36:00.406+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.113 seconds
+[2025-03-12T14:36:30.718+0000] {processor.py:161} INFO - Started process (PID=1511) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:36:30.720+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:36:30.721+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:36:30.721+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:36:30.738+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:36:30.757+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:36:30.756+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:36:30.773+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:36:30.773+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:36:30.794+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.079 seconds
+[2025-03-12T14:37:01.669+0000] {processor.py:161} INFO - Started process (PID=1528) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:37:01.671+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:37:01.673+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:37:01.672+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:37:01.695+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:37:01.727+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:37:01.726+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:37:01.751+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:37:01.751+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:37:01.777+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.112 seconds
+[2025-03-12T14:37:32.761+0000] {processor.py:161} INFO - Started process (PID=1545) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:37:32.762+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:37:32.763+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:37:32.762+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:37:32.777+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:37:32.798+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:37:32.798+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:37:32.815+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:37:32.815+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:37:32.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.075 seconds
+[2025-03-12T14:37:57.087+0000] {processor.py:161} INFO - Started process (PID=1557) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:37:57.088+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:37:57.089+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:37:57.089+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:37:57.111+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:37:57.189+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:37:57.189+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:37:57.374+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:37:57.374+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:37:57.407+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.323 seconds
+[2025-03-12T14:38:28.206+0000] {processor.py:161} INFO - Started process (PID=1574) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:38:28.207+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:38:28.208+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:38:28.208+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:38:28.224+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:38:28.245+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:38:28.244+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:38:28.264+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:38:28.263+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:38:28.287+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.084 seconds
+[2025-03-12T14:38:58.706+0000] {processor.py:161} INFO - Started process (PID=1589) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:38:58.707+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:38:58.708+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:38:58.708+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:38:58.722+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:38:58.742+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:38:58.741+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:38:58.761+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:38:58.761+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:38:58.792+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.088 seconds
+[2025-03-12T14:39:29.619+0000] {processor.py:161} INFO - Started process (PID=1608) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:39:29.621+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:39:29.622+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:39:29.621+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:39:29.642+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:39:29.664+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:39:29.664+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:39:29.686+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:39:29.685+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:39:29.717+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.101 seconds
+[2025-03-12T14:40:02.354+0000] {processor.py:161} INFO - Started process (PID=1681) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:40:02.355+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:40:02.356+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:40:02.355+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:40:02.372+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:40:02.394+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:40:02.394+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:40:02.414+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:40:02.414+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:40:02.431+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.080 seconds
+[2025-03-12T14:40:37.190+0000] {processor.py:161} INFO - Started process (PID=1794) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:40:37.191+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:40:37.192+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:40:37.191+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:40:37.206+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:40:37.224+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:40:37.224+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:40:37.241+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:40:37.240+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:40:37.259+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.072 seconds
+[2025-03-12T14:41:07.507+0000] {processor.py:161} INFO - Started process (PID=1849) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:41:07.508+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:41:07.510+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:41:07.509+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:41:07.528+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:41:07.552+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:41:07.551+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:41:07.577+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:41:07.576+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:41:07.602+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.097 seconds
+[2025-03-12T14:41:38.409+0000] {processor.py:161} INFO - Started process (PID=1866) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:41:38.411+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:41:38.413+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:41:38.412+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:41:38.436+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:41:38.475+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:41:38.474+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:41:38.508+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:41:38.507+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:41:38.541+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.139 seconds
+[2025-03-12T14:42:09.063+0000] {processor.py:161} INFO - Started process (PID=1883) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:42:09.064+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:42:09.065+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:42:09.064+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:42:09.079+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:42:09.098+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:42:09.098+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:42:09.115+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:42:09.114+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:42:09.132+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.072 seconds
+[2025-03-12T14:42:39.533+0000] {processor.py:161} INFO - Started process (PID=1907) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:42:39.534+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:42:39.534+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:42:39.534+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:42:39.548+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:42:39.565+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:42:39.565+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:42:39.581+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:42:39.581+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:42:39.599+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.068 seconds
+[2025-03-12T14:43:11.160+0000] {processor.py:161} INFO - Started process (PID=1925) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:43:11.162+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:43:11.164+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:43:11.163+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:43:11.192+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:43:11.233+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:43:11.233+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:43:11.484+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:43:11.483+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:43:11.513+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.357 seconds
+[2025-03-12T14:43:42.366+0000] {processor.py:161} INFO - Started process (PID=1951) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:43:42.367+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:43:42.368+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:43:42.368+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:43:42.385+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:43:42.407+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:43:42.407+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:43:42.426+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:43:42.426+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:43:42.447+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.084 seconds
+[2025-03-12T14:44:13.485+0000] {processor.py:161} INFO - Started process (PID=1968) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:44:13.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:44:13.487+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:44:13.487+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:44:13.506+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:44:13.531+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:44:13.531+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:44:13.553+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:44:13.552+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:44:13.577+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.094 seconds
+[2025-03-12T14:44:43.996+0000] {processor.py:161} INFO - Started process (PID=1985) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:44:43.998+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:44:43.999+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:44:43.999+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:44:44.020+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:44:44.042+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:44:44.042+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:44:44.228+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:44:44.228+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:44:44.251+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.258 seconds
+[2025-03-12T14:45:15.635+0000] {processor.py:161} INFO - Started process (PID=2002) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:45:15.638+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:45:15.640+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:45:15.639+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:45:15.665+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:45:15.701+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:45:15.701+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:45:15.727+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:45:15.726+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:45:15.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.127 seconds
+[2025-03-12T14:45:46.756+0000] {processor.py:161} INFO - Started process (PID=2055) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:45:46.757+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:45:46.758+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:45:46.758+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:45:46.783+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:45:46.812+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:45:46.811+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:45:46.834+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:45:46.833+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:45:46.862+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.110 seconds
+[2025-03-12T14:46:27.646+0000] {processor.py:161} INFO - Started process (PID=2180) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:46:27.647+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:46:27.648+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:46:27.648+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:46:27.665+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:46:27.685+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:46:27.685+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:46:27.866+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:46:27.866+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:46:27.885+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.241 seconds
+[2025-03-12T14:46:58.947+0000] {processor.py:161} INFO - Started process (PID=2233) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:46:58.948+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:46:58.949+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:46:58.949+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:46:58.968+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:46:58.989+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:46:58.988+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:46:59.006+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:46:59.006+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:46:59.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.085 seconds
+[2025-03-12T14:47:29.970+0000] {processor.py:161} INFO - Started process (PID=2250) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:47:29.970+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:47:29.971+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:47:29.971+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:47:29.986+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:47:30.005+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:47:30.005+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:47:30.022+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:47:30.022+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:47:30.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.074 seconds
+[2025-03-12T14:48:00.757+0000] {processor.py:161} INFO - Started process (PID=2267) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:48:00.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:48:00.759+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:48:00.758+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:48:00.774+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:48:00.793+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:48:00.792+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:48:00.809+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:48:00.809+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:48:01.132+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.377 seconds
+[2025-03-12T14:48:32.529+0000] {processor.py:161} INFO - Started process (PID=2284) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:48:32.531+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:48:32.533+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:48:32.532+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:48:32.562+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:48:32.603+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:48:32.602+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:48:32.871+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:48:32.871+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:48:32.897+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.371 seconds
+[2025-03-12T14:49:03.833+0000] {processor.py:161} INFO - Started process (PID=2301) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:49:03.834+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:49:03.836+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:49:03.835+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:49:03.857+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:49:03.880+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:49:03.879+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:49:03.901+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:49:03.901+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:49:03.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.092 seconds
+[2025-03-12T14:49:35.362+0000] {processor.py:161} INFO - Started process (PID=2318) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:49:35.365+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:49:35.368+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:49:35.367+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:49:35.439+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:49:35.496+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:49:35.495+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:49:35.558+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:49:35.557+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:49:35.613+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.278 seconds
+[2025-03-12T14:50:08.325+0000] {processor.py:161} INFO - Started process (PID=2388) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:50:08.328+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:50:08.330+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:50:08.329+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:50:08.363+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:50:08.425+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:50:08.425+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:50:08.514+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:50:08.513+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:50:08.820+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.504 seconds
+[2025-03-12T14:50:53.608+0000] {processor.py:161} INFO - Started process (PID=2527) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:50:53.609+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:50:53.609+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:50:53.609+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:50:53.626+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:50:53.648+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:50:53.648+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:50:53.823+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:50:53.822+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:50:53.840+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.235 seconds
+[2025-03-12T14:51:35.611+0000] {processor.py:161} INFO - Started process (PID=2665) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:51:35.612+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:51:35.613+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:51:35.613+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:51:35.629+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:51:35.812+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:51:35.811+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:51:35.827+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:51:35.827+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:51:35.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.242 seconds
+[2025-03-12T14:52:11.047+0000] {processor.py:161} INFO - Started process (PID=2770) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:52:11.047+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:52:11.048+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:52:11.048+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:52:11.063+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:52:11.081+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:52:11.081+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:52:11.098+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:52:11.097+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:52:11.121+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.077 seconds
+[2025-03-12T14:52:43.726+0000] {processor.py:161} INFO - Started process (PID=2852) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:52:43.728+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:52:43.729+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:52:43.729+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:52:43.750+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:52:43.778+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:52:43.777+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:52:43.803+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:52:43.802+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:52:43.831+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.109 seconds
+[2025-03-12T14:53:16.262+0000] {processor.py:161} INFO - Started process (PID=2905) to work on /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:53:16.264+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_house_assignment.py for tasks to queue
+[2025-03-12T14:53:16.265+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:53:16.264+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:53:16.280+0000] {processor.py:840} INFO - DAG(s) 'Telegram' retrieved from /opt/airflow/dags/5_1_house_assignment.py
+[2025-03-12T14:53:16.303+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:53:16.303+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-12T14:53:16.323+0000] {logging_mixin.py:188} INFO - [2025-03-12T14:53:16.323+0000] {dag.py:3823} INFO - Setting next_dagrun for Telegram to 2025-03-12 00:00:00+00:00, run_after=2025-03-13 00:00:00+00:00
+[2025-03-12T14:53:16.345+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_house_assignment.py took 0.085 seconds

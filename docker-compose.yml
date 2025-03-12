@@ -34,7 +34,7 @@ services:
       - ./plugins:/opt/airflow/plugins
     ports:
       - "8081:8080"
-    entrypoint: ["/bin/bash", "-c", "airflow db init && airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com &&  python -m pip install --upgrade pip && pip install clickhouse_driver && airflow webserver & airflow scheduler "]
+    entrypoint: ["/bin/bash", "-c", "airflow db init && airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com &&  python -m pip install --upgrade pip && pip install clickhouse_driver && pip install airflow-clickhouse-plugin && pip install apache-airflow-providers-telegram==4.0.0 && airflow webserver & airflow scheduler "]
     networks:
       - airflow_network
 

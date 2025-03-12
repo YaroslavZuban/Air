@@ -1,0 +1,60 @@
+[2025-03-12T14:24:17.701+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Telegram.always_fail_task manual__2025-03-12T14:24:09.493151+00:00 [queued]>
+[2025-03-12T14:24:17.706+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Telegram.always_fail_task manual__2025-03-12T14:24:09.493151+00:00 [queued]>
+[2025-03-12T14:24:17.706+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-12T14:24:17.717+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): always_fail_task> on 2025-03-12 14:24:09.493151+00:00
+[2025-03-12T14:24:17.722+0000] {standard_task_runner.py:60} INFO - Started process 1092 to run task
+[2025-03-12T14:24:17.724+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Telegram', 'always_fail_task', 'manual__2025-03-12T14:24:09.493151+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/5_1_house_assignment.py', '--cfg-path', '/tmp/tmpywyc4hbo']
+[2025-03-12T14:24:17.726+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask always_fail_task
+[2025-03-12T14:24:17.760+0000] {task_command.py:423} INFO - Running <TaskInstance: Telegram.always_fail_task manual__2025-03-12T14:24:09.493151+00:00 [running]> on host 13d00b3af9e0
+[2025-03-12T14:24:17.806+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Telegram' AIRFLOW_CTX_TASK_ID='always_fail_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-12T14:24:09.493151+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-12T14:24:09.493151+00:00'
+[2025-03-12T14:24:17.810+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/5_1_house_assignment.py", line 9, in raise_exc
+    raise AirflowException("This task is designed to fail.")
+airflow.exceptions.AirflowException: This task is designed to fail.
+[2025-03-12T14:24:17.814+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=Telegram, task_id=always_fail_task, execution_date=20250312T142409, start_date=20250312T142417, end_date=20250312T142417
+[2025-03-12T14:24:17.817+0000] {taskinstance.py:1116} ERROR - Error when executing notify_failure callback
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2334, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode, session=session)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2499, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2516, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/5_1_house_assignment.py", line 9, in raise_exc
+    raise AirflowException("This task is designed to fail.")
+airflow.exceptions.AirflowException: This task is designed to fail.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1113, in _run_finished_callback
+    callback(context)
+  File "/opt/airflow/dags/5_1_house_assignment.py", line 23, in notify_failure
+    telegram_op.execute(context)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/telegram/operators/telegram.py", line 78, in execute
+    telegram_hook = TelegramHook(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/telegram/hooks/telegram.py", line 68, in __init__
+    self.token = self.__get_token(token, telegram_conn_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/telegram/hooks/telegram.py", line 92, in __get_token
+    conn = self.get_connection(telegram_conn_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/hooks/base.py", line 82, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/connection.py", line 479, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `telegram_id` isn't defined
+[2025-03-12T14:24:17.828+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 3 for task always_fail_task (This task is designed to fail.; 1092)
+[2025-03-12T14:24:17.857+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-12T14:24:17.868+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

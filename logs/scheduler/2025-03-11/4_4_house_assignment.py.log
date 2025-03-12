@@ -6377,3 +6377,410 @@ airflow.exceptions.AirflowNotFoundException: The conn_id `clickhouse_default` is
 [2025-03-11T14:03:34.290+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:03:34.288+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-03-11T14:03:34.312+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:03:34.312+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
 [2025-03-11T14:03:34.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.939 seconds
+[2025-03-11T14:04:05.112+0000] {processor.py:161} INFO - Started process (PID=7554) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:04:05.113+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:04:05.114+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:05.114+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:04:05.717+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:05.716+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:04:05.719+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:05.718+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:04:05.720+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:05.720+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:04:05.722+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:05.722+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:04:05.729+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:04:05.794+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:05.793+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:04:05.813+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:05.812+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:04:05.834+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.724 seconds
+[2025-03-11T14:04:36.257+0000] {processor.py:161} INFO - Started process (PID=7566) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:04:36.258+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:04:36.259+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:36.258+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:04:36.713+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:36.713+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:04:36.715+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:36.715+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:04:36.717+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:36.717+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:04:36.718+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:36.718+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:04:36.726+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:04:36.791+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:36.790+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:04:36.803+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:04:36.803+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:04:36.822+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.568 seconds
+[2025-03-11T14:05:07.491+0000] {processor.py:161} INFO - Started process (PID=7578) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:05:07.492+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:05:07.493+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:07.492+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:05:08.028+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:08.027+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:05:08.030+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:08.030+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:05:08.031+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:08.031+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:05:08.033+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:08.033+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:05:08.040+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:05:08.103+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:08.102+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:05:08.116+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:08.115+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:05:08.135+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.646 seconds
+[2025-03-11T14:05:38.252+0000] {processor.py:161} INFO - Started process (PID=7590) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:05:38.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:05:38.254+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:38.253+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:05:38.743+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:38.743+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:05:38.745+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:38.745+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:05:38.747+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:38.747+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:05:38.749+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:38.749+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:05:38.756+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:05:38.816+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:38.815+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:05:38.829+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:05:38.829+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:05:38.848+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.598 seconds
+[2025-03-11T14:06:09.640+0000] {processor.py:161} INFO - Started process (PID=7603) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:06:09.640+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:06:09.641+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:09.641+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:06:10.065+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:10.065+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:06:10.068+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:10.067+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:06:10.070+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:10.070+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:06:10.072+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:10.071+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:06:10.079+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:06:10.153+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:10.152+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:06:10.166+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:10.166+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:06:10.192+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.554 seconds
+[2025-03-11T14:06:40.600+0000] {processor.py:161} INFO - Started process (PID=7615) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:06:40.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:06:40.602+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:40.602+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:06:41.075+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:41.074+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:06:41.078+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:41.078+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:06:41.080+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:41.080+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:06:41.082+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:41.082+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:06:41.091+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:06:41.159+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:41.159+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:06:41.173+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:06:41.173+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:06:41.193+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.595 seconds
+[2025-03-11T14:07:11.326+0000] {processor.py:161} INFO - Started process (PID=7627) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:07:11.327+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:07:11.328+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:11.327+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:07:11.932+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:11.932+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:07:11.934+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:11.934+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:07:11.936+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:11.936+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:07:11.938+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:11.938+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:07:11.945+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:07:12.008+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:12.008+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:07:12.020+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:12.020+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:07:12.038+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.715 seconds
+[2025-03-11T14:07:42.251+0000] {processor.py:161} INFO - Started process (PID=7639) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:07:42.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:07:42.252+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:42.252+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:07:42.685+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:42.684+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:07:42.687+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:42.687+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:07:42.688+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:42.688+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:07:42.690+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:42.690+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:07:42.696+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:07:42.757+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:42.757+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:07:42.770+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:07:42.770+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:07:42.787+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.539 seconds
+[2025-03-11T14:08:13.102+0000] {processor.py:161} INFO - Started process (PID=7651) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:08:13.103+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:08:13.104+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:13.104+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:08:13.598+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:13.597+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:08:13.600+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:13.600+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:08:13.602+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:13.602+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:08:13.603+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:13.603+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:08:13.611+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:08:13.690+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:13.690+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:08:13.707+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:13.706+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:08:13.726+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.627 seconds
+[2025-03-11T14:08:43.894+0000] {processor.py:161} INFO - Started process (PID=7663) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:08:43.895+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:08:43.895+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:43.895+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:08:44.323+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:44.323+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:08:44.325+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:44.325+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:08:44.327+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:44.327+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:08:44.328+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:44.328+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:08:44.335+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:08:44.343+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:44.343+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:08:44.358+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:08:44.357+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:08:44.377+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.486 seconds
+[2025-03-11T14:09:14.737+0000] {processor.py:161} INFO - Started process (PID=7675) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:09:14.738+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:09:14.739+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:14.739+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:09:15.232+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:15.232+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:09:15.234+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:15.234+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:09:15.235+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:15.235+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:09:15.237+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:15.237+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:09:15.244+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:09:15.302+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:15.302+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:09:15.314+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:15.314+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:09:15.331+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.596 seconds
+[2025-03-11T14:09:45.567+0000] {processor.py:161} INFO - Started process (PID=7687) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:09:45.568+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:09:45.569+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:45.568+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:09:46.018+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:46.017+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:09:46.019+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:46.019+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:09:46.021+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:46.021+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:09:46.022+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:46.022+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:09:46.029+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:09:46.036+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:46.036+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:09:46.048+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:09:46.048+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:09:46.066+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.501 seconds
+[2025-03-11T14:10:16.519+0000] {processor.py:161} INFO - Started process (PID=7699) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:10:16.520+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:10:16.521+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:16.521+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:10:17.040+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:17.040+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:10:17.042+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:17.042+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:10:17.044+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:17.044+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:10:17.045+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:17.045+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:10:17.052+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:10:17.112+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:17.111+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:10:17.125+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:17.124+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:10:17.143+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.626 seconds
+[2025-03-11T14:10:47.392+0000] {processor.py:161} INFO - Started process (PID=7711) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:10:47.393+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:10:47.393+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:47.393+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:10:47.853+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:47.852+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:10:47.856+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:47.856+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:10:47.859+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:47.858+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:10:47.861+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:47.861+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:10:47.872+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:10:47.960+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:47.960+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:10:47.975+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:10:47.974+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:10:48.001+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.611 seconds
+[2025-03-11T14:11:18.195+0000] {processor.py:161} INFO - Started process (PID=7723) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:11:18.196+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:11:18.197+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:18.197+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:11:18.620+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:18.620+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:11:18.622+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:18.622+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:11:18.624+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:18.623+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:11:18.625+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:18.625+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:11:18.632+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:11:18.641+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:18.641+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:11:18.654+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:18.654+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:11:18.674+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.481 seconds
+[2025-03-11T14:11:49.102+0000] {processor.py:161} INFO - Started process (PID=7735) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:11:49.103+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:11:49.103+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:49.103+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:11:49.657+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:49.657+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:11:49.659+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:49.659+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:11:49.661+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:49.660+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:11:49.662+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:49.662+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:11:49.669+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:11:49.678+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:49.678+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:11:49.691+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:11:49.691+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:11:49.712+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.485 seconds
+[2025-03-11T14:12:20.121+0000] {processor.py:161} INFO - Started process (PID=7747) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:12:20.122+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:12:20.123+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:20.122+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:12:20.627+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:20.627+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:12:20.630+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:20.630+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:12:20.634+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:20.634+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:12:20.637+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:20.637+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:12:20.646+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:12:20.657+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:20.656+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:12:20.674+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:20.673+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:12:20.696+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.577 seconds
+[2025-03-11T14:12:50.943+0000] {processor.py:161} INFO - Started process (PID=7759) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:12:50.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:12:50.944+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:50.944+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:12:51.388+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:51.388+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:12:51.390+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:51.390+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:12:51.392+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:51.392+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:12:51.393+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:51.393+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:12:51.400+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:12:51.465+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:51.464+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:12:51.478+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:12:51.478+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:12:51.499+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.558 seconds
+[2025-03-11T14:13:21.599+0000] {processor.py:161} INFO - Started process (PID=7771) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:13:21.600+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:13:21.601+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:21.600+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:13:22.151+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:22.151+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:13:22.154+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:22.154+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:13:22.157+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:22.157+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:13:22.159+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:22.159+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:13:22.174+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:13:22.254+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:22.254+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:13:22.268+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:22.268+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:13:22.286+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.691 seconds
+[2025-03-11T14:13:52.331+0000] {processor.py:161} INFO - Started process (PID=7783) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:13:52.332+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:13:52.333+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:52.333+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:13:52.793+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:52.793+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:13:52.795+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:52.795+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:13:52.798+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:52.797+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:13:52.800+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:52.800+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:13:52.808+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:13:52.819+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:52.818+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:13:52.833+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:13:52.832+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:13:52.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.526 seconds
+[2025-03-11T14:14:23.251+0000] {processor.py:161} INFO - Started process (PID=7795) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:14:23.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:14:23.253+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:23.252+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:14:23.728+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:23.727+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:14:23.730+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:23.730+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:14:23.732+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:23.732+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:14:23.733+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:23.733+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:14:23.741+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:14:23.802+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:23.802+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:14:23.817+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:23.817+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:14:23.837+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.589 seconds
+[2025-03-11T14:14:54.076+0000] {processor.py:161} INFO - Started process (PID=7807) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:14:54.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:14:54.078+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:54.078+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:14:54.584+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:54.584+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:14:54.586+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:54.586+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:14:54.588+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:54.588+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:14:54.590+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:54.590+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:14:54.597+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:14:54.699+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:54.699+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:14:54.719+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:14:54.719+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:14:54.746+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.673 seconds
+[2025-03-11T14:15:24.789+0000] {processor.py:161} INFO - Started process (PID=7819) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:15:24.790+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:15:24.790+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:24.790+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:15:25.276+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:25.275+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:15:25.278+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:25.278+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:15:25.280+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:25.280+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:15:25.281+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:25.281+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:15:25.290+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:15:25.356+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:25.356+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:15:25.371+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:25.370+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:15:25.392+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.605 seconds
+[2025-03-11T14:15:55.577+0000] {processor.py:161} INFO - Started process (PID=7831) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:15:55.578+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:15:55.579+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:55.579+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:15:56.027+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:56.027+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:15:56.029+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:56.029+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:15:56.031+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:56.031+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:15:56.033+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:56.032+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:15:56.039+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:15:56.099+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:56.099+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:15:56.112+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:15:56.111+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:15:56.130+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.555 seconds
+[2025-03-11T14:16:26.389+0000] {processor.py:161} INFO - Started process (PID=7843) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:16:26.390+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:16:26.390+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:26.390+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:16:26.911+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:26.910+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:16:26.913+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:26.913+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:16:26.915+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:26.915+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:16:26.916+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:26.916+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:16:26.924+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:16:26.989+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:26.989+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:16:27.004+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:27.004+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:16:27.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.642 seconds
+[2025-03-11T14:16:57.528+0000] {processor.py:161} INFO - Started process (PID=7855) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:16:57.529+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:16:57.529+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:57.529+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:16:58.120+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:58.119+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:16:58.122+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:58.121+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:16:58.123+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:58.123+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:16:58.125+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:58.124+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:16:58.132+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:16:58.140+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:58.140+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:16:58.154+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:16:58.154+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:16:58.172+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.646 seconds
+[2025-03-11T14:17:28.348+0000] {processor.py:161} INFO - Started process (PID=7867) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:17:28.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:17:28.350+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:17:28.349+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:17:29.240+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:17:29.239+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:17:29.243+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:17:29.243+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:17:29.245+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:17:29.245+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:17:29.248+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:17:29.247+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:17:29.260+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:17:29.368+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:17:29.367+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:17:29.388+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:17:29.388+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:17:29.432+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 1.087 seconds
+[2025-03-11T14:17:59.973+0000] {processor.py:161} INFO - Started process (PID=7879) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:17:59.973+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:17:59.974+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:17:59.974+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:18:00.540+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:00.539+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:18:00.542+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:00.542+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:18:00.543+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:00.543+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:18:00.545+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:00.545+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:18:00.552+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:18:00.630+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:00.629+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:18:00.643+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:00.643+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:18:00.668+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.698 seconds
+[2025-03-11T14:18:31.222+0000] {processor.py:161} INFO - Started process (PID=7891) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:18:31.223+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:18:31.224+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:31.224+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:18:31.725+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:31.724+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:18:31.727+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:31.727+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:18:31.729+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:31.729+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:18:31.731+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:31.731+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:18:31.738+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:18:31.803+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:31.803+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:18:31.819+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:18:31.818+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:18:31.846+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.626 seconds
+[2025-03-11T14:19:02.320+0000] {processor.py:161} INFO - Started process (PID=7903) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:19:02.322+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:19:02.323+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:02.322+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:19:02.846+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:02.845+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:19:02.848+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:02.848+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:19:02.850+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:02.850+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:19:02.852+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:02.852+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:19:02.860+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:19:02.928+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:02.927+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:19:02.942+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:02.942+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:19:02.969+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.652 seconds
+[2025-03-11T14:19:33.482+0000] {processor.py:161} INFO - Started process (PID=7915) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:19:33.483+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:19:33.484+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:33.483+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:19:33.982+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:33.981+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:19:33.985+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:33.984+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:19:33.987+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:33.987+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:19:33.988+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:33.988+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:19:33.999+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:19:34.068+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:34.067+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:19:34.084+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:19:34.083+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:19:34.126+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.647 seconds
+[2025-03-11T14:20:04.612+0000] {processor.py:161} INFO - Started process (PID=7927) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:20:04.613+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:20:04.614+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:04.613+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:20:05.056+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:05.055+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:20:05.058+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:05.058+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:20:05.060+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:05.060+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:20:05.062+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:05.062+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:20:05.069+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:20:05.136+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:05.136+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:20:05.151+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:05.151+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:20:05.181+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.571 seconds
+[2025-03-11T14:20:35.534+0000] {processor.py:161} INFO - Started process (PID=7939) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:20:35.535+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:20:35.536+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:35.535+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:20:36.003+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:36.002+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:20:36.005+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:36.004+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:20:36.006+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:36.006+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:20:36.008+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:36.008+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:20:36.014+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:20:36.073+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:36.073+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:20:36.086+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:20:36.086+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:20:36.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.579 seconds
+[2025-03-11T14:21:06.559+0000] {processor.py:161} INFO - Started process (PID=7951) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:21:06.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:21:06.560+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:06.560+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:21:07.048+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:07.047+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:21:07.050+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:07.050+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:21:07.052+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:07.051+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:21:07.053+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:07.053+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:21:07.061+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:21:07.126+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:07.126+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:21:07.140+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:07.140+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:21:07.164+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.607 seconds
+[2025-03-11T14:21:37.702+0000] {processor.py:161} INFO - Started process (PID=7963) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:21:37.703+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:21:37.703+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:37.703+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:21:38.178+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:38.178+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:21:38.180+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:38.180+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:21:38.182+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:38.182+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:21:38.183+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:38.183+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:21:38.189+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:21:38.257+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:38.257+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:21:38.271+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:21:38.271+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:21:38.296+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.596 seconds
+[2025-03-11T14:22:08.798+0000] {processor.py:161} INFO - Started process (PID=7975) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:22:08.799+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:22:08.800+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:08.800+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:22:09.327+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:09.327+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:22:09.329+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:09.329+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:22:09.331+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:09.331+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:22:09.332+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:09.332+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:22:09.339+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:22:09.348+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:09.348+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:22:09.364+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:09.364+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:22:09.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.590 seconds
+[2025-03-11T14:22:39.520+0000] {processor.py:161} INFO - Started process (PID=7987) to work on /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:22:39.521+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/4_4_house_assignment.py for tasks to queue
+[2025-03-11T14:22:39.521+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:39.521+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:22:39.972+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:39.972+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:22:39.974+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:39.974+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:22:39.976+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:39.976+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:22:39.978+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:39.978+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-11T14:22:39.984+0000] {processor.py:840} INFO - DAG(s) '4_4_house_assignment' retrieved from /opt/airflow/dags/4_4_house_assignment.py
+[2025-03-11T14:22:39.993+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:39.992+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-11T14:22:40.008+0000] {logging_mixin.py:188} INFO - [2025-03-11T14:22:40.007+0000] {dag.py:3823} INFO - Setting next_dagrun for 4_4_house_assignment to None, run_after=None
+[2025-03-11T14:22:40.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/4_4_house_assignment.py took 0.506 seconds

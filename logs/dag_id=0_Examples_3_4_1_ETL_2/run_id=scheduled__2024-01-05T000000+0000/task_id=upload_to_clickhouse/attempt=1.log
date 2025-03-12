@@ -106,3 +106,16 @@ clickhouse_driver.errors.NetworkError: Code: 210. Connection refused (localhost:
 [2025-02-26T10:09:13.583+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=0_Examples_3_4_1_ETL_2, task_id=upload_to_clickhouse, execution_date=20240105T000000, start_date=20250226T100913, end_date=20250226T100913
 [2025-02-26T10:09:13.620+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
 [2025-02-26T10:09:13.629+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-12T11:46:20.829+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-05T00:00:00+00:00 [queued]>
+[2025-03-12T11:46:20.834+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-05T00:00:00+00:00 [queued]>
+[2025-03-12T11:46:20.834+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-12T11:46:20.846+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse> on 2024-01-05 00:00:00+00:00
+[2025-03-12T11:46:20.851+0000] {standard_task_runner.py:60} INFO - Started process 2945 to run task
+[2025-03-12T11:46:20.853+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '0_Examples_3_4_1_ETL_2', 'upload_to_clickhouse', 'scheduled__2024-01-05T00:00:00+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/exchangerate_api_work.py', '--cfg-path', '/tmp/tmp_cteoydx']
+[2025-03-12T11:46:20.854+0000] {standard_task_runner.py:88} INFO - Job 16: Subtask upload_to_clickhouse
+[2025-03-12T11:46:20.880+0000] {task_command.py:423} INFO - Running <TaskInstance: 0_Examples_3_4_1_ETL_2.upload_to_clickhouse scheduled__2024-01-05T00:00:00+00:00 [running]> on host 727edeb5f419
+[2025-03-12T11:46:20.922+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='0_Examples_3_4_1_ETL_2' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse' AIRFLOW_CTX_EXECUTION_DATE='2024-01-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-05T00:00:00+00:00'
+[2025-03-12T11:46:20.940+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-03-12T11:46:20.944+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=0_Examples_3_4_1_ETL_2, task_id=upload_to_clickhouse, execution_date=20240105T000000, start_date=20250312T114620, end_date=20250312T114620
+[2025-03-12T11:46:20.986+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-12T11:46:20.995+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

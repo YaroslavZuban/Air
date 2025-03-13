@@ -1,0 +1,13 @@
+[2025-03-12T14:53:52.516+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 5_2_2_house_assignment.created_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-12T14:53:52.524+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 5_2_2_house_assignment.created_table scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-12T14:53:52.525+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-12T14:53:52.542+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): created_table> on 2024-01-03 00:00:00+00:00
+[2025-03-12T14:53:52.549+0000] {standard_task_runner.py:60} INFO - Started process 3009 to run task
+[2025-03-12T14:53:52.552+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '5_2_2_house_assignment', 'created_table', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/5_2_2_house_assignment.py', '--cfg-path', '/tmp/tmpysd1_bzp']
+[2025-03-12T14:53:52.554+0000] {standard_task_runner.py:88} INFO - Job 15: Subtask created_table
+[2025-03-12T14:53:52.593+0000] {task_command.py:423} INFO - Running <TaskInstance: 5_2_2_house_assignment.created_table scheduled__2024-01-03T00:00:00+00:00 [running]> on host 13d00b3af9e0
+[2025-03-12T14:53:52.661+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='5_2_2_house_assignment' AIRFLOW_CTX_TASK_ID='created_table' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-12T14:53:52.666+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-12T14:53:52.667+0000] {clickhouse.py:79} INFO - CREATE TABLE IF NOT EXISTS currency_data (num_code Int64, char_code String, nominal Int64, name String, value String, date String) ENGINE Log
+[2025-03-12T14:53:52.775+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=5_2_2_house_assignment, task_id=created_table, execution_date=20240103T000000, start_date=20250312T145352, end_date=20250312T145352
+[2025-03-12T14:53:52.806+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0

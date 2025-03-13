@@ -1,0 +1,141 @@
+[2025-03-12T14:53:29.275+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 5_2_2_house_assignment.upload_to_clickhouse scheduled__2024-01-02T00:00:00+00:00 [queued]>
+[2025-03-12T14:53:29.283+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 5_2_2_house_assignment.upload_to_clickhouse scheduled__2024-01-02T00:00:00+00:00 [queued]>
+[2025-03-12T14:53:29.284+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-12T14:53:29.306+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): upload_to_clickhouse> on 2024-01-02 00:00:00+00:00
+[2025-03-12T14:53:29.314+0000] {standard_task_runner.py:60} INFO - Started process 2943 to run task
+[2025-03-12T14:53:29.317+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '5_2_2_house_assignment', 'upload_to_clickhouse', 'scheduled__2024-01-02T00:00:00+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/5_2_2_house_assignment.py', '--cfg-path', '/tmp/tmp0a5wi2ap']
+[2025-03-12T14:53:29.320+0000] {standard_task_runner.py:88} INFO - Job 12: Subtask upload_to_clickhouse
+[2025-03-12T14:53:29.372+0000] {task_command.py:423} INFO - Running <TaskInstance: 5_2_2_house_assignment.upload_to_clickhouse scheduled__2024-01-02T00:00:00+00:00 [running]> on host 13d00b3af9e0
+[2025-03-12T14:53:29.445+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='5_2_2_house_assignment' AIRFLOW_CTX_TASK_ID='upload_to_clickhouse' AIRFLOW_CTX_EXECUTION_DATE='2024-01-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-02T00:00:00+00:00'
+[2025-03-12T14:53:29.512+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/5_2_2_house_assignment.py", line 77, in upload_to_clickhouse
+    client.execute(f'INSERT INTO {table_name} VALUES', data_frame.to_dict('records'))
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 376, in execute
+    rv = self.process_insert_query(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 607, in process_insert_query
+    rv = self.send_data(sample_block, data,
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 670, in send_data
+    self.receive_profile_events()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 747, in receive_profile_events
+    raise packet.exception
+clickhouse_driver.errors.ServerException: Code: 241.
+DB::Exception: (total) memory limit exceeded: would use 3.42 GiB (attempt to allocate chunk of 4195772 bytes), current RSS 1.79 GiB, maximum: 3.42 GiB. OvercommitTracker decision: Query was selected to stop by OvercommitTracker. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000dd0ee7b
+1. DB::Exception::Exception(PreformattedMessage&&, int) @ 0x0000000008bac62c
+2. DB::Exception::Exception<char const*, char const*, String, long&, String, String, char const*, std::basic_string_view<char, std::char_traits<char>>>(int, FormatStringHelperImpl<std::type_identity<char const*>::type, std::type_identity<char const*>::type, std::type_identity<String>::type, std::type_identity<long&>::type, std::type_identity<String>::type, std::type_identity<String>::type, std::type_identity<char const*>::type, std::type_identity<std::basic_string_view<char, std::char_traits<char>>>::type>, char const*&&, char const*&&, String&&, long&, String&&, String&&, char const*&&, std::basic_string_view<char, std::char_traits<char>>&&) @ 0x000000000dd30432
+3. MemoryTracker::allocImpl(long, bool, MemoryTracker*, double) @ 0x000000000dd2f7d2
+4. MemoryTracker::allocImpl(long, bool, MemoryTracker*, double) @ 0x000000000dd2f239
+5. MemoryTracker::allocImpl(long, bool, MemoryTracker*, double) @ 0x000000000dd2f239
+6. MemoryTracker::allocImpl(long, bool, MemoryTracker*, double) @ 0x000000000dd2f239
+7. Allocator<false, false>::alloc(unsigned long, unsigned long) @ 0x000000000dce0120
+8. DB::Memory<Allocator<false, false>>::alloc(unsigned long) @ 0x000000000dd78add
+9. void std::__function::__policy_invoker<void (DB::ISerialization::SubstreamPath const&)>::__call_impl[abi:ne180100]<std::__function::__default_alloc_func<DB::LogSink::writeData(DB::NameAndTypePair const&, DB::IColumn const&)::$_0, void (DB::ISerialization::SubstreamPath const&)>>(std::__function::__policy_storage const*, DB::ISerialization::SubstreamPath const&) @ 0x00000000134dcaf3
+10. DB::ISerialization::enumerateStreams(DB::ISerialization::EnumerateStreamsSettings&, std::function<void (DB::ISerialization::SubstreamPath const&)> const&, DB::ISerialization::SubstreamData const&) const @ 0x0000000011b5bbf7
+11. DB::ISerialization::enumerateStreams(std::function<void (DB::ISerialization::SubstreamPath const&)> const&, std::shared_ptr<DB::IDataType const> const&, COW<DB::IColumn>::immutable_ptr<DB::IColumn> const&) const @ 0x0000000011b5bea8
+12. DB::LogSink::consume(DB::Chunk&) @ 0x00000000134d1335
+13. DB::SinkToStorage::onConsume(DB::Chunk) @ 0x000000001427ba64
+14. void std::__function::__policy_invoker<void ()>::__call_impl[abi:ne180100]<std::__function::__default_alloc_func<DB::ExceptionKeepingTransform::work()::$_1, void ()>>(std::__function::__policy_storage const*) @ 0x000000001419e9d8
+15. DB::runStep(std::function<void ()>, DB::ThreadStatus*, std::atomic<unsigned long>*) @ 0x000000001419e6df
+16. DB::ExceptionKeepingTransform::work() @ 0x000000001419dfda
+17. DB::ExecutionThreadContext::executeTask() @ 0x0000000013f26627
+18. DB::PipelineExecutor::executeStepImpl(unsigned long, std::atomic<bool>*) @ 0x0000000013f192c4
+19. DB::PipelineExecutor::executeStep(std::atomic<bool>*) @ 0x0000000013f18b76
+20. DB::TCPHandler::processInsertQuery(DB::QueryState&) @ 0x0000000013e8d275
+21. DB::TCPHandler::runImpl() @ 0x0000000013e7dc77
+22. DB::TCPHandler::run() @ 0x0000000013e9b419
+23. Poco::Net::TCPServerConnection::start() @ 0x0000000017458027
+24. Poco::Net::TCPServerDispatcher::run() @ 0x0000000017458479
+25. Poco::PooledThread::run() @ 0x00000000174249db
+26. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000017422ebd
+27. ? @ 0x00007efe9bfceac3
+28. ? @ 0x00007efe9c060850
+
+[2025-03-12T14:53:29.519+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=5_2_2_house_assignment, task_id=upload_to_clickhouse, execution_date=20240102T000000, start_date=20250312T145329, end_date=20250312T145329
+[2025-03-12T14:53:29.523+0000] {base.py:83} INFO - Using connection ID 'telegram_id' for task execution.
+[2025-03-12T14:53:29.525+0000] {base.py:83} INFO - Using connection ID 'telegram_id' for task execution.
+[2025-03-12T14:53:30.334+0000] {_client.py:1740} INFO - HTTP Request: POST https://api.telegram.org/bot7637994734:AAGvM2WRHeVQYm8VJwtx1lyk6bN6LERhzT0/sendMessage "HTTP/1.1 400 Bad Request"
+[2025-03-12T14:53:32.653+0000] {_client.py:1740} INFO - HTTP Request: POST https://api.telegram.org/bot7637994734:AAGvM2WRHeVQYm8VJwtx1lyk6bN6LERhzT0/sendMessage "HTTP/1.1 400 Bad Request"
+[2025-03-12T14:53:34.995+0000] {_client.py:1740} INFO - HTTP Request: POST https://api.telegram.org/bot7637994734:AAGvM2WRHeVQYm8VJwtx1lyk6bN6LERhzT0/sendMessage "HTTP/1.1 400 Bad Request"
+[2025-03-12T14:53:34.996+0000] {taskinstance.py:1116} ERROR - Error when executing notify_failure callback
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/telegram/hooks/telegram.py", line 142, in send_message
+    response = asyncio.run(self.connection.send_message(**kwargs))
+  File "/usr/local/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "/home/airflow/.local/lib/python3.9/site-packages/telegram/_bot.py", line 1091, in send_message
+    return await self._send_message(
+  File "/home/airflow/.local/lib/python3.9/site-packages/telegram/_bot.py", line 803, in _send_message
+    result = await self._post(
+  File "/home/airflow/.local/lib/python3.9/site-packages/telegram/_bot.py", line 691, in _post
+    return await self._do_post(
+  File "/home/airflow/.local/lib/python3.9/site-packages/telegram/_bot.py", line 720, in _do_post
+    result = await request.post(
+  File "/home/airflow/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+  File "/home/airflow/.local/lib/python3.9/site-packages/telegram/request/_baserequest.py", line 383, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: unsupported start tag "char" at byte offset 499
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1113, in _run_finished_callback
+    callback(context)
+  File "/opt/airflow/dags/5_2_2_house_assignment.py", line 96, in notify_failure
+    telegram_op.execute(context)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/providers/telegram/operators/telegram.py", line 83, in execute
+    telegram_hook.send_message(self.telegram_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/airflow/.local/lib/python3.9/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/airflow/.local/lib/python3.9/site-packages/tenacity/__init__.py", line 326, in iter
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x7f0195985df0 state=finished raised BadRequest>]
+[2025-03-12T14:53:35.018+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 12 for task upload_to_clickhouse (Code: 241.
+DB::Exception: (total) memory limit exceeded: would use 3.42 GiB (attempt to allocate chunk of 4195772 bytes), current RSS 1.79 GiB, maximum: 3.42 GiB. OvercommitTracker decision: Query was selected to stop by OvercommitTracker. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000dd0ee7b
+1. DB::Exception::Exception(PreformattedMessage&&, int) @ 0x0000000008bac62c
+2. DB::Exception::Exception<char const*, char const*, String, long&, String, String, char const*, std::basic_string_view<char, std::char_traits<char>>>(int, FormatStringHelperImpl<std::type_identity<char const*>::type, std::type_identity<char const*>::type, std::type_identity<String>::type, std::type_identity<long&>::type, std::type_identity<String>::type, std::type_identity<String>::type, std::type_identity<char const*>::type, std::type_identity<std::basic_string_view<char, std::char_traits<char>>>::type>, char const*&&, char const*&&, String&&, long&, String&&, String&&, char const*&&, std::basic_string_view<char, std::char_traits<char>>&&) @ 0x000000000dd30432
+3. MemoryTracker::allocImpl(long, bool, MemoryTracker*, double) @ 0x000000000dd2f7d2
+4. MemoryTracker::allocImpl(long, bool, MemoryTracker*, double) @ 0x000000000dd2f239
+5. MemoryTracker::allocImpl(long, bool, MemoryTracker*, double) @ 0x000000000dd2f239
+6. MemoryTracker::allocImpl(long, bool, MemoryTracker*, double) @ 0x000000000dd2f239
+7. Allocator<false, false>::alloc(unsigned long, unsigned long) @ 0x000000000dce0120
+8. DB::Memory<Allocator<false, false>>::alloc(unsigned long) @ 0x000000000dd78add
+9. void std::__function::__policy_invoker<void (DB::ISerialization::SubstreamPath const&)>::__call_impl[abi:ne180100]<std::__function::__default_alloc_func<DB::LogSink::writeData(DB::NameAndTypePair const&, DB::IColumn const&)::$_0, void (DB::ISerialization::SubstreamPath const&)>>(std::__function::__policy_storage const*, DB::ISerialization::SubstreamPath const&) @ 0x00000000134dcaf3
+10. DB::ISerialization::enumerateStreams(DB::ISerialization::EnumerateStreamsSettings&, std::function<void (DB::ISerialization::SubstreamPath const&)> const&, DB::ISerialization::SubstreamData const&) const @ 0x0000000011b5bbf7
+11. DB::ISerialization::enumerateStreams(std::function<void (DB::ISerialization::SubstreamPath const&)> const&, std::shared_ptr<DB::IDataType const> const&, COW<DB::IColumn>::immutable_ptr<DB::IColumn> const&) const @ 0x0000000011b5bea8
+12. DB::LogSink::consume(DB::Chunk&) @ 0x00000000134d1335
+13. DB::SinkToStorage::onConsume(DB::Chunk) @ 0x000000001427ba64
+14. void std::__function::__policy_invoker<void ()>::__call_impl[abi:ne180100]<std::__function::__default_alloc_func<DB::ExceptionKeepingTransform::work()::$_1, void ()>>(std::__function::__policy_storage const*) @ 0x000000001419e9d8
+15. DB::runStep(std::function<void ()>, DB::ThreadStatus*, std::atomic<unsigned long>*) @ 0x000000001419e6df
+16. DB::ExceptionKeepingTransform::work() @ 0x000000001419dfda
+17. DB::ExecutionThreadContext::executeTask() @ 0x0000000013f26627
+18. DB::PipelineExecutor::executeStepImpl(unsigned long, std::atomic<bool>*) @ 0x0000000013f192c4
+19. DB::PipelineExecutor::executeStep(std::atomic<bool>*) @ 0x0000000013f18b76
+20. DB::TCPHandler::processInsertQuery(DB::QueryState&) @ 0x0000000013e8d275
+21. DB::TCPHandler::runImpl() @ 0x0000000013e7dc77
+22. DB::TCPHandler::run() @ 0x0000000013e9b419
+23. Poco::Net::TCPServerConnection::start() @ 0x0000000017458027
+24. Poco::Net::TCPServerDispatcher::run() @ 0x0000000017458479
+25. Poco::PooledThread::run() @ 0x00000000174249db
+26. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000017422ebd
+27. ? @ 0x00007efe9bfceac3
+28. ? @ 0x00007efe9c060850
+; 2943)
+[2025-03-12T14:53:35.073+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-12T14:53:35.081+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

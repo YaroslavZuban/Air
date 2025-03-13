@@ -1,0 +1,37 @@
+[2025-03-13T12:56:43.280+0000] {processor.py:161} INFO - Started process (PID=11273) to work on /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:56:43.282+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/6_house_assignment.py for tasks to queue
+[2025-03-13T12:56:43.284+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:56:43.283+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:56:43.911+0000] {processor.py:840} INFO - DAG(s) '6_house_assignment' retrieved from /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:56:44.043+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:56:44.042+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:6_house_assignment
+[2025-03-13T12:56:44.059+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:56:44.058+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:6_house_assignment
+[2025-03-13T12:56:44.072+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:56:44.071+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:6_house_assignment
+[2025-03-13T12:56:44.073+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:56:44.072+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-13T12:56:44.087+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:56:44.086+0000] {dag.py:3058} INFO - Creating ORM DAG for 6_house_assignment
+[2025-03-13T12:56:44.104+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:56:44.104+0000] {dag.py:3823} INFO - Setting next_dagrun for 6_house_assignment to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-13T12:56:44.446+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/6_house_assignment.py took 1.170 seconds
+[2025-03-13T12:57:17.368+0000] {processor.py:161} INFO - Started process (PID=11368) to work on /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:57:17.369+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/6_house_assignment.py for tasks to queue
+[2025-03-13T12:57:17.370+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:57:17.370+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:57:17.744+0000] {processor.py:840} INFO - DAG(s) '6_house_assignment' retrieved from /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:57:17.764+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:57:17.763+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-13T12:57:17.786+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:57:17.785+0000] {dag.py:3823} INFO - Setting next_dagrun for 6_house_assignment to 2024-01-02 00:00:00+00:00, run_after=2024-01-03 00:00:00+00:00
+[2025-03-13T12:57:17.817+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/6_house_assignment.py took 0.451 seconds
+[2025-03-13T12:57:48.474+0000] {processor.py:161} INFO - Started process (PID=11487) to work on /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:57:48.474+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/6_house_assignment.py for tasks to queue
+[2025-03-13T12:57:48.475+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:57:48.475+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:57:48.832+0000] {processor.py:840} INFO - DAG(s) '6_house_assignment' retrieved from /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:57:48.845+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:57:48.844+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-13T12:57:48.881+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/6_house_assignment.py took 0.410 seconds
+[2025-03-13T12:58:32.065+0000] {processor.py:161} INFO - Started process (PID=11627) to work on /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:58:32.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/6_house_assignment.py for tasks to queue
+[2025-03-13T12:58:32.068+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:58:32.067+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:58:32.591+0000] {processor.py:840} INFO - DAG(s) '6_house_assignment' retrieved from /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:58:32.628+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:58:32.626+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-13T12:58:32.737+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/6_house_assignment.py took 0.675 seconds
+[2025-03-13T12:59:07.353+0000] {processor.py:161} INFO - Started process (PID=11704) to work on /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:59:07.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/6_house_assignment.py for tasks to queue
+[2025-03-13T12:59:07.355+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:59:07.355+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:59:07.755+0000] {processor.py:840} INFO - DAG(s) '6_house_assignment' retrieved from /opt/airflow/dags/6_house_assignment.py
+[2025-03-13T12:59:07.766+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:59:07.766+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-13T12:59:07.782+0000] {logging_mixin.py:188} INFO - [2025-03-13T12:59:07.782+0000] {dag.py:3823} INFO - Setting next_dagrun for 6_house_assignment to None, run_after=None
+[2025-03-13T12:59:07.802+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/6_house_assignment.py took 0.451 seconds

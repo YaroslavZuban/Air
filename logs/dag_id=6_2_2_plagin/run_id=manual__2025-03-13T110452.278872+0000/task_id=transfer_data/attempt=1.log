@@ -1,0 +1,14 @@
+[2025-03-13T11:05:02.470+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 6_2_2_plagin.transfer_data manual__2025-03-13T11:04:52.278872+00:00 [queued]>
+[2025-03-13T11:05:02.481+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 6_2_2_plagin.transfer_data manual__2025-03-13T11:04:52.278872+00:00 [queued]>
+[2025-03-13T11:05:02.482+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-13T11:05:02.501+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickhouseTransferOperator): transfer_data> on 2025-03-13 11:04:52.278872+00:00
+[2025-03-13T11:05:02.508+0000] {standard_task_runner.py:60} INFO - Started process 6766 to run task
+[2025-03-13T11:05:02.511+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '6_2_2_plagin', 'transfer_data', 'manual__2025-03-13T11:04:52.278872+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/6_2_2_plagin.py', '--cfg-path', '/tmp/tmp7n4niod7']
+[2025-03-13T11:05:02.512+0000] {standard_task_runner.py:88} INFO - Job 35: Subtask transfer_data
+[2025-03-13T11:05:02.549+0000] {task_command.py:423} INFO - Running <TaskInstance: 6_2_2_plagin.transfer_data manual__2025-03-13T11:04:52.278872+00:00 [running]> on host 13d00b3af9e0
+[2025-03-13T11:05:02.607+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='6_2_2_plagin' AIRFLOW_CTX_TASK_ID='transfer_data' AIRFLOW_CTX_EXECUTION_DATE='2025-03-13T11:04:52.278872+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-13T11:04:52.278872+00:00'
+[2025-03-13T11:05:02.746+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-13T11:05:02.747+0000] {clickhouse.py:79} INFO - INSERT INTO campaign_table VALUES with [{'campaign': 'Campaign A', 'cost': 1200, 'date': '2024-01-01'}, {'campaign': 'Campaign B', 'cost': 850, 'date': '2024-01-01'}, {'campaign': 'Campaign C', 'cost': 1500, 'date': '2024-01-01'}]
+[2025-03-13T11:05:02.784+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=6_2_2_plagin, task_id=transfer_data, execution_date=20250313T110452, start_date=20250313T110502, end_date=20250313T110502
+[2025-03-13T11:05:02.844+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-13T11:05:02.856+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,495 @@
+[2025-03-17T10:47:53.960+0000] {processor.py:161} INFO - Started process (PID=127) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:47:53.961+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:47:53.962+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:47:53.962+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:47:54.673+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:47:54.673+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:47:54.677+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:47:54.677+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:47:54.680+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:47:54.679+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:47:54.682+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:47:54.682+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:47:54.690+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:47:54.695+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:47:54.694+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:47:54.719+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:47:54.719+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:47:54.762+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.805 seconds
+[2025-03-17T10:48:26.991+0000] {processor.py:161} INFO - Started process (PID=192) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:48:26.992+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:48:26.993+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:26.993+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:48:27.724+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:27.724+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:48:27.727+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:27.726+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:48:27.729+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:27.728+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:48:27.731+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:27.730+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:48:27.737+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:48:27.807+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:27.806+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:48:27.823+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:27.823+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:48:27.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.878 seconds
+[2025-03-17T10:48:58.837+0000] {processor.py:161} INFO - Started process (PID=216) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:48:58.838+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:48:58.839+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:58.839+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:48:59.485+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:59.484+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:48:59.487+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:59.486+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:48:59.488+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:59.488+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:48:59.490+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:59.490+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:48:59.495+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:48:59.562+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:59.561+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:48:59.583+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:48:59.582+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:48:59.619+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.785 seconds
+[2025-03-17T10:49:30.025+0000] {processor.py:161} INFO - Started process (PID=240) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:49:30.027+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:49:30.030+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:49:30.028+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:49:30.575+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:49:30.575+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:49:30.577+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:49:30.577+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:49:30.579+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:49:30.579+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:49:30.581+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:49:30.581+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:49:30.586+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:49:30.658+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:49:30.658+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:49:30.673+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:49:30.672+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:49:30.702+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.680 seconds
+[2025-03-17T10:50:01.591+0000] {processor.py:161} INFO - Started process (PID=264) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:50:01.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:50:01.593+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:01.593+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:50:02.138+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:02.137+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:50:02.140+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:02.140+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:50:02.142+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:02.142+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:50:02.144+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:02.144+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:50:02.149+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:50:02.217+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:02.216+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:50:02.231+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:02.231+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:50:02.268+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.680 seconds
+[2025-03-17T10:50:32.663+0000] {processor.py:161} INFO - Started process (PID=288) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:50:32.664+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:50:32.665+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:32.665+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:50:33.148+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:33.148+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:50:33.150+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:33.150+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:50:33.152+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:33.152+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:50:33.154+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:33.154+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:50:33.159+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:50:33.224+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:33.223+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:50:33.237+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:50:33.236+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:50:33.263+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.602 seconds
+[2025-03-17T10:51:03.731+0000] {processor.py:161} INFO - Started process (PID=312) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:51:03.732+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:51:03.734+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:03.733+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:51:04.304+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:04.303+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:51:04.306+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:04.306+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:51:04.308+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:04.308+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:51:04.310+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:04.310+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:51:04.315+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:51:04.387+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:04.386+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:51:04.401+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:04.401+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:51:04.433+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.705 seconds
+[2025-03-17T10:51:34.728+0000] {processor.py:161} INFO - Started process (PID=336) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:51:34.729+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:51:34.730+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:34.730+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:51:35.271+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:35.271+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:51:35.276+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:35.276+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:51:35.284+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:35.284+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:51:35.287+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:35.287+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:51:35.293+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:51:35.367+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:35.367+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:51:35.383+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:51:35.383+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:51:35.410+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.685 seconds
+[2025-03-17T10:52:05.776+0000] {processor.py:161} INFO - Started process (PID=360) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:52:05.777+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:52:05.778+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:05.778+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:52:06.348+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:06.347+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:52:06.350+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:06.350+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:52:06.352+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:06.352+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:52:06.354+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:06.354+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:52:06.359+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:52:06.427+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:06.426+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:52:06.441+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:06.441+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:52:06.463+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.691 seconds
+[2025-03-17T10:52:36.701+0000] {processor.py:161} INFO - Started process (PID=384) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:52:36.702+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:52:36.703+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:36.703+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:52:37.193+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:37.192+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:52:37.195+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:37.195+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:52:37.197+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:37.197+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:52:37.198+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:37.198+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:52:37.203+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:52:37.271+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:37.270+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:52:37.285+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:52:37.285+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:52:37.309+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.610 seconds
+[2025-03-17T10:53:08.191+0000] {processor.py:161} INFO - Started process (PID=408) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:53:08.192+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:53:08.194+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:08.192+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:53:08.774+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:08.774+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:53:08.776+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:08.776+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:53:08.778+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:08.778+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:53:08.779+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:08.779+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:53:08.784+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:53:08.848+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:08.848+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:53:08.862+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:08.861+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:53:08.881+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.692 seconds
+[2025-03-17T10:53:40.670+0000] {processor.py:161} INFO - Started process (PID=434) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:53:40.671+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:53:40.673+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:40.673+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:53:41.400+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:41.400+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:53:41.403+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:41.402+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:53:41.404+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:41.404+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:53:41.406+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:41.406+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:53:41.411+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:53:41.526+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:41.525+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:53:41.549+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:53:41.548+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:53:41.588+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.922 seconds
+[2025-03-17T10:54:12.259+0000] {processor.py:161} INFO - Started process (PID=459) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:54:12.259+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:54:12.260+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:12.260+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:54:12.783+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:12.783+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:54:12.785+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:12.785+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:54:12.787+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:12.787+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:54:12.789+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:12.789+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:54:12.794+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:54:12.859+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:12.859+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:54:12.874+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:12.874+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:54:12.896+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.640 seconds
+[2025-03-17T10:54:43.605+0000] {processor.py:161} INFO - Started process (PID=484) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:54:43.606+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:54:43.607+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:43.607+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:54:44.147+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:44.146+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:54:44.148+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:44.148+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:54:44.150+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:44.150+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:54:44.152+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:44.151+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:54:44.156+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:54:44.218+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:44.218+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:54:44.231+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:54:44.231+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:54:44.250+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.649 seconds
+[2025-03-17T10:55:14.583+0000] {processor.py:161} INFO - Started process (PID=509) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:55:14.584+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:55:14.585+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:14.585+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:55:15.199+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:15.198+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:55:15.201+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:15.201+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:55:15.203+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:15.203+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:55:15.206+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:15.205+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:55:15.211+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:55:15.224+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:15.223+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:55:15.239+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:15.239+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:55:15.262+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.682 seconds
+[2025-03-17T10:55:45.590+0000] {processor.py:161} INFO - Started process (PID=534) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:55:45.590+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:55:45.591+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:45.591+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:55:46.070+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:46.069+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:55:46.072+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:46.071+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:55:46.073+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:46.073+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:55:46.075+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:46.075+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:55:46.079+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:55:46.088+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:46.087+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:55:46.100+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:55:46.100+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:55:46.120+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.533 seconds
+[2025-03-17T10:56:16.549+0000] {processor.py:161} INFO - Started process (PID=559) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:56:16.550+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:56:16.552+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:16.551+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:56:17.070+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:17.070+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:56:17.072+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:17.072+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:56:17.074+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:17.074+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:56:17.075+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:17.075+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:56:17.079+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:56:17.139+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:17.139+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:56:17.151+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:17.150+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:56:17.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.623 seconds
+[2025-03-17T10:56:47.409+0000] {processor.py:161} INFO - Started process (PID=584) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:56:47.410+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:56:47.411+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:47.411+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:56:47.891+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:47.891+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:56:47.894+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:47.893+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:56:47.895+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:47.895+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:56:47.897+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:47.897+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:56:47.902+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:56:47.965+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:47.965+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:56:47.979+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:56:47.979+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:56:48.002+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.596 seconds
+[2025-03-17T10:57:18.332+0000] {processor.py:161} INFO - Started process (PID=609) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:57:18.333+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:57:18.334+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:18.334+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:57:18.835+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:18.834+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:57:18.837+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:18.837+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:57:18.838+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:18.838+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:57:18.840+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:18.840+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:57:18.845+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:57:18.905+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:18.904+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:57:18.917+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:18.917+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:57:18.937+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.608 seconds
+[2025-03-17T10:57:49.942+0000] {processor.py:161} INFO - Started process (PID=634) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:57:49.943+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:57:49.944+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:49.944+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:57:50.508+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:50.507+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:57:50.511+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:50.511+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:57:50.513+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:50.513+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:57:50.515+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:50.515+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:57:50.521+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:57:50.625+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:50.625+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:57:50.641+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:57:50.641+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:57:50.665+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.727 seconds
+[2025-03-17T10:58:21.261+0000] {processor.py:161} INFO - Started process (PID=659) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:58:21.262+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:58:21.263+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:21.263+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:58:21.771+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:21.770+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:58:21.773+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:21.773+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:58:21.774+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:21.774+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:58:21.776+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:21.776+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:58:21.781+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:58:21.844+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:21.843+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:58:21.858+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:21.858+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:58:21.888+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.629 seconds
+[2025-03-17T10:58:52.585+0000] {processor.py:161} INFO - Started process (PID=684) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:58:52.586+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:58:52.587+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:52.587+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:58:53.058+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:53.057+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:58:53.060+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:53.060+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:58:53.061+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:53.061+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:58:53.063+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:53.063+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:58:53.067+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:58:53.129+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:53.129+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:58:53.144+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:58:53.144+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:58:53.174+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.592 seconds
+[2025-03-17T10:59:24.339+0000] {processor.py:161} INFO - Started process (PID=709) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:59:24.343+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:59:24.345+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:24.344+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:59:25.012+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:25.012+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:59:25.014+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:25.014+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:59:25.015+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:25.015+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:59:25.017+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:25.017+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:59:25.021+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:59:25.088+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:25.087+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:59:25.101+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:25.101+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:59:25.124+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.793 seconds
+[2025-03-17T10:59:56.152+0000] {processor.py:161} INFO - Started process (PID=734) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:59:56.154+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T10:59:56.156+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:56.156+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:59:57.026+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:57.025+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:59:57.028+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:57.028+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:59:57.030+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:57.030+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:59:57.032+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:57.032+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T10:59:57.038+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T10:59:57.104+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:57.103+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T10:59:57.118+0000] {logging_mixin.py:188} INFO - [2025-03-17T10:59:57.118+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T10:59:57.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.940 seconds
+[2025-03-17T11:00:29.054+0000] {processor.py:161} INFO - Started process (PID=761) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:00:29.056+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:00:29.057+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:00:29.057+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:00:29.595+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:00:29.595+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:00:29.597+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:00:29.597+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:00:29.599+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:00:29.599+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:00:29.601+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:00:29.601+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:00:29.606+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:00:29.673+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:00:29.672+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:00:29.686+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:00:29.685+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:00:29.706+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.656 seconds
+[2025-03-17T11:01:00.604+0000] {processor.py:161} INFO - Started process (PID=786) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:01:00.605+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:01:00.606+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:00.606+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:01:01.169+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:01.168+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:01:01.172+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:01.171+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:01:01.174+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:01.174+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:01:01.176+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:01.176+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:01:01.184+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:01:01.263+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:01.262+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:01:01.281+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:01.281+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:01:01.317+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.715 seconds
+[2025-03-17T11:01:31.621+0000] {processor.py:161} INFO - Started process (PID=815) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:01:31.622+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:01:31.624+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:31.624+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:01:32.208+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:32.207+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:01:32.211+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:32.211+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:01:32.213+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:32.213+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:01:32.215+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:32.214+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:01:32.220+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:01:32.230+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:32.230+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:01:32.247+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:01:32.247+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:01:32.274+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.655 seconds
+[2025-03-17T11:02:03.024+0000] {processor.py:161} INFO - Started process (PID=840) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:02:03.026+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:02:03.028+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:03.027+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:02:03.618+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:03.617+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:02:03.621+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:03.621+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:02:03.625+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:03.624+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:02:03.628+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:03.627+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:02:03.634+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:02:03.648+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:03.647+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:02:03.668+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:03.668+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:02:03.697+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.677 seconds
+[2025-03-17T11:02:34.342+0000] {processor.py:161} INFO - Started process (PID=867) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:02:34.343+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:02:34.344+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:34.344+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:02:35.384+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:35.382+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:02:35.392+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:35.392+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:02:35.399+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:35.398+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:02:35.408+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:35.406+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:02:35.421+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:02:35.558+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:35.557+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:02:35.586+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:02:35.586+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:02:35.627+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 1.288 seconds
+[2025-03-17T11:03:06.510+0000] {processor.py:161} INFO - Started process (PID=892) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:03:06.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:03:06.512+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:06.511+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:03:07.015+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:07.015+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:03:07.017+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:07.017+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:03:07.018+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:07.018+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:03:07.020+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:07.020+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:03:07.024+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:03:07.087+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:07.087+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:03:07.100+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:07.100+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:03:07.128+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.621 seconds
+[2025-03-17T11:03:37.414+0000] {processor.py:161} INFO - Started process (PID=917) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:03:37.415+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:03:37.416+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:37.416+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:03:38.011+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:38.011+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:03:38.014+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:38.014+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:03:38.016+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:38.015+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:03:38.017+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:38.017+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:03:38.023+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:03:38.037+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:38.036+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:03:38.062+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:03:38.061+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:03:38.086+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.674 seconds
+[2025-03-17T11:04:08.357+0000] {processor.py:161} INFO - Started process (PID=942) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:04:08.358+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:04:08.359+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:08.359+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:04:08.979+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:08.978+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:04:08.981+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:08.981+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:04:08.983+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:08.983+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:04:08.985+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:08.985+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:04:08.991+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:04:09.073+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:09.072+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:04:09.089+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:09.089+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:04:09.118+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.766 seconds
+[2025-03-17T11:04:39.756+0000] {processor.py:161} INFO - Started process (PID=967) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:04:39.757+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:04:39.758+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:39.758+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:04:40.260+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:40.259+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:04:40.262+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:40.262+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:04:40.264+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:40.263+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:04:40.265+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:40.265+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:04:40.270+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:04:40.332+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:40.332+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:04:40.347+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:04:40.346+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:04:40.373+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.620 seconds
+[2025-03-17T11:05:10.607+0000] {processor.py:161} INFO - Started process (PID=994) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:05:10.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:05:10.608+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:10.608+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:05:11.136+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:11.136+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:05:11.139+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:11.138+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:05:11.140+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:11.140+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:05:11.142+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:11.142+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:05:11.147+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:05:11.158+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:11.158+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:05:11.174+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:11.174+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:05:11.199+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.594 seconds
+[2025-03-17T11:05:41.407+0000] {processor.py:161} INFO - Started process (PID=1021) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:05:41.408+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:05:41.409+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:41.408+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:05:41.943+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:41.943+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:05:41.945+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:41.945+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:05:41.947+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:41.947+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:05:41.948+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:41.948+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:05:41.953+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:05:42.015+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:42.015+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:05:42.033+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:05:42.033+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:05:42.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.657 seconds
+[2025-03-17T11:06:13.059+0000] {processor.py:161} INFO - Started process (PID=1046) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:06:13.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:06:13.061+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:13.061+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:06:13.592+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:13.591+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:06:13.594+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:13.594+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:06:13.596+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:13.596+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:06:13.598+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:13.598+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:06:13.603+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:06:13.670+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:13.669+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:06:13.684+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:13.684+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:06:13.708+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.651 seconds
+[2025-03-17T11:06:44.192+0000] {processor.py:161} INFO - Started process (PID=1071) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:06:44.193+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:06:44.195+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:44.194+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:06:44.810+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:44.809+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:06:44.813+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:44.813+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:06:44.816+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:44.816+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:06:44.818+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:44.818+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:06:44.824+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:06:44.836+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:44.836+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:06:44.853+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:06:44.853+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:06:44.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.692 seconds
+[2025-03-17T11:07:31.108+0000] {processor.py:161} INFO - Started process (PID=1172) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:07:31.109+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:07:31.110+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:07:31.110+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:07:31.687+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:07:31.686+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:07:31.689+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:07:31.689+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:07:31.691+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:07:31.691+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:07:31.692+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:07:31.692+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:07:31.697+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:07:31.763+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:07:31.763+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:07:31.778+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:07:31.778+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:07:31.797+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.692 seconds
+[2025-03-17T11:08:02.388+0000] {processor.py:161} INFO - Started process (PID=1233) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:08:02.389+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:08:02.391+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:08:02.390+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:08:02.969+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:08:02.969+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:08:02.972+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:08:02.971+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:08:02.974+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:08:02.974+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:08:02.976+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:08:02.976+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:08:02.981+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:08:03.053+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:08:03.052+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:08:03.067+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:08:03.067+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:08:03.097+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.712 seconds
+[2025-03-17T11:09:48.079+0000] {processor.py:161} INFO - Started process (PID=1665) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:09:48.080+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:09:48.080+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:09:48.080+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:09:48.609+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:09:48.608+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:09:48.612+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:09:48.612+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:09:48.615+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:09:48.614+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:09:48.617+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:09:48.617+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:09:48.623+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:09:48.733+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:09:48.733+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:09:48.777+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:09:48.777+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:09:48.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.728 seconds
+[2025-03-17T11:10:19.154+0000] {processor.py:161} INFO - Started process (PID=1690) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:10:19.155+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:10:19.156+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:19.156+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:10:19.678+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:19.678+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:10:19.681+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:19.681+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:10:19.684+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:19.684+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:10:19.686+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:19.686+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:10:19.690+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:10:19.763+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:19.762+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:10:19.777+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:19.777+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:10:19.799+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.648 seconds
+[2025-03-17T11:10:49.997+0000] {processor.py:161} INFO - Started process (PID=1715) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:10:49.998+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:10:49.999+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:49.999+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:10:50.564+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:50.563+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:10:50.567+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:50.567+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:10:50.569+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:50.569+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:10:50.571+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:50.571+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:10:50.579+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:10:50.658+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:50.657+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:10:50.673+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:10:50.672+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:10:50.701+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.707 seconds
+[2025-03-17T11:11:21.542+0000] {processor.py:161} INFO - Started process (PID=1740) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:11:21.543+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:11:21.544+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:21.544+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:11:22.077+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:22.076+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:11:22.080+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:22.080+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:11:22.082+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:22.082+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:11:22.084+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:22.083+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:11:22.089+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:11:22.160+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:22.159+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:11:22.173+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:22.173+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:11:22.195+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.655 seconds
+[2025-03-17T11:11:53.058+0000] {processor.py:161} INFO - Started process (PID=1765) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:11:53.059+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:11:53.060+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:53.060+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:11:53.609+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:53.608+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:11:53.611+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:53.611+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:11:53.614+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:53.613+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:11:53.615+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:53.615+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:11:53.621+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:11:53.685+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:53.685+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:11:53.698+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:11:53.698+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:11:53.720+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.665 seconds
+[2025-03-17T11:12:24.277+0000] {processor.py:161} INFO - Started process (PID=1790) to work on /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:12:24.278+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/5_1_2_xcom.py for tasks to queue
+[2025-03-17T11:12:24.279+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:12:24.279+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:12:24.873+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:12:24.872+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:12:24.875+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:12:24.875+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:12:24.877+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:12:24.877+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:12:24.879+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:12:24.878+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:12:24.884+0000] {processor.py:840} INFO - DAG(s) 'test_xcom' retrieved from /opt/airflow/dags/5_1_2_xcom.py
+[2025-03-17T11:12:25.019+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:12:25.018+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-17T11:12:25.054+0000] {logging_mixin.py:188} INFO - [2025-03-17T11:12:25.053+0000] {dag.py:3823} INFO - Setting next_dagrun for test_xcom to 2024-01-01 00:00:00+00:00, run_after=2024-01-02 00:00:00+00:00
+[2025-03-17T11:12:25.097+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/5_1_2_xcom.py took 0.824 seconds

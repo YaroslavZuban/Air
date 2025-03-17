@@ -1,0 +1,14 @@
+[2025-03-17T11:08:50.607+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 7_house_assignment.create_order_usd scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-17T11:08:50.614+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 7_house_assignment.create_order_usd scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-17T11:08:50.615+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-17T11:08:50.629+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): create_order_usd> on 2024-01-03 00:00:00+00:00
+[2025-03-17T11:08:50.635+0000] {standard_task_runner.py:60} INFO - Started process 1412 to run task
+[2025-03-17T11:08:50.637+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '7_house_assignment', 'create_order_usd', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/7_1_house_assignment.py', '--cfg-path', '/tmp/tmppvlvzqu5']
+[2025-03-17T11:08:50.639+0000] {standard_task_runner.py:88} INFO - Job 71: Subtask create_order_usd
+[2025-03-17T11:08:50.669+0000] {task_command.py:423} INFO - Running <TaskInstance: 7_house_assignment.create_order_usd scheduled__2024-01-03T00:00:00+00:00 [running]> on host 13d00b3af9e0
+[2025-03-17T11:08:50.719+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='7_house_assignment' AIRFLOW_CTX_TASK_ID='create_order_usd' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-17T11:08:50.724+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:08:50.725+0000] {clickhouse.py:79} INFO - CREATE TABLE IF NOT EXISTS order_usd (date String, order_id Int64, purchase_rub Float64, purchase_usd Float64) ENGINE Log
+[2025-03-17T11:08:50.743+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=7_house_assignment, task_id=create_order_usd, execution_date=20240103T000000, start_date=20250317T110850, end_date=20250317T110850
+[2025-03-17T11:08:50.771+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-17T11:08:50.788+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

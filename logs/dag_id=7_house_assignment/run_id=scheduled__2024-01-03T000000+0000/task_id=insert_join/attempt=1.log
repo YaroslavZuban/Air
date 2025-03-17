@@ -1,0 +1,90 @@
+[2025-03-17T11:09:01.934+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 7_house_assignment.insert_join scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-17T11:09:01.943+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 7_house_assignment.insert_join scheduled__2024-01-03T00:00:00+00:00 [queued]>
+[2025-03-17T11:09:01.944+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-17T11:09:01.964+0000] {taskinstance.py:2191} INFO - Executing <Task(ClickHouseOperator): insert_join> on 2024-01-03 00:00:00+00:00
+[2025-03-17T11:09:01.972+0000] {standard_task_runner.py:60} INFO - Started process 1468 to run task
+[2025-03-17T11:09:01.975+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', '7_house_assignment', 'insert_join', 'scheduled__2024-01-03T00:00:00+00:00', '--job-id', '74', '--raw', '--subdir', 'DAGS_FOLDER/7_1_house_assignment.py', '--cfg-path', '/tmp/tmpra7jxmyx']
+[2025-03-17T11:09:01.976+0000] {standard_task_runner.py:88} INFO - Job 74: Subtask insert_join
+[2025-03-17T11:09:02.019+0000] {task_command.py:423} INFO - Running <TaskInstance: 7_house_assignment.insert_join scheduled__2024-01-03T00:00:00+00:00 [running]> on host 13d00b3af9e0
+[2025-03-17T11:09:02.082+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='7_house_assignment' AIRFLOW_CTX_TASK_ID='insert_join' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-03T00:00:00+00:00'
+[2025-03-17T11:09:02.088+0000] {base.py:83} INFO - Using connection ID 'clickhouse_default' for task execution.
+[2025-03-17T11:09:02.089+0000] {clickhouse.py:79} INFO -  INSERT INTO order_usd 
+            SELECT date, order_id, purchase_rub, purchase_rub / toFloat64(replace(value, ',', '.')) as purchase_usd
+            FROM airflow.orders t1
+                left join (select * from currency_cb where name = 'Доллар США' and date = '2024-01-03') t2 on t1.date = t2.date
+            where date = '2024-01-03' 
+[2025-03-17T11:09:02.094+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 83, in execute
+    return self._hook_execute()
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 69, in _hook_execute
+    return hook.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 80, in execute
+    last_result = conn.execute(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 382, in execute
+    rv = self.process_ordinary_query(
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 580, in process_ordinary_query
+    return self.receive_result(with_column_types=with_column_types,
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 212, in receive_result
+    return result.get_result()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/result.py", line 50, in get_result
+    for packet in self.packet_generator:
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 228, in packet_generator
+    packet = self.receive_packet()
+  File "/home/airflow/.local/lib/python3.9/site-packages/clickhouse_driver/client.py", line 245, in receive_packet
+    raise packet.exception
+clickhouse_driver.errors.ServerException: Code: 60.
+DB::Exception: Unknown table expression identifier 'airflow.orders' in scope SELECT date, order_id, purchase_rub, purchase_rub / toFloat64(replace(value, ',', '.')) AS purchase_usd FROM airflow.orders AS t1 LEFT JOIN (SELECT * FROM currency_cb WHERE (name = 'Доллар США') AND (date = '2024-01-03')) AS t2 ON t1.date = t2.date WHERE date = '2024-01-03'. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000dd0ee7b
+1. DB::Exception::Exception(PreformattedMessage&&, int) @ 0x0000000008bac62c
+2. DB::Exception::Exception<String const&, String>(int, FormatStringHelperImpl<std::type_identity<String const&>::type, std::type_identity<String>::type>, String const&, String&&) @ 0x000000000921d86b
+3. DB::QueryAnalyzer::resolveQuery(std::shared_ptr<DB::IQueryTreeNode> const&, DB::IdentifierResolveScope&) @ 0x0000000011ee9635
+4. DB::QueryAnalyzer::resolve(std::shared_ptr<DB::IQueryTreeNode>&, std::shared_ptr<DB::IQueryTreeNode> const&, std::shared_ptr<DB::Context const>) @ 0x0000000011ee448c
+5. DB::QueryAnalysisPass::run(std::shared_ptr<DB::IQueryTreeNode>&, std::shared_ptr<DB::Context const>) @ 0x0000000011ee3d60
+6. DB::QueryTreePassManager::run(std::shared_ptr<DB::IQueryTreeNode>) @ 0x00000000125a10d6
+7. DB::(anonymous namespace)::buildQueryTreeAndRunPasses(std::shared_ptr<DB::IAST> const&, DB::SelectQueryOptions const&, std::shared_ptr<DB::Context const> const&, std::shared_ptr<DB::IStorage> const&) (.llvm.12983879491467856026) @ 0x0000000012800f1d
+8. DB::InterpreterSelectQueryAnalyzer::InterpreterSelectQueryAnalyzer(std::shared_ptr<DB::IAST> const&, std::shared_ptr<DB::Context const> const&, DB::SelectQueryOptions const&, std::vector<String, std::allocator<String>> const&) @ 0x00000000127ff0fc
+9. DB::InterpreterInsertQuery::buildInsertSelectPipeline(DB::ASTInsertQuery&, std::shared_ptr<DB::IStorage>) @ 0x00000000127a57c8
+10. DB::InterpreterInsertQuery::execute() @ 0x00000000127a887f
+11. DB::executeQueryImpl(char const*, char const*, std::shared_ptr<DB::Context>, DB::QueryFlags, DB::QueryProcessingStage::Enum, DB::ReadBuffer*) @ 0x0000000012b8f7d4
+12. DB::executeQuery(String const&, std::shared_ptr<DB::Context>, DB::QueryFlags, DB::QueryProcessingStage::Enum) @ 0x0000000012b8a7bc
+13. DB::TCPHandler::runImpl() @ 0x0000000013e7db2c
+14. DB::TCPHandler::run() @ 0x0000000013e9b419
+15. Poco::Net::TCPServerConnection::start() @ 0x0000000017458027
+16. Poco::Net::TCPServerDispatcher::run() @ 0x0000000017458479
+17. Poco::PooledThread::run() @ 0x00000000174249db
+18. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000017422ebd
+19. ? @ 0x00007efd97bd4ac3
+20. ? @ 0x00007efd97c66850
+
+[2025-03-17T11:09:02.100+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=7_house_assignment, task_id=insert_join, execution_date=20240103T000000, start_date=20250317T110901, end_date=20250317T110902
+[2025-03-17T11:09:02.113+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 74 for task insert_join (Code: 60.
+DB::Exception: Unknown table expression identifier 'airflow.orders' in scope SELECT date, order_id, purchase_rub, purchase_rub / toFloat64(replace(value, ',', '.')) AS purchase_usd FROM airflow.orders AS t1 LEFT JOIN (SELECT * FROM currency_cb WHERE (name = 'Доллар США') AND (date = '2024-01-03')) AS t2 ON t1.date = t2.date WHERE date = '2024-01-03'. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000dd0ee7b
+1. DB::Exception::Exception(PreformattedMessage&&, int) @ 0x0000000008bac62c
+2. DB::Exception::Exception<String const&, String>(int, FormatStringHelperImpl<std::type_identity<String const&>::type, std::type_identity<String>::type>, String const&, String&&) @ 0x000000000921d86b
+3. DB::QueryAnalyzer::resolveQuery(std::shared_ptr<DB::IQueryTreeNode> const&, DB::IdentifierResolveScope&) @ 0x0000000011ee9635
+4. DB::QueryAnalyzer::resolve(std::shared_ptr<DB::IQueryTreeNode>&, std::shared_ptr<DB::IQueryTreeNode> const&, std::shared_ptr<DB::Context const>) @ 0x0000000011ee448c
+5. DB::QueryAnalysisPass::run(std::shared_ptr<DB::IQueryTreeNode>&, std::shared_ptr<DB::Context const>) @ 0x0000000011ee3d60
+6. DB::QueryTreePassManager::run(std::shared_ptr<DB::IQueryTreeNode>) @ 0x00000000125a10d6
+7. DB::(anonymous namespace)::buildQueryTreeAndRunPasses(std::shared_ptr<DB::IAST> const&, DB::SelectQueryOptions const&, std::shared_ptr<DB::Context const> const&, std::shared_ptr<DB::IStorage> const&) (.llvm.12983879491467856026) @ 0x0000000012800f1d
+8. DB::InterpreterSelectQueryAnalyzer::InterpreterSelectQueryAnalyzer(std::shared_ptr<DB::IAST> const&, std::shared_ptr<DB::Context const> const&, DB::SelectQueryOptions const&, std::vector<String, std::allocator<String>> const&) @ 0x00000000127ff0fc
+9. DB::InterpreterInsertQuery::buildInsertSelectPipeline(DB::ASTInsertQuery&, std::shared_ptr<DB::IStorage>) @ 0x00000000127a57c8
+10. DB::InterpreterInsertQuery::execute() @ 0x00000000127a887f
+11. DB::executeQueryImpl(char const*, char const*, std::shared_ptr<DB::Context>, DB::QueryFlags, DB::QueryProcessingStage::Enum, DB::ReadBuffer*) @ 0x0000000012b8f7d4
+12. DB::executeQuery(String const&, std::shared_ptr<DB::Context>, DB::QueryFlags, DB::QueryProcessingStage::Enum) @ 0x0000000012b8a7bc
+13. DB::TCPHandler::runImpl() @ 0x0000000013e7db2c
+14. DB::TCPHandler::run() @ 0x0000000013e9b419
+15. Poco::Net::TCPServerConnection::start() @ 0x0000000017458027
+16. Poco::Net::TCPServerDispatcher::run() @ 0x0000000017458479
+17. Poco::PooledThread::run() @ 0x00000000174249db
+18. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000017422ebd
+19. ? @ 0x00007efd97bd4ac3
+20. ? @ 0x00007efd97c66850
+; 1468)
+[2025-03-17T11:09:02.148+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-17T11:09:02.159+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
